@@ -1,5 +1,4 @@
 import os
-import attr
 from itertools import chain
 from concurrent.futures import ThreadPoolExecutor as PoolExectutor
 
