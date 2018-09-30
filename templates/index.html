@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+
+<title>Cat Listing</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{{ url_for('static', filename='writ.css') }}"">
+
+<header>
+  <h1>Cat Listing</h1>
+</header>
+
+<main>
+  {% for listing in data %}
+  <p>
+    <img src="{{listing.image}}"/>
+
+    <table>
+      <tbody>
+        <tr><td>Location:</td><td>{{listing.location}}</td></tr>
+        <tr><td>Breed:</td><td>{{listing.breed}}</td></tr>
+        <tr><td>Color:</td><td>{{listing.color}}</td></tr>
+        <tr><td>Gender:</td><td>{{listing.gender}}</td></tr>
+        <tr><td>Found on:</td><td>{{listing.found_on.format('DD/MM/YYYY')}}</td></tr>
+        <tr><td>Source:</td><td>{{listing.source}}</td></tr>
+      </tbody>
+    </table>
+  </p>
+  <hr/>
+  {% endfor %}
+</main>
