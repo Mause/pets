@@ -178,26 +178,26 @@ def swan():
 
 def _swan(subsection):
     url = f'http://www.swanamf.com.au/{subsection}'
-    cats = requests.get(url).text
-    match = re.search(r"var preload_data = '([^']+)';", cats)
+    pets = requests.get(url).text
+    match = re.search(r"var preload_data = '([^']+)';", pets)
     if not match:
         return []
 
-    cats = json.loads(
+    pets = json.loads(
         json.loads(
             '"{}"'.format(
                 match.group(1)
             )
         )
     )
-    for cat in cats:
+    for pet in pets:
         yield Pet(
-            breed=cat["breed"],
-            color=cat["colour"],
-            found_on=parse(cat["impounded_at"]),
-            gender=cat["sex"],
-            location=cat["suburb"],
-            image=urljoin(url, cat["photo_url"]),
+            breed=pet["breed"],
+            color=pet["colour"],
+            found_on=parse(pet["impounded_at"]),
+            gender=pet["sex"],
+            location=pet["suburb"],
+            image=urljoin(url, pet["photo_url"]),
             source='swan',
             url=url,
         )
