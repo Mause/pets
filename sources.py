@@ -263,6 +263,28 @@ def canning():
         )
 
 
+def gosnells():
+    url = 'https://eservices.gosnells.wa.gov.au/data/impounds'
+    html = get(url)
+    rows = ctx(html, 'table > tbody > tr')
+
+    for row in rows:
+        _, date, gender, photo = ctx(row, 'td')
+
+        yield Pet(
+            found_on=parse(date.text.strip(), 'D MMMM YYYY'),
+            location=None,
+            color=None,
+            breed=None,
+            gender=None if gender.text is None else gender.text.strip(),
+            image=urljoin(
+                url,
+                ctx(photo, 'a > img')[0].attrib['src']
+            ),
+            source='gosnells',
+        )
+
+
 sources = [
     wanneroo,
     victoriapark,
@@ -270,7 +292,8 @@ sources = [
     kwinana,
     swan,
     cat_haven,
-    canning
+    canning,
+    gosnells,
 ]
 
 
