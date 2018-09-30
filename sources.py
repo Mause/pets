@@ -283,16 +283,18 @@ def gosnells():
     for row in rows:
         _, date, gender, photo = ctx(row, 'td')
 
+        image = urljoin(
+            url,
+            ctx(photo, 'a > img')[0].attrib['src']
+        ).replace('width=200', 'width=800')
+
         yield Pet(
             found_on=parse(date.text.strip(), 'D MMMM YYYY'),
             location=None,
             color=None,
             breed=None,
             gender=None if gender.text is None else gender.text.strip(),
-            image=urljoin(
-                url,
-                ctx(photo, 'a > img')[0].attrib['src']
-            ),
+            image=image,
             source='gosnells',
             url=url,
         )
