@@ -75,10 +75,7 @@ def wanneroo():
 
 def victoriapark():
     url = 'https://www.victoriapark.wa.gov.au/Found-animals'
-    html = get(
-        url,
-        params='dlv_OC CL Public Lost Animals=(dd_OC Animal Type=Cat)'
-    )
+    html = get(url)
     items = html.xpath('.//*[@class="list-item-container"]/article/div')
     for item in items:
         def g(key):
@@ -122,9 +119,6 @@ def armadale():
         location = (ctx(item, '.location-found'))[0].text
         found_on = (ctx(item, '.date-found > span'))[0].attrib['content']
         gender, species = (ctx(item, '.species'))[0].text.split('\u00a0')
-        if species != 'cat':
-            print(species)
-            continue
 
         yield Pet(
             gender=gender,
