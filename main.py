@@ -18,8 +18,11 @@ def get_data():
             sources,
         )
     )
-    data = tqdm(data)
-    data = sorted(data, key=lambda item: item.found_on, reverse=True)
+    return sorted(
+        tqdm(data),
+        key=lambda item: item.found_on,
+        reverse=True
+    )
 
 
 @app.route('/index.json')
