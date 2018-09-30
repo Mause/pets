@@ -34,6 +34,7 @@ class Pet(object):
     gender = attr.ib()
     found_on = attr.ib()
     source = attr.ib()
+    url = attr.ib()
 
     @found_on.validator
     def validate(self, attr, value):
@@ -51,7 +52,8 @@ def wanneroo():
     html = get(url)
     items = html.xpath('.//a[@class="item-list__article boxed"]/@href')
     for item in items:
-        item = get(urljoin(url, item))
+        actual_url = urljoin(url, item)
+        item = get(actual_url)
         image = urljoin(
             url,
             ctx(item, '.container > .main-image')[0].attrib['src']
@@ -66,7 +68,8 @@ def wanneroo():
             breed=item['Breed: '],
             location=item['Admitted from: '],
             image=image,
-            source='wanneroo'
+            source='wanneroo',
+            url=actual_url,
         )
 
 
@@ -97,12 +100,14 @@ def victoriapark():
             color=color,
             gender=gender,
             found_on=found_on,
-            source='victoriapark'
+            source='victoriapark',
+            url=url,
         )
 
 
 def armadale():
-    html = get('https://www.armadale.wa.gov.au/animal-management-facility')
+    url = 'https://www.armadale.wa.gov.au/animal-management-facility'
+    html = get(url)
     items = (ctx(
         html,
         '.view-impounded-animals > .view-content > .views-row'))
@@ -128,7 +133,8 @@ def armadale():
             breed=breed,
             location=location,
             found_on=parse(found_on),
-            source='armadale'
+            source='armadale',
+            url=url,
         )
 
 
@@ -158,7 +164,11 @@ def kwinana():
             breed=description['breed'],
             location=description['location'],
             image=cat['versions']['original']['url'],
-            source='kwinana'
+            source='kwinana',
+            url=(
+                'https://www.kwinana.wa.gov.au/our-services/'
+                'animal-services/lostanimals/Pages/default.aspx'
+            ),
         )
 
 
@@ -184,14 +194,14 @@ def swan():
             gender=cat["sex"],
             location=cat["suburb"],
             image=urljoin(url, cat["photo_url"]),
-            source='swan'
+            source='swan',
+            url=url,
         )
 
 
 def cat_haven():
-    html = requests.get(
-        'https://www.cathavenlostandfound.com/incoming-cats'
-    ).text
+    url = 'https://www.cathavenlostandfound.com/incoming-cats'
+    html = requests.get(url).text
     match = re.search(r'var warmupData = (.*);', html)
     if not match:
         return []
@@ -220,17 +230,18 @@ def cat_haven():
             ),
             breed=None,
             image=image,
-            source='cat_haven'
+            source='cat_haven',
+            url=url,
         )
 
 
 def canning():
-    url = 'https://www.canning.wa.gov.au'
-    html = get(
-        url + '/Community/'
+    url = (
+        'https://www.canning.wa.gov.au/Community/'
         'Ranger-and-Community-Safety-Services/'
         'Animal-Control/Impounded-Animals'
     )
+    html = get(url)
 
     pets = ctx(html, '.main-content-field > table > tbody > tr')
 
@@ -259,7 +270,8 @@ def canning():
             breed=None,
             gender=gender,
             image=urljoin(url, image),
-            source='canning'
+            source='canning',
+            url=url,
         )
 
 
@@ -282,6 +294,7 @@ def gosnells():
                 ctx(photo, 'a > img')[0].attrib['src']
             ),
             source='gosnells',
+            url=url,
         )
 
 
