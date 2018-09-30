@@ -48,7 +48,12 @@ def get(*args, **kwargs):
 
 
 def wanneroo():
-    url = 'http://www.wanneroo.wa.gov.au/animals/cats'
+    yield from _wanneroo('dogs')
+    yield from _wanneroo('cats')
+
+
+def _wanneroo(subsection):
+    url = f'http://www.wanneroo.wa.gov.au/animals/{subsection}'
     html = get(url)
     items = html.xpath('.//a[@class="item-list__article boxed"]/@href')
     for item in items:
