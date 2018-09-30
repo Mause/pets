@@ -316,13 +316,14 @@ sources = [
 ]
 
 
-def main():
-    def default(obj):
-        if isinstance(obj, arrow.Arrow):
-            return obj.isoformat()
-        else:
-            return attr.asdict(obj)
+def default(obj):
+    if isinstance(obj, arrow.Arrow):
+        return obj.isoformat()
+    else:
+        return attr.asdict(obj)
 
+
+def main():
     for source in tqdm(sources):
         data = list(source())
 

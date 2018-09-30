@@ -5,10 +5,11 @@ from concurrent.futures import ThreadPoolExecutor as PoolExectutor
 from tqdm import tqdm
 from flask import Flask, render_template, jsonify
 
-from sources import sources
+from sources import sources, default
 
 EXECUTOR = PoolExectutor()
 app = Flask(__name__)
+app.json_encoder.default = lambda self, obj: default(obj)
 
 
 def get_data():
