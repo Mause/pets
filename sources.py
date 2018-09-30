@@ -64,14 +64,14 @@ def _wanneroo(subsection):
             ctx(item, '.container > .main-image')[0].attrib['src']
         )
         item = ctx(item, '.container > .item-list')[0]
-        item = dict(li.itertext() for li in item)
+        item = {li.text.strip(): li[0].text.strip() for li in item}
 
         yield Pet(
-            found_on=parse(item['Admission date: '], 'DD/MM/YYYY'),
-            gender=item['Sex: '],
-            color=item['Colour: '],
-            breed=item['Breed: '],
-            location=item['Admitted from: '],
+            found_on=parse(item['Admission date:'], 'DD/MM/YYYY'),
+            gender=item['Sex:'],
+            color=item['Colour:'],
+            breed=item['Breed:'],
+            location=item['Admitted from:'],
             image=image,
             source='wanneroo',
             url=actual_url,
