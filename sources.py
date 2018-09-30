@@ -121,7 +121,7 @@ def armadale():
         color = color[0].text
         image = (ctx(item, '.animal-image > a > img'))[0].attrib['src']
         breed = (ctx(item, '.breed'))[0].text
-        location = ctx(item, '.location-found')[0][0].text.strip()
+        location = ctx(item, '.location-found')[0][0].tail.strip()
         found_on = (ctx(item, '.date-found > span'))[0].attrib['content']
         gender, species = (ctx(item, '.species'))[0].text.split('\u00a0')
         actual_url = urljoin(
