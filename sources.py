@@ -172,7 +172,12 @@ def kwinana():
 
 
 def swan():
-    url = 'http://www.swanamf.com.au/cats'
+    yield from _swan('dogs')
+    yield from _swan('cats')
+
+
+def _swan(subsection):
+    url = f'http://www.swanamf.com.au/{subsection}'
     cats = requests.get(url).text
     match = re.search(r"var preload_data = '([^']+)';", cats)
     if not match:
