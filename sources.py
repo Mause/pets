@@ -308,6 +308,42 @@ def gosnells():
         )
 
 
+def adjacent(iterable):
+    iterable = iter(iterable)
+    try:
+        while True:
+            yield (next(iterable), next(iterable))
+    except StopIteration:
+        pass
+
+
+def rockingham():
+    url = (
+        'http://rockingham.wa.gov.au/Services/'
+        'Ranger-services/Animal-pound.aspx'
+    )
+    html = get(url)
+
+    for pet in ctx(html, '.landing-box'):
+        image = ctx(pet, '.landing-image > img')[0].attrib['src']
+
+        bits = ctx(pet, '.landing-details > p')[0].itertext()
+        bits = filter(None, map(str.strip, bits))
+        bits = list(bits)
+        details = dict(adjacent(bits))
+
+        yield Pet(
+            found_on=parse(details['Date Found:'], 'DD MMM YYYY'),
+            location=details['Location Found:'],
+            color=details['Colour:'],
+            breed=details['Breed:'],
+            gender=details['Sex:'],
+            image=urljoin(rb.url, image),
+            source='rockingham',
+            url=rb.url,
+        )
+
+
 sources = [
     wanneroo,
     victoriapark,
@@ -317,6 +353,7 @@ sources = [
     cat_haven,
     canning,
     gosnells,
+    rockingham,
 ]
 
 
