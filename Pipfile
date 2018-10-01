@@ -12,6 +12,7 @@ cssselect = "*"
 arrow = "*"
 flask = "*"
 gunicorn = "*"
+robobrowser = "*"
 
 [dev-packages]
 ipdb = "*"
