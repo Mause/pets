@@ -338,9 +338,9 @@ def rockingham():
             color=details['Colour:'],
             breed=details['Breed:'],
             gender=details['Sex:'],
-            image=urljoin(rb.url, image),
+            image=urljoin(url, image),
             source='rockingham',
-            url=rb.url,
+            url=url,
         )
 
 
