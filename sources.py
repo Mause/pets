@@ -4,6 +4,7 @@ import arrow
 import requests
 from tqdm import tqdm
 from urllib.parse import urljoin
+from robobrowser import RoboBrowser
 from lxml.html import fromstring, tostring
 from cssselect import HTMLTranslator
 from functools import lru_cache
@@ -318,12 +319,38 @@ def adjacent(iterable):
 
 
 def rockingham():
+    rb = RoboBrowser(parser='lxml')
     url = (
         'http://rockingham.wa.gov.au/Services/'
         'Ranger-services/Animal-pound.aspx'
     )
-    html = get(url)
+    rb.open(url)
+    yield from _rockingham(rb)
 
+
+def _rockingham(rb):
+    html = fromstring(rb.response.content)
+    yield from _rockingham_page(rb.url, html)
+    index = ctx(html, '.DogIndex')[0].text
+    current, total = re.match(
+        r' You are viewing page (\d+) of (\d+) ',
+        index
+    ).groups()
+    if current == total:
+        return
+
+    form = rb.get_form()
+    key = (
+        'ctl00$ctl00$TemplateRegion$ContentInternal$'
+        'CMSPagePlaceholder1$lt$ContentZone$'
+        'AnimalPound_1$NextPage'
+    )
+    form[key].value = 'Next'
+    rb.submit_form(form, submit=form.submit_fields[key])
+    yield from _rockingham(rb)
+
+
+def _rockingham_page(url, html):
     for pet in ctx(html, '.landing-box'):
         image = ctx(pet, '.landing-image > img')[0].attrib['src']
 
