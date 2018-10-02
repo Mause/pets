@@ -230,7 +230,7 @@ def cat_haven():
         lines = dict(line.split(': ') for line in lines)
 
         yield Pet(
-            found_on=parse(lines['Date Found'], ['D/M/YYYY', 'D/M/YY']),
+            found_on=parse(lines.get('Date Found', lines.get('Date In')), ['D/M/YYYY', 'D/M/YY']),
             gender=lines['Gender'],
             location=lines['Location Found'],
             color=lines.get(
