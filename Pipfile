@@ -13,8 +13,8 @@ arrow = "*"
 flask = "*"
 gunicorn = "*"
 robobrowser = "*"
-crython = "*"
 redis = "*"
+schedule = "*"
 
 [dev-packages]
 ipdb = "*"

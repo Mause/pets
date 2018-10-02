@@ -1,12 +1,15 @@
 import time
 import pickle
 import logging
-import crython
+
+import schedule
 
 from main import get_data, redis
 
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
 
-@crython.job(minute="*/5")
+
 def update_data():
     start = time.time()
     logging.info("Starting data update")
@@ -15,4 +18,8 @@ def update_data():
 
 
 if __name__ == "__main__":
-    crython.start()
+    schedule.every(5).minutes.do(update_data)
+
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
