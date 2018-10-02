@@ -13,9 +13,14 @@ arrow = "*"
 flask = "*"
 gunicorn = "*"
 robobrowser = "*"
+crython = "*"
+redis = "*"
 
 [dev-packages]
 ipdb = "*"
 
 [requires]
 python_version = "3.6"
+
+[pipenv]
+allow_prereleases = true

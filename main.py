@@ -3,9 +3,12 @@ from itertools import chain
 from concurrent.futures import ThreadPoolExecutor as PoolExectutor
 
 from tqdm import tqdm
+from redis import StrictRedis
 from flask import Flask, render_template, jsonify
 
 from sources import sources, default
+
+redis = StrictRedis.from_url(os.environ.get("REDIS_URL"))
 
 EXECUTOR = PoolExectutor()
 app = Flask(__name__)
