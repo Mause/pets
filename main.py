@@ -1,4 +1,5 @@
 import os
+import pickle
 from itertools import chain
 from concurrent.futures import ThreadPoolExecutor as PoolExectutor
 
@@ -29,14 +30,18 @@ def get_data():
     )
 
 
+def get_cached_data():
+    return pickle.loads(redis.get('data'))
+
+
 @app.route('/index.json')
 def index_json():
-    return jsonify(get_data())
+    return jsonify(get_cached_data())
 
 
 @app.route('/')
 def index():
-    return render_template('index.html', data=get_data())
+    return render_template('index.html', data=get_cached_data())
 
 
 if __name__ == '__main__':
