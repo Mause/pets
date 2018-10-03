@@ -85,7 +85,8 @@ def victoriapark():
     items = html.xpath('.//*[@class="list-item-container"]/article/div')
     for item in items:
         def g(key):
-            return ctx(item, f'.{key} > .field-value')[0].text
+            items = ctx(item, f'.{key} > .field-value')
+            return items[0].text if items else None
         image = item.xpath(
             '*[contains(@class,"image-gallery-container")]/span/a/img/@src'
         )[0]
