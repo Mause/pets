@@ -36,12 +36,19 @@ def get_cached_data():
 
 @app.route('/index.json')
 def index_json():
-    return jsonify(get_cached_data())
+    return jsonify(
+        data=get_cached_data(),
+        last_updated=redis.get('last_updated')
+    )
 
 
 @app.route('/')
 def index():
-    return render_template('index.html', data=get_cached_data())
+    return render_template(
+        'index.html',
+        data=get_cached_data(),
+        last_updated=redis.get('last_updated')
+    )
 
 
 if __name__ == '__main__':

@@ -1,6 +1,7 @@
 import time
 import pickle
 import logging
+from datetime import datetime
 
 import schedule
 
@@ -14,6 +15,7 @@ def update_data():
     start = time.time()
     logging.info("Starting data update")
     redis.set("data", pickle.dumps(get_data()))
+    redis.set('last_updated', datetime.now().isoformat())
     logging.info("Update took %s seconds", time.time() - start)
 
 
