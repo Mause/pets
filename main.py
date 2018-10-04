@@ -38,7 +38,7 @@ def get_cached_data():
 def index_json():
     return jsonify(
         data=get_cached_data(),
-        last_updated=redis.get('last_updated')
+        last_updated=redis.get('last_updated').decode()
     )
 
 
@@ -47,7 +47,7 @@ def index():
     return render_template(
         'index.html',
         data=get_cached_data(),
-        last_updated=redis.get('last_updated')
+        last_updated=redis.get('last_updated').decode()
     )
 
 
