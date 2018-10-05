@@ -64,8 +64,9 @@ def get_cached_data():
 def index_json():
     data = get_cached_data()
     return jsonify(
+        last_updated=redis.get('last_updated').decode(),
+        statuses=json.loads(redis.get('statuses').decode()),
         data=data,
-        last_updated=redis.get('last_updated').decode()
     )
 7
 
