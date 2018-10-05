@@ -46,7 +46,7 @@ def index_json():
             date = arrow.get(date)
         date = date.date()
         data = [pet for pet in data if pet.found_on.date() == date]
-    return jsonify
+    return jsonify(
         data=data,
         last_updated=redis.get('last_updated').decode()
     )
