@@ -32,12 +32,7 @@ def get_data():
 
 
 def get_cached_data():
-    return pickle.loads(redis.get('data'))
-
-
-@app.route('/index.json')
-def index_json():
-    data = get_cached_data()
+    data = pickle.loads(redis.get('data'))
     date = request.args.get('date')
     if date:
         if date == 'today':
@@ -46,6 +41,12 @@ def index_json():
             date = arrow.get(date)
         date = date.date()
         data = [pet for pet in data if pet.found_on.date() == date]
+    return data
+
+
+@app.route('/index.json')
+def index_json():
+    data = get_cached_data()
     return jsonify(
         data=data,
         last_updated=redis.get('last_updated').decode()
