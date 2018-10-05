@@ -156,6 +156,7 @@ def kwinana():
     ).json()['items']
 
     for cat in cats:
+        print(cats)
         # ""Male Shih-Tzu found on Gilmore Ave Leda",
         description = re.match(
             r"(?P<gender>[^ ]*) (?P<breed>.*) found on (?P<location>.*)",
