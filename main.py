@@ -1,5 +1,6 @@
 import os
 import pickle
+import logging
 from itertools import chain
 from concurrent.futures import ThreadPoolExecutor as PoolExectutor
 
@@ -9,6 +10,8 @@ from redis import StrictRedis
 from flask import Flask, render_template, jsonify, request
 
 from sources import sources, default
+
+logging.basicConfig(level=logging.DEBUG)
 
 redis = StrictRedis.from_url(os.environ.get("REDIS_URL"))
 
