@@ -32,9 +32,9 @@ def reliable():
         except Exception:
             logging.exception(
                 'failed to retrieve data for %s',
-                src.__name__
+                source.__name__
             )
-            statuses[src.__name__] = False
+            statuses[source.__name__] = False
 
     redis.put('statuses', json.dumps(statuses))
 
