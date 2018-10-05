@@ -69,7 +69,7 @@ def _wanneroo(subsection):
 
         yield Pet(
             found_on=parse(item['Admission date:'], 'DD/MM/YYYY'),
-            gender=item['Sex:'],
+            gender=item.get('Sex:'),
             color=item['Colour:'],
             breed=item['Breed:'],
             location=item['Admitted from:'],
