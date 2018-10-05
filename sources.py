@@ -275,7 +275,10 @@ def canning():
         )
 
         yield Pet(
-            found_on=parse(details['Found'], 'D MMMM YYYY'),
+            found_on=parse(
+                details['Found'].replace('\xa0', ' '),
+                'D MMMM YYYY'
+            ),
             location=details['Location'],
             color=details['Colour'],
             breed=None,
