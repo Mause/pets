@@ -36,11 +36,20 @@ def get_cached_data():
 
 @app.route('/index.json')
 def index_json():
-    return jsonify(
-        data=get_cached_data(),
+    data = get_cached_data()
+    date = request.args.get('date')
+    if date:
+        if date == 'today':
+            date = arrow.get()
+        else:
+            date = arrow.get(date)
+        date = date.date()
+        data = [pet for pet in data if pet.found_on.date() == date]
+    return jsonify
+        data=data,
         last_updated=redis.get('last_updated').decode()
     )
-
+7
 
 @app.route('/')
 def index():
