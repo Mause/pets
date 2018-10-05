@@ -159,7 +159,7 @@ def kwinana():
         print(cats)
         # ""Male Shih-Tzu found on Gilmore Ave Leda",
         description = re.match(
-            r"(?P<gender>[^ ]*) (?P<breed>.*) found on (?P<location>.*)",
+            r"(?P<gender>[^ ]*) (?P<breed>.*) found [io]n (?P<location>.*)",
             cat['description']
         ).groupdict()
 
