@@ -20,15 +20,28 @@ app = Flask(__name__)
 app.json_encoder.default = lambda self, obj: default(obj)
 
 
+def reliable():
+    # call with list() to ensure they start in parallel
+    fs = list(map(EXECUTOR.submit, sources))
+
+    statuses = {src.__name__: True for src in sources}
+
+    for source, future in zip(sources, fs):
+        try:
+            yield from future.result()
+        except Exception:
+            logging.exception(
+                'failed to retrieve data for %s',
+                src.__name__
+            )
+            statuses[src.__name__] = False
+
+    redis.put('statuses', json.dumps(statuses))
+
+
 def get_data():
-    data = chain.from_iterable(
-        EXECUTOR.map(
-            lambda func: list(func()),
-            sources,
-        )
-    )
     return sorted(
-        tqdm(data),
+        tqdm(reliable()),
         key=lambda item: item.found_on,
         reverse=True
     )
