@@ -6,7 +6,7 @@ from concurrent.futures import ThreadPoolExecutor as PoolExectutor
 import arrow
 from tqdm import tqdm
 from redis import StrictRedis
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
 
 from sources import sources, default
 
