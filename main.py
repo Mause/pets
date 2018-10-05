@@ -37,7 +37,7 @@ def reliable():
             )
             statuses[source.__name__] = False
 
-    redis.put('statuses', json.dumps(statuses))
+    redis.set('statuses', json.dumps(statuses))
 
 
 def get_data():
