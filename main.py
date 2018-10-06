@@ -16,6 +16,7 @@ redis = StrictRedis.from_url(os.environ.get("REDIS_URL"))
 
 app = Flask(__name__)
 app.json_encoder.default = lambda self, obj: default(obj)
+app.json_encoder.indent = 2
 
 
 def get_cached_data():
