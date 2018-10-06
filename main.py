@@ -3,10 +3,8 @@ import json
 import pickle
 import logging
 from itertools import chain
-from concurrent.futures import ThreadPoolExecutor as PoolExectutor
 
 import arrow
-from tqdm import tqdm
 from redis import StrictRedis
 from flask import Flask, render_template, jsonify, request
 
@@ -16,36 +14,8 @@ logging.basicConfig(level=logging.DEBUG)
 
 redis = StrictRedis.from_url(os.environ.get("REDIS_URL"))
 
-EXECUTOR = PoolExectutor()
 app = Flask(__name__)
 app.json_encoder.default = lambda self, obj: default(obj)
-
-
-def reliable():
-    # call with list() to ensure they start in parallel
-    fs = list(map(EXECUTOR.submit, sources))
-
-    statuses = {src.__name__: True for src in sources}
-
-    for source, future in zip(sources, fs):
-        try:
-            yield from future.result()
-        except Exception:
-            logging.exception(
-                'failed to retrieve data for %s',
-                source.__name__
-            )
-            statuses[source.__name__] = False
-
-    redis.set('statuses', json.dumps(statuses))
-
-
-def get_data():
-    return sorted(
-        tqdm(reliable()),
-        key=lambda item: item.found_on,
-        reverse=True
-    )
 
 
 def get_cached_data():
