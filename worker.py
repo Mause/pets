@@ -22,7 +22,7 @@ def update_data():
 
     data, statuses = get_data()
 
-    daata = pickle.dumps(data)
+    data = pickle.dumps(data)
     statuses = json.dumps(statuses)
 
     (
