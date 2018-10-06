@@ -35,21 +35,31 @@ def get_last_updated():
     return redis.get('last_updated').decode()
 
 
+def get_status():
+    return json.loads(redis.get('statuses').decode())
+
+
 @app.route('/index.json')
 def index_json():
     data = get_cached_data()
     return jsonify(
         last_updated=get_last_updated(),
-        statuses=json.loads(redis.get('statuses').decode()),
+        statuses=get_status(),
         data=data,
     )
-7
+
+
+@app.route('/status')
+def status():
+    return jsonify(get_status())
+
 
 @app.route('/')
 def index():
     return render_template(
         'index.html',
         data=get_cached_data(),
+        statuses=get_status(),
         last_updated=get_last_updated()
     )
 
