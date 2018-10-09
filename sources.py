@@ -159,17 +159,18 @@ def kwinana():
     for cat in cats:
         print(cats)
         # ""Male Shih-Tzu found on Gilmore Ave Leda",
-        description = re.match(
+        match = re.match(
             r"(?P<gender>[^ ]*) (?P<breed>.*) found [io]n (?P<location>.*)",
             cat['description']
-        ).groupdict()
+        )
+        description = match.groupdict() if match else {}
 
         yield Pet(
             color=None,
             found_on=parse(cat['modified']),
-            gender=description['gender'],
-            breed=description['breed'],
-            location=description['location'],
+            gender=description.get('gender'),
+            breed=description.get('breed'),
+            location=description.get('location'),
             image=cat['versions']['original']['url'],
             source='kwinana',
             url=(
