@@ -60,10 +60,11 @@ def _wanneroo(subsection):
     for item in items:
         actual_url = urljoin(url, item)
         item = get(actual_url)
+        els = ctx(item, '.container > .main-image')
         image = urljoin(
             url,
-            ctx(item, '.container > .main-image')[0].attrib['src']
-        )
+            els[0].attrib['src']
+        ) if els else None
         item = ctx(item, '.container > .item-list')[0]
         item = {li.text.strip(): li[0].text.strip() for li in item}
 
