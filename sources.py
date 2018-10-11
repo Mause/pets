@@ -73,7 +73,7 @@ def _wanneroo(subsection):
             gender=item.get('Sex:'),
             color=item['Colour:'],
             breed=item['Breed:'],
-            location=item['Admitted from:'],
+            location=item.get('Admitted from:'),
             image=image,
             source='wanneroo',
             url=actual_url,
