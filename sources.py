@@ -259,7 +259,8 @@ def canning():
     pets = ctx(html, '.main-content-field > table > tbody > tr')
 
     for pet in pets:
-        image = ctx(pet, 'td > img')[0].attrib['src']
+        els = ctx(pet, 'td > img')
+        image = els[0].attrib['src'] if els else None
         details = {
             p.text.split(':')[0]: p.tail
             for p in ctx(pet, 'td > p > strong')
