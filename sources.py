@@ -248,6 +248,33 @@ def cat_haven():
         )
 
 
+def cockburn():
+    url = (
+        'https://www.cockburn.wa.gov.au/Health-and-Safety/Dogs-and-Cats/'
+        'Animal-Pound-Dogs-and-Cats'
+    )
+    html = get(url)
+
+    for pet in ctx(html, '.uk-grid > div > .textimage'):
+        text = ctx(pet, '.textimage-text')[0]
+        image = ctx(pet, '.textimage-image > img')[0].attrib['src']
+
+        bits = filter(None, map(str.strip, text.itertext()))
+        bits = list(bits)
+        details = dict(adjacent(bits))
+
+        yield Pet(
+            found_on=parse(details['Impound date:'], ['D MMMM YYYY']),
+            gender=details['Gender:'],
+            location=details['Location found:'],
+            color=details['Colour:'],
+            breed=details['Breed:'],
+            image=urljoin(url, image),
+            source='cockburn',
+            url=url,
+        )
+
+
 def canning():
     url = (
         'https://www.canning.wa.gov.au/Community/'
@@ -389,6 +416,7 @@ sources = [
     canning,
     gosnells,
     rockingham,
+    cockburn,
 ]
 
 
