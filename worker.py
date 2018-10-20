@@ -6,14 +6,30 @@ from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor as PoolExectutor
 
 import schedule
+import requests
 from tqdm import tqdm
 
 from main import redis
+from config import config
 from sources import sources
 
 EXECUTOR = PoolExectutor()
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
+
+MAILGUN_API_KEY = config["MAILGUN_API_KEY"]
+MAILGUN_DOMAIN = config["MAILGUN_DOMAIN"]
+MESSAGES_URL = f"https://api.mailgun.net/v3/{MAILGUN_DOMAIN}/messages"
+
+session = requests.Session()
+session.auth = ("api", MAILGUN_API_KEY)
+
+
+def send_email(subject, body):
+    session.post(
+        MESSAGES_URL,
+        json={"to": "me@mause.me", "subject": subject, "html": body},
+    ).raise_for_status()
 
 
 def update_data():
