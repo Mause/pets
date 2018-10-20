@@ -3,6 +3,7 @@ import json
 import pickle
 import logging
 import traceback
+from itertools import chain
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor as PoolExectutor
 
@@ -35,13 +36,16 @@ def send_email(subject, body):
 
 
 def alert_error(source, error: Exception):
-    tb, = traceback.format_tb(error.__traceback__)
+    tb = chain.from_iterable(
+        frame.splitlines()
+        for frame in traceback.format_tb(error.__traceback__)
+    )
 
     with app.app_context():
         body = render_template(
             "alert_email.html",
             source=source,
-            tb=tb.splitlines()
+            tb=tb
         )
 
     send_email(f"{source} is failing", body)
