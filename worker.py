@@ -2,11 +2,11 @@ import time
 import json
 import pickle
 import logging
-from tqdm import tqdm
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor as PoolExectutor
 
 import schedule
+from tqdm import tqdm
 
 from main import redis
 from sources import sources
