@@ -2,14 +2,16 @@ import time
 import json
 import pickle
 import logging
+import traceback
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor as PoolExectutor
 
 import schedule
 import requests
 from tqdm import tqdm
+from flask import render_template
 
-from main import redis
+from main import redis, app
 from config import config
 from sources import sources
 
@@ -32,6 +34,19 @@ def send_email(subject, body):
     ).raise_for_status()
 
 
+def alert_error(source, error: Exception):
+    tb, = traceback.format_tb(error.__traceback__)
+
+    with app.app_context():
+        body = render_template(
+            "alert_email.html",
+            source=source,
+            tb=tb.splitlines()
+        )
+
+    send_email(f"{source} is failing", body)
+
+
 def update_data():
     start = time.time()
     logging.info("Starting data update")
@@ -50,6 +65,12 @@ def update_data():
             .set('statuses', statuses)
             .execute()
     )
+
+    for source, error in errors.items():
+        if not error:
+            continue
+
+        alert_error(source, error)
 
     redis.set('last_updated', datetime.now().isoformat())
     logging.info("Update took %s seconds", time.time() - start)
