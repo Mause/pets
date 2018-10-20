@@ -15,9 +15,12 @@ gunicorn = "*"
 robobrowser = "*"
 redis = "*"
 schedule = "*"
+responses = "*"
+pytest = "*"
 
 [dev-packages]
 ipdb = "*"
+pdbpp = "*"
 
 [requires]
 python_version = "3.6"
