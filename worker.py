@@ -20,7 +20,9 @@ def update_data():
     start = time.time()
     logging.info("Starting data update")
 
-    data, statuses = get_data()
+    data, errors = get_data()
+
+    statuses = {source: not error for source, error in errors.items()}
 
     data = pickle.dumps(data)
     statuses = json.dumps(statuses)
@@ -37,33 +39,32 @@ def update_data():
     logging.info("Update took %s seconds", time.time() - start)
 
 
-def reliable(statuses):
+def reliable(errors):
     # call with list() to ensure they start in parallel
     fs = list(map(EXECUTOR.submit, sources))
 
     for source, future in zip(sources, fs):
         try:
             yield from future.result()
-        except Exception:
+        except Exception as e:
             logging.exception(
                 'failed to retrieve data for %s',
                 source.__name__
             )
-            statuses[source.__name__] = False
-
+            errors[source.__name__] = e
 
 
 def get_data():
-    statuses = {src.__name__: True for src in sources}
+    errors = {src.__name__: None for src in sources}
 
-    data = reliable(statuses)
+    data = reliable(errors)
     data = sorted(
         tqdm(data),
         key=lambda item: item.found_on,
         reverse=True
     )
 
-    return data, statuses
+    return data, errors
 
 
 if __name__ == "__main__":
