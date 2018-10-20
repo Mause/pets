@@ -147,18 +147,12 @@ def armadale():
 def kwinana():
     cats = requests.get(
         'http://rtcdn.cincopa.com/jsonv2.aspx',
-        params={
-            'wid': '_cp_0',
-            'fid': 'AQKAMMeTUqs_',
-            'thumb': 'large',
-            'content': 'original,v:mp4_hd,a:mp3,p:xlarge',
-            'details': 'all'
-        }
+        params={'fid': 'AQKAMMeTUqs_'}
     ).json()['items']
 
     for cat in cats:
-        print(cats)
-        # ""Male Shih-Tzu found on Gilmore Ave Leda",
+        # "Male Shih-Tzu found on Gilmore Ave Leda",
+        # "Male DLH Grey and white - Handed in to Vet"
         match = re.match(
             r"(?P<gender>[^ ]*) (?P<breed>.*) found [io]n (?P<location>.*)",
             cat['description']
