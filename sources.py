@@ -5,7 +5,7 @@ import requests
 from tqdm import tqdm
 from urllib.parse import urljoin
 from robobrowser import RoboBrowser
-from lxml.html import fromstring, tostring
+from lxml.html import fromstring
 from cssselect import HTMLTranslator
 from functools import lru_cache
 import attr
@@ -234,7 +234,10 @@ def cat_haven():
         lines = dict(line.split(': ') for line in lines)
 
         yield Pet(
-            found_on=parse(lines.get('Date Found', lines.get('Date In')), ['D/M/YYYY', 'D/M/YY']),
+            found_on=parse(
+                lines.get('Date Found', lines.get('Date In')),
+                ['D/M/YYYY', 'D/M/YY']
+            ),
             gender=lines['Gender'],
             location=lines['Location Found'],
             color=lines.get(

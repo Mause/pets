@@ -2,13 +2,12 @@ import os
 import json
 import pickle
 import logging
-from itertools import chain
 
 import arrow
 from redis import StrictRedis
 from flask import Flask, render_template, jsonify, request
 
-from sources import sources, default
+from sources import default
 from config import config
 
 logging.basicConfig(level=logging.DEBUG)
