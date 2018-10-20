@@ -9,10 +9,11 @@ from redis import StrictRedis
 from flask import Flask, render_template, jsonify, request
 
 from sources import sources, default
+from config import config
 
 logging.basicConfig(level=logging.DEBUG)
 
-redis = StrictRedis.from_url(os.environ.get("REDIS_URL"))
+redis = StrictRedis.from_url(config["REDIS_URL"])
 
 app = Flask(__name__)
 app.json_encoder.default = lambda self, obj: default(obj)
