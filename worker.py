@@ -33,7 +33,7 @@ def send_email(subject, body):
         MESSAGES_URL,
         data={
             "to": "me@mause.me",
-            "from": 'Pets Alerts',
+            "from": '"Pets Alerts" <me@mause.me>',
             "subject": subject,
             "html": body
         },
