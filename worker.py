@@ -44,10 +44,7 @@ def send_email(subject, body):
 
 
 def alert_error(source, error: Exception):
-    tb = chain.from_iterable(
-        frame.splitlines()
-        for frame in traceback.format_tb(error.__traceback__)
-    )
+    tb = '\n'.join(traceback.format_tb(error.__traceback__))
 
     with app.app_context():
         body = render_template(
