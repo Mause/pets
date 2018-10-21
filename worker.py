@@ -29,10 +29,18 @@ session.auth = ("api", MAILGUN_API_KEY)
 
 
 def send_email(subject, body):
-    session.post(
+    r = session.post(
         MESSAGES_URL,
-        json={"to": "me@mause.me", "subject": subject, "html": body},
-    ).raise_for_status()
+        data={
+            "to": "me@mause.me",
+            "from": 'Pets Alerts',
+            "subject": subject,
+            "html": body
+        },
+    )
+    if not r.ok:
+        print(r.text)
+    r.raise_for_status()
 
 
 def alert_error(source, error: Exception):
