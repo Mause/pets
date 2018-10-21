@@ -403,11 +403,6 @@ def _rockingham_page(url, html):
         )
 
 
-def dummy():
-    import socket
-    raise socket.error()
-
-
 sources = [
     wanneroo,
     victoriapark,
@@ -419,7 +414,6 @@ sources = [
     gosnells,
     rockingham,
     cockburn,
-    dummy,
 ]
 
 
