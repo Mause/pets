@@ -290,7 +290,7 @@ def canning():
             for p in ctx(pet, 'td > p > strong')
         }
 
-        desc = details['Description'].lower()
+        desc = details.get('Description', '').lower()
         gender = (
             'Female'
             if 'female' in desc
