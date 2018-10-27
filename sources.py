@@ -283,6 +283,10 @@ def canning():
     pets = ctx(html, '.main-content-field > table > tbody > tr')
 
     for pet in pets:
+        good = any(len(tr) for tr in ctx(pet, 'tr > td'))
+        if not good:
+            continue
+
         els = ctx(pet, 'td > img')
         image = els[0].attrib['src'] if els else None
         details = {
