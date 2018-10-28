@@ -225,7 +225,10 @@ def cat_haven():
         lines = fromstring(cat['wxRchTxt_sTxt0']['text']).xpath('./p/text()')
         lines = (line.strip('\u200b\n\xa0\n') for line in lines)
         lines = filter(None, lines)
-        lines = dict(line.split(': ') for line in lines)
+        lines = dict(
+            re.split(r': ?', line)
+            for line in lines
+        )
 
         yield Pet(
             found_on=parse(
