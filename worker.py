@@ -7,6 +7,7 @@ from typing import cast
 from itertools import chain
 from datetime import datetime
 from types import TracebackType
+from os.path import relpath, dirname
 from concurrent.futures import ThreadPoolExecutor as PoolExectutor
 
 import schedule
@@ -25,6 +26,8 @@ logger.setLevel(logging.DEBUG)
 MAILGUN_API_KEY = config["MAILGUN_API_KEY"]
 MAILGUN_DOMAIN = config["MAILGUN_DOMAIN"]
 MESSAGES_URL = f"https://api.mailgun.net/v3/{MAILGUN_DOMAIN}/messages"
+
+HERE = dirname(__file__)
 
 session = requests.Session()
 session.auth = ("api", MAILGUN_API_KEY)
@@ -58,15 +61,14 @@ def send_xmatter_alert(subject, body):
 
 
 def alert_error(source, error: Exception):
-    tb = '\n'.join(
-        traceback
-        .TracebackException(
-            type(error),
-            error,
-            cast(TracebackType, error.__traceback__)
-        )
-        .format(chain=True)
+    te = traceback.TracebackException(
+        type(error),
+        error,
+        cast(TracebackType, error.__traceback__)
     )
+    for frame in te.stack:
+        frame.filename = relpath(frame.filename, HERE)
+    tb = '\n'.join(te.format(chain=True))
 
     with app.app_context():
         body = render_template(
