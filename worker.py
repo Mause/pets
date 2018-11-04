@@ -45,6 +45,18 @@ def send_email(subject, body):
     r.raise_for_status()
 
 
+def send_xmatter_alert(subject, body):
+    requests.post(
+        config['XMATTERS_WEBHOOK'],
+        json={
+            "properties": {
+                "subject": subject,
+                "message": body
+            }
+        }
+    )
+
+
 def alert_error(source, error: Exception):
     tb = '\n'.join(
         traceback
@@ -63,7 +75,7 @@ def alert_error(source, error: Exception):
             tb=tb
         )
 
-    send_email(f"{source} is failing", body)
+    send_xmatter_alert(f"{source} is failing", body)
 
 
 def update_data():
