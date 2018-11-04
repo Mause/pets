@@ -228,6 +228,7 @@ def cat_haven():
         lines = dict(
             re.split(r': ?', line)
             for line in lines
+            if ':' in line
         )
 
         found_on = lines.get('Date Found', lines.get('Date In'))
