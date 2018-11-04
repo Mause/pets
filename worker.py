@@ -4,7 +4,6 @@ import pickle
 import logging
 import traceback
 from typing import cast
-from itertools import chain
 from datetime import datetime
 from types import TracebackType
 from os.path import relpath, dirname
