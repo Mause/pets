@@ -230,11 +230,10 @@ def cat_haven():
             for line in lines
         )
 
+        found_on = lines.get('Date Found', lines.get('Date In'))
+        assert found_on, lines
         yield Pet(
-            found_on=parse(
-                lines.get('Date Found', lines.get('Date In')),
-                ['D/M/YYYY', 'D/M/YY']
-            ),
+            found_on=parse(found_on, ['D/M/YYYY', 'D/M/YY']),
             gender=lines['Gender'],
             location=lines['Location Found'],
             color=lines.get(
