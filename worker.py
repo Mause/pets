@@ -91,10 +91,10 @@ def update_data():
 
     (
         redis
-            .pipeline()
-            .set("data", data)
-            .set('statuses', statuses)
-            .execute()
+        .pipeline()
+        .set("data", data)
+        .set('statuses', statuses)
+        .execute()
     )
 
     for source, error in errors.items():
