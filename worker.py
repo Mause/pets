@@ -3,8 +3,10 @@ import json
 import pickle
 import logging
 import traceback
+from typing import cast
 from itertools import chain
 from datetime import datetime
+from types import TracebackType
 from concurrent.futures import ThreadPoolExecutor as PoolExectutor
 
 import schedule
@@ -49,7 +51,7 @@ def alert_error(source, error: Exception):
         .TracebackException(
             type(error),
             error,
-            error.__traceback__
+            cast(TracebackType, error.__traceback__)
         )
         .format(chain=True)
     )
