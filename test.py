@@ -6,6 +6,7 @@ from worker import alert_error, MESSAGES_URL
 @responses.activate
 def test_alert_email():
     responses.add(method="POST", url=MESSAGES_URL)
+    responses.add(method='POST', url='https://fake/callback')
 
     try:
         raise Exception("What the heck?")
