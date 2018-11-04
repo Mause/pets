@@ -43,6 +43,7 @@ jobs:
           environment:
             REDIS_URL:
             MAILGUN_API_KEY: 5b0fc1f0-4edb-4363-ab05-cb85e2f85781
+            MAILGUN_DOMAIN: whatever.com
           command: |
             pipenv run py.test test.py -v --junitxml=test-reports/junit/junit.xml
 
