@@ -1,12 +1,17 @@
+import json
+from unittest.mock import patch
+
 import responses
-from urllib.parse import parse_qsl
-from worker import alert_error, MESSAGES_URL
+
+from worker import alert_error
+
+URL = 'https://fake/callback'
 
 
 @responses.activate
+@patch('worker.config', {'XMATTERS_WEBHOOK': URL})
 def test_alert_email():
-    responses.add(method="POST", url=MESSAGES_URL)
-    responses.add(method='POST', url='https://fake/callback')
+    responses.add(method='POST', url=URL)
 
     try:
         raise Exception("What the heck?")
@@ -15,6 +20,8 @@ def test_alert_email():
 
     alert_error("Busso", error)
 
-    js = dict(parse_qsl(responses.calls[0].request.body))
+    js = json.loads(responses.calls[0].request.body)
 
-    assert js["html"].strip() == open("tests/data/email.html").read().strip()
+    contents = open("tests/data/email.html").read().strip()
+
+    assert js['properties']['message'].strip() == contents
