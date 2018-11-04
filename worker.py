@@ -44,7 +44,15 @@ def send_email(subject, body):
 
 
 def alert_error(source, error: Exception):
-    tb = '\n'.join(traceback.format_tb(error.__traceback__))
+    tb = '\n'.join(
+        traceback
+        .TracebackException(
+            type(error),
+            error,
+            error.__traceback__
+        )
+        .format(chain=True)
+    )
 
     with app.app_context():
         body = render_template(
