@@ -236,11 +236,11 @@
         },
         "responses": {
             "hashes": [
-                "sha256:25df51df9ed5d879160c60129696603b9143a7e1a850616b8c7943ecccc676d3",
-                "sha256:5b99beef28dd177da180604be2e849a16c3a40605bfda7c8d792a9924dd3d60e"
+                "sha256:16ad4a7a914f20792111157adf09c63a8dc37699c57d1ad20dbc281a4f5743fb",
+                "sha256:b9b31d9b1fcf6d48aea044c9fdd3d04199f6d227b0650c15d2566b0135bc1ed7"
             ],
             "index": "pypi",
-            "version": "==0.10.3"
+            "version": "==0.10.4"
         },
         "robobrowser": {
             "hashes": [
