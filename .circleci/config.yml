@@ -41,7 +41,7 @@ jobs:
       - run:
           name: run tests
           environment:
-            REDIS_URL:
+            REDIS_URL: redis://
             MAILGUN_API_KEY: 5b0fc1f0-4edb-4363-ab05-cb85e2f85781
             MAILGUN_DOMAIN: whatever.com
             XMATTERS_WEBHOOK: https://fake/callback
