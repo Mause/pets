@@ -18,11 +18,11 @@
     "default": {
         "arrow": {
             "hashes": [
-                "sha256:399b47d46ef6d2befd647148f186c212f83730a607628b65373e9a8333818e31",
-                "sha256:f1837ac68cc954fd910b24c9f998172d1b430b0b255e875e9d190a16463e85e1"
+                "sha256:03404b624e89ac5e4fc19c52045fa0f3203419fd4dd64f6e8958c522580a574a",
+                "sha256:41be7ea4c53c2cf57bf30f2d614f60c411160133f7a0a8c49111c30fb7e725b5"
             ],
             "index": "pypi",
-            "version": "==0.14.0"
+            "version": "==0.14.2"
         },
         "atomicwrites": {
             "hashes": [
