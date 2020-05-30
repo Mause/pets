@@ -19,6 +19,8 @@ pytest = "*"
 werkzeug = "==0.16.1"
 sentry-sdk = "*"
 blinker = "*"
+betamax = "*"
+snapshottest = "*"
 
 [dev-packages]
 ipdb = "*"
