@@ -95,8 +95,4 @@ def get_data():
 
 
 if __name__ == "__main__":
-    schedule.every(5).minutes.do(update_data)
-
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
+    update_data()
