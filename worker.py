@@ -3,7 +3,7 @@ import logging
 import os
 import pickle
 import time
-from concurrent.futures import ThreadPoolExecutor as PoolExectutor
+from concurrent.futures import ThreadPoolExecutor as PoolExecutor
 from datetime import datetime
 from os.path import dirname
 
@@ -22,7 +22,8 @@ from sources import sources
 if 'SENTRY_DSN' in os.environ:
     sentry_sdk.init(dsn=os.environ['SENTRY_DSN'])
 
-EXECUTOR = PoolExectutor()
+
+EXECUTOR = PoolExecutor()
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
