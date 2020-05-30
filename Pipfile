@@ -14,7 +14,6 @@ flask = "*"
 gunicorn = "*"
 robobrowser = "*"
 redis = "*"
-schedule = "*"
 responses = "*"
 pytest = "*"
 werkzeug = "==0.16.1"
@@ -24,6 +23,7 @@ blinker = "*"
 [dev-packages]
 ipdb = "*"
 pdbpp = "*"
+pre-commit = "*"
 
 [requires]
 python_version = "3.8"
