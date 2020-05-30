@@ -1,6 +1,7 @@
 import json
 import re
 from functools import lru_cache
+from typing import Callable, Iterable, List
 from urllib.parse import urljoin
 
 import arrow
@@ -8,6 +9,7 @@ import attr
 import requests
 from cssselect import HTMLTranslator
 from lxml.html import fromstring
+from requests import Session
 from robobrowser import RoboBrowser
 from tqdm import tqdm
 
@@ -43,24 +45,24 @@ class Pet(object):
         assert isinstance(value, arrow.Arrow)
 
 
-def get(*args, **kwargs):
-    r = requests.get(*args, **kwargs)
+def get(session: Session, url: str, *args, **kwargs):
+    r = session.get(*args, **kwargs)
     r.raise_for_status()
     return fromstring(r.text)
 
 
-def wanneroo():
-    yield from _wanneroo('dogs')
-    yield from _wanneroo('cats')
+def wanneroo(session):
+    yield from _wanneroo(session, 'dogs')
+    yield from _wanneroo(session, 'cats')
 
 
-def _wanneroo(subsection):
+def _wanneroo(session, subsection):
     url = f'http://www.wanneroo.wa.gov.au/animals/{subsection}'
-    html = get(url)
+    html = get(session, url)
     items = html.xpath('.//a[@class="item-list__article boxed"]/@href')
     for item in items:
         actual_url = urljoin(url, item)
-        item = get(actual_url)
+        item = get(session, actual_url)
         els = ctx(item, '.container > .main-image')
         image = urljoin(url, els[0].attrib['src']) if els else None
         item = ctx(item, '.container > .item-list')[0]
@@ -78,9 +80,9 @@ def _wanneroo(subsection):
         )
 
 
-def victoriapark():
+def victoriapark(session):
     url = 'https://www.victoriapark.wa.gov.au/Found-animals'
-    html = get(url)
+    html = get(session, url)
     items = html.xpath('.//*[@class="list-item-container"]/article/div')
     for item in items:
 
@@ -110,9 +112,9 @@ def victoriapark():
         )
 
 
-def armadale():
+def armadale(session):
     url = 'https://www.armadale.wa.gov.au/lost-cats-and-dogs-animal-management-facility'
-    html = get(url)
+    html = get(session, url)
     items = ctx(html, '.view-impounded-animals > .view-content > .views-row')
     for item in items:
         color = ctx(item, '.animal-color')
@@ -138,8 +140,8 @@ def armadale():
         )
 
 
-def kwinana():
-    cats = requests.get(
+def kwinana(session):
+    cats = session.get(
         'http://rtcdn.cincopa.com/jsonv2.aspx', params={'fid': 'AcCALWejDppN'}
     ).json()['items']
 
@@ -167,15 +169,15 @@ def kwinana():
         )
 
 
-def swan():
-    yield from _swan('dogs')
-    yield from _swan('cats')
+def swan(session):
+    yield from _swan(session, 'dogs')
+    yield from _swan(session, 'cats')
 
 
-def _swan(subsection):
+def _swan(session, subsection):
     url = f'http://www.swanamf.com.au/{subsection}'
-    pets = requests.get(url).text
-    match = re.search(r"var preload_data = '([^']+)';", pets)
+    r = session.get(url).text
+    match = re.search(r"var preload_data = '([^']+)';", r)
     if not match:
         return []
 
@@ -193,9 +195,9 @@ def _swan(subsection):
         )
 
 
-def cat_haven():
+def cat_haven(session):
     url = 'https://www.cathavenlostandfound.com/incoming-cats'
-    html = requests.get(url).text
+    html = session.get(url).text
     match = re.search(r'var warmupData = (.*);', html)
     if not match:
         return []
@@ -229,12 +231,12 @@ def cat_haven():
         )
 
 
-def cockburn():
+def cockburn(session):
     url = (
         'https://www.cockburn.wa.gov.au/Health-and-Safety/Dogs-and-Cats/'
         'Animal-Pound-Dogs-and-Cats'
     )
-    html = get(url)
+    html = get(session, url)
 
     for pet in ctx(html, '.uk-grid > div > .textimage'):
         text = ctx(pet, '.textimage-text')[0]
@@ -256,13 +258,13 @@ def cockburn():
         )
 
 
-def canning():
+def canning(session):
     url = (
         'https://www.canning.wa.gov.au/Community/'
         'Ranger-and-Community-Safety-Services/'
         'Animal-Control/Impounded-Animals'
     )
-    html = get(url)
+    html = get(session, url)
 
     pets = ctx(html, '.main-content-field > table > tbody > tr')
 
@@ -292,9 +294,9 @@ def canning():
         )
 
 
-def gosnells():
+def gosnells(session):
     url = 'https://eservices.gosnells.wa.gov.au/data/impounds'
-    html = get(url)
+    html = get(session, url)
     rows = ctx(html, 'table > tbody > tr')
 
     for row in rows:
@@ -325,8 +327,8 @@ def adjacent(iterable):
         pass
 
 
-def rockingham():
-    rb = RoboBrowser(parser='lxml')
+def rockingham(session):
+    rb = RoboBrowser(parser='lxml', session=session)
     url = 'http://rockingham.wa.gov.au/Services/' 'Ranger-services/Animal-pound.aspx'
     rb.open(url)
     yield from _rockingham(rb)
@@ -372,7 +374,7 @@ def _rockingham_page(url, html):
         )
 
 
-sources = [
+sources: List[Callable[[Session], Iterable[Pet]]] = [
     wanneroo,
     victoriapark,
     armadale,
