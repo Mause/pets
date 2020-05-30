@@ -11,6 +11,7 @@ import requests
 import schedule
 import sentry_sdk
 from flask import render_template
+from requests import Session
 from sentry_sdk import capture_exception, push_scope
 from tqdm import tqdm
 
@@ -55,7 +56,7 @@ def update_data():
 
 def reliable(errors):
     # call with list() to ensure they start in parallel
-    fs = list(map(EXECUTOR.submit, sources))
+    fs = [EXECUTOR.submit(s, Session()) for s in sources]
 
     for source, future in zip(sources, fs):
         try:
