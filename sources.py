@@ -216,7 +216,7 @@ def cat_haven():
     warmup_data = json.loads(match.group(1))
 
     cats = (
-        warmup_data['wixapps']['appbuilder']
+        warmup_data['wixappsCoreWarmup']['appbuilder']
         ['items']['NewsPosts_i7ezjf6v55_2']
     ).values()
 
