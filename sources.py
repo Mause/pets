@@ -127,10 +127,6 @@ def armadale():
         location = ctx(item, '.location-found')[0][0].tail.strip()
         found_on = (ctx(item, '.date-found > span'))[0].attrib['content']
         gender, species = (ctx(item, '.species'))[0].text.split('\u00a0')
-        actual_url = urljoin(
-            url,
-            ctx(item, '.impound-number > h3 > a')[0].attrib['href']
-        )
 
         yield Pet(
             gender=gender,
@@ -140,7 +136,7 @@ def armadale():
             location=location,
             found_on=parse(found_on),
             source='armadale',
-            url=actual_url,
+            url=url,
         )
 
 
