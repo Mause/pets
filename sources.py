@@ -329,8 +329,7 @@ def adjacent(iterable):
 
 def rockingham(session):
     rb = RoboBrowser(parser='lxml', session=session)
-    url = 'http://rockingham.wa.gov.au/Services/' 'Ranger-services/Animal-pound.aspx'
-    rb.open(url)
+    rb.open('https://rockingham.wa.gov.au/your-services/pets-and-animals/animal-pound')
     yield from _rockingham(rb)
 
 
