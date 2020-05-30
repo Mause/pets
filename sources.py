@@ -111,7 +111,7 @@ def victoriapark():
 
 
 def armadale():
-    url = 'https://www.armadale.wa.gov.au/animal-management-facility'
+    url = 'https://www.armadale.wa.gov.au/lost-cats-and-dogs-animal-management-facility'
     html = get(url)
     items = (ctx(
         html,
