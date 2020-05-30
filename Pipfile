@@ -18,6 +18,7 @@ schedule = "*"
 responses = "*"
 pytest = "*"
 werkzeug = "==0.16.1"
+sentry-sdk = "*"
 
 [dev-packages]
 ipdb = "*"
