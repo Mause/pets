@@ -19,6 +19,7 @@ responses = "*"
 pytest = "*"
 werkzeug = "==0.16.1"
 sentry-sdk = "*"
+blinker = "*"
 
 [dev-packages]
 ipdb = "*"
