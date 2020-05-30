@@ -59,7 +59,7 @@ def update_data():
 
     with push_scope() as scope:
         # This will be changed only for the error caught inside and automatically discarded afterward
-        scope.source = source
+        scope.set_tag('source', source)
         capture_exception(error)
 
     redis.set('last_updated', datetime.now().isoformat())
