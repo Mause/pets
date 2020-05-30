@@ -1,5 +1,5 @@
-import os
 import json
+import os
 
 try:
     with open('config.json') as fh:

@@ -1,14 +1,14 @@
-import os
 import json
-import pickle
 import logging
+import os
+import pickle
 
 import arrow
+from flask import Flask, jsonify, render_template, request
 from redis import StrictRedis
-from flask import Flask, render_template, jsonify, request
 
-from sources import default
 from config import config
+from sources import default
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -43,11 +43,7 @@ def get_status():
 @app.route('/index.json')
 def index_json():
     data = get_cached_data()
-    return jsonify(
-        last_updated=get_last_updated(),
-        statuses=get_status(),
-        data=data,
-    )
+    return jsonify(last_updated=get_last_updated(), statuses=get_status(), data=data,)
 
 
 @app.route('/status')
@@ -61,13 +57,9 @@ def index():
         'index.html',
         data=get_cached_data(),
         statuses=get_status(),
-        last_updated=get_last_updated()
+        last_updated=get_last_updated(),
     )
 
 
 if __name__ == '__main__':
-    app.run(
-        debug=True,
-        host='0.0.0.0',
-        port=int(os.environ.get('PORT', 5000))
-    )
+    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))

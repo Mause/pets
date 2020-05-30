@@ -1,14 +1,15 @@
-import re
 import json
-import arrow
-import requests
-from tqdm import tqdm
-from urllib.parse import urljoin
-from robobrowser import RoboBrowser
-from lxml.html import fromstring
-from cssselect import HTMLTranslator
+import re
 from functools import lru_cache
+from urllib.parse import urljoin
+
+import arrow
 import attr
+import requests
+from cssselect import HTMLTranslator
+from lxml.html import fromstring
+from robobrowser import RoboBrowser
+from tqdm import tqdm
 
 _ctx = lru_cache()(HTMLTranslator().css_to_xpath)
 parser = arrow.parser.DateTimeParser('en_au', 100)
@@ -61,10 +62,7 @@ def _wanneroo(subsection):
         actual_url = urljoin(url, item)
         item = get(actual_url)
         els = ctx(item, '.container > .main-image')
-        image = urljoin(
-            url,
-            els[0].attrib['src']
-        ) if els else None
+        image = urljoin(url, els[0].attrib['src']) if els else None
         item = ctx(item, '.container > .item-list')[0]
         item = {li.text.strip(): li[0].text.strip() for li in item}
 
@@ -85,9 +83,11 @@ def victoriapark():
     html = get(url)
     items = html.xpath('.//*[@class="list-item-container"]/article/div')
     for item in items:
+
         def g(key):
             items = ctx(item, f'.{key} > .field-value')
             return items[0].text if items else None
+
         image = item.xpath(
             '*[contains(@class,"image-gallery-container")]/span/a/img/@src'
         )[0]
@@ -113,11 +113,9 @@ def victoriapark():
 def armadale():
     url = 'https://www.armadale.wa.gov.au/lost-cats-and-dogs-animal-management-facility'
     html = get(url)
-    items = (ctx(
-        html,
-        '.view-impounded-animals > .view-content > .views-row'))
+    items = ctx(html, '.view-impounded-animals > .view-content > .views-row')
     for item in items:
-        color = (ctx(item, '.animal-color'))
+        color = ctx(item, '.animal-color')
         if not color:
             continue
 
@@ -142,8 +140,7 @@ def armadale():
 
 def kwinana():
     cats = requests.get(
-        'http://rtcdn.cincopa.com/jsonv2.aspx',
-        params={'fid': 'AcCALWejDppN'}
+        'http://rtcdn.cincopa.com/jsonv2.aspx', params={'fid': 'AcCALWejDppN'}
     ).json()['items']
 
     for cat in cats:
@@ -151,7 +148,7 @@ def kwinana():
         # "Male DLH Grey and white - Handed in to Vet"
         match = re.match(
             r"(?P<gender>[^ ]*) (?P<breed>.*) found [io]n (?P<location>.*)",
-            cat['description']
+            cat['description'],
         )
         description = match.groupdict() if match else {}
 
@@ -182,13 +179,7 @@ def _swan(subsection):
     if not match:
         return []
 
-    pets = json.loads(
-        json.loads(
-            '"{}"'.format(
-                match.group(1)
-            )
-        )
-    )
+    pets = json.loads(json.loads('"{}"'.format(match.group(1))))
     for pet in pets:
         yield Pet(
             breed=pet["breed"],
@@ -212,8 +203,9 @@ def cat_haven():
     warmup_data = json.loads(match.group(1))
 
     cats = (
-        warmup_data['wixappsCoreWarmup']['appbuilder']
-        ['items']['NewsPosts_i7ezjf6v55_2']
+        warmup_data['wixappsCoreWarmup']['appbuilder']['items'][
+            'NewsPosts_i7ezjf6v55_2'
+        ]
     ).values()
 
     for cat in cats:
@@ -221,11 +213,7 @@ def cat_haven():
         lines = fromstring(cat['wxRchTxt_sTxt0']['text']).xpath('./p/text()')
         lines = (line.strip('\u200b\n\xa0\n') for line in lines)
         lines = filter(None, lines)
-        lines = dict(
-            re.split(r': ?', line)
-            for line in lines
-            if ':' in line
-        )
+        lines = dict(re.split(r': ?', line) for line in lines if ':' in line)
 
         found_on = lines.get('Date Found', lines.get('Date In'))
         assert found_on, lines
@@ -233,10 +221,7 @@ def cat_haven():
             found_on=parse(found_on, ['D/M/YYYY', 'D/M/YY']),
             gender=lines['Gender'],
             location=lines['Location Found'],
-            color=lines.get(
-                'Description',
-                lines.get('Descrption')  # sic
-            ),
+            color=lines.get('Description', lines.get('Descrption')),  # sic
             breed=None,
             image=image,
             source='cat_haven',
@@ -288,27 +273,15 @@ def canning():
 
         els = ctx(pet, 'td > img')
         image = els[0].attrib['src'] if els else None
-        details = {
-            p.text.split(':')[0]: p.tail
-            for p in ctx(pet, 'td > p > strong')
-        }
+        details = {p.text.split(':')[0]: p.tail for p in ctx(pet, 'td > p > strong')}
 
         desc = details.get('Description', '').lower()
         gender = (
-            'Female'
-            if 'female' in desc
-            else (
-                'Male'
-                if 'male' in desc
-                else 'Unknown'
-            )
+            'Female' if 'female' in desc else ('Male' if 'male' in desc else 'Unknown')
         )
 
         yield Pet(
-            found_on=parse(
-                details['Found'].replace('\xa0', ' '),
-                'D MMMM YYYY'
-            ),
+            found_on=parse(details['Found'].replace('\xa0', ' '), 'D MMMM YYYY'),
             location=details['Location'],
             color=details['Colour'],
             breed=None,
@@ -327,10 +300,9 @@ def gosnells():
     for row in rows:
         _, date, gender, photo = ctx(row, 'td')
 
-        image = urljoin(
-            url,
-            ctx(photo, 'a > img')[0].attrib['src']
-        ).replace('width=200', 'width=800')
+        image = urljoin(url, ctx(photo, 'a > img')[0].attrib['src']).replace(
+            'width=200', 'width=800'
+        )
 
         yield Pet(
             found_on=parse(date.text.strip(), 'D MMMM YYYY'),
@@ -355,10 +327,7 @@ def adjacent(iterable):
 
 def rockingham():
     rb = RoboBrowser(parser='lxml')
-    url = (
-        'http://rockingham.wa.gov.au/Services/'
-        'Ranger-services/Animal-pound.aspx'
-    )
+    url = 'http://rockingham.wa.gov.au/Services/' 'Ranger-services/Animal-pound.aspx'
     rb.open(url)
     yield from _rockingham(rb)
 
@@ -367,10 +336,7 @@ def _rockingham(rb):
     html = fromstring(rb.response.content)
     yield from _rockingham_page(rb.url, html)
     index = ctx(html, '.DogIndex')[0].text
-    current, total = re.match(
-        r' You are viewing page (\d+) of (\d+) ',
-        index
-    ).groups()
+    current, total = re.match(r' You are viewing page (\d+) of (\d+) ', index).groups()
     if current == total:
         return
 
@@ -432,10 +398,7 @@ def main():
         data = list(source())
 
         with open(f'sources/{source.__name__}.json', 'w') as fh:
-            json.dump(
-                data, fh, indent=2,
-                default=default
-            )
+            json.dump(data, fh, indent=2, default=default)
 
 
 if __name__ == '__main__':

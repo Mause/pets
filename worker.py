@@ -1,27 +1,22 @@
-import os
-import time
 import json
-import pickle
 import logging
-import traceback
-from typing import cast
-from datetime import datetime
-from types import TracebackType
-from os.path import relpath, dirname
+import os
+import pickle
+import time
 from concurrent.futures import ThreadPoolExecutor as PoolExectutor
+from datetime import datetime
+from os.path import dirname
 
-import schedule
 import requests
-from tqdm import tqdm
-from flask import render_template
-
-from main import redis, app
-from config import config
-from sources import sources
-
+import schedule
 import sentry_sdk
+from flask import render_template
 from sentry_sdk import capture_exception, push_scope
-from main import app
+from tqdm import tqdm
+
+from config import config
+from main import app, redis
+from sources import sources
 
 if 'SENTRY_DSN' in os.environ:
     sentry_sdk.init(dsn=os.environ['SENTRY_DSN'])
@@ -44,13 +39,7 @@ def update_data():
     data = pickle.dumps(data)
     statuses = json.dumps(statuses)
 
-    (
-        redis
-        .pipeline()
-        .set("data", data)
-        .set('statuses', statuses)
-        .execute()
-    )
+    (redis.pipeline().set("data", data).set('statuses', statuses).execute())
 
     for source, error in errors.items():
         if not error:
@@ -72,10 +61,7 @@ def reliable(errors):
         try:
             yield from future.result()
         except Exception as e:
-            logging.exception(
-                'failed to retrieve data for %s',
-                source.__name__
-            )
+            logging.exception('failed to retrieve data for %s', source.__name__)
             errors[source.__name__] = e
 
 
@@ -83,11 +69,7 @@ def get_data():
     errors = {src.__name__: None for src in sources}
 
     data = reliable(errors)
-    data = sorted(
-        tqdm(data),
-        key=lambda item: item.found_on,
-        reverse=True
-    )
+    data = sorted(tqdm(data), key=lambda item: item.found_on, reverse=True)
 
     return data, errors
 
