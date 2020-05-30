@@ -56,11 +56,9 @@ def update_data():
         if not error:
             continue
 
-
-    with push_scope() as scope:
-        # This will be changed only for the error caught inside and automatically discarded afterward
-        scope.set_tag('source', source)
-        capture_exception(error)
+        with push_scope() as scope:
+            scope.set_tag('source', source)
+            capture_exception(error, scope)
 
     redis.set('last_updated', datetime.now().isoformat())
     logging.info("Update took %s seconds", time.time() - start)
