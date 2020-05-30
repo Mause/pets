@@ -147,7 +147,7 @@ def armadale():
 def kwinana():
     cats = requests.get(
         'http://rtcdn.cincopa.com/jsonv2.aspx',
-        params={'fid': 'AQKAMMeTUqs_'}
+        params={'fid': 'AcCALWejDppN'}
     ).json()['items']
 
     for cat in cats:
