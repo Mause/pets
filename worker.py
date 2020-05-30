@@ -1,3 +1,4 @@
+import os
 import time
 import json
 import pickle
@@ -18,65 +19,18 @@ from main import redis, app
 from config import config
 from sources import sources
 
+import sentry_sdk
+from sentry_sdk import capture_exception, push_scope
+from main import app
+
+if 'SENTRY_DSN' in os.environ:
+    sentry_sdk.init(dsn=os.environ['SENTRY_DSN'])
+
 EXECUTOR = PoolExectutor()
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
-MAILGUN_API_KEY = config["MAILGUN_API_KEY"]
-MAILGUN_DOMAIN = config["MAILGUN_DOMAIN"]
-MESSAGES_URL = f"https://api.mailgun.net/v3/{MAILGUN_DOMAIN}/messages"
-
 HERE = dirname(__file__)
-
-session = requests.Session()
-session.auth = ("api", MAILGUN_API_KEY)
-
-
-def send_email(subject, body):
-    r = session.post(
-        MESSAGES_URL,
-        data={
-            "to": "me@mause.me",
-            "from": '"Pets Alerts" <me@mause.me>',
-            "subject": subject,
-            "html": body
-        },
-    )
-    if not r.ok:
-        print(r.text)
-    r.raise_for_status()
-
-
-def send_xmatter_alert(subject, body):
-    requests.post(
-        config['XMATTERS_WEBHOOK'],
-        json={
-            "properties": {
-                "subject": subject,
-                "message": body
-            }
-        }
-    )
-
-
-def alert_error(source, error: Exception):
-    te = traceback.TracebackException(
-        type(error),
-        error,
-        cast(TracebackType, error.__traceback__)
-    )
-    for frame in te.stack:
-        frame.filename = relpath(frame.filename, HERE)
-    tb = '\n'.join(te.format(chain=True))
-
-    with app.app_context():
-        body = render_template(
-            "alert_email.html",
-            source=source,
-            tb=tb
-        )
-
-    send_xmatter_alert(f"{source} is failing", body)
 
 
 def update_data():
@@ -102,7 +56,11 @@ def update_data():
         if not error:
             continue
 
-        alert_error(source, error)
+
+    with push_scope() as scope:
+        # This will be changed only for the error caught inside and automatically discarded afterward
+        scope.source = source
+        capture_exception(error)
 
     redis.set('last_updated', datetime.now().isoformat())
     logging.info("Update took %s seconds", time.time() - start)
