@@ -1,0 +1,625 @@
+http_interactions:
+- recorded_at: '2020-05-31T04:41:08'
+  request:
+    body:
+      encoding: utf-8
+      string: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.23.0
+    method: GET
+    uri: https://www.armadale.wa.gov.au/lost-cats-and-dogs-animal-management-facility
+  response:
+    body:
+      encoding: utf-8
+      string: "<!DOCTYPE html>\r\n<!--[if IEMobile 7]><html class=\"iem7\"  lang=\"\
+        en\" dir=\"ltr\"><![endif]-->\r\n<!--[if lte IE 6]><html class=\"lt-ie9 lt-ie8\
+        \ lt-ie7\"  lang=\"en\" dir=\"ltr\"><![endif]-->\r\n<!--[if (IE 7)&(!IEMobile)]><html\
+        \ class=\"lt-ie9 lt-ie8\"  lang=\"en\" dir=\"ltr\"><![endif]-->\r\n<!--[if\
+        \ IE 8]><html class=\"lt-ie9\"  lang=\"en\" dir=\"ltr\"><![endif]-->\r\n<!--[if\
+        \ (gte IE 9)|(gt IEMobile 7)]><!--><html  lang=\"en\" dir=\"ltr\" prefix=\"\
+        content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/\
+        \ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema#\
+        \ sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos:\
+        \ http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#\"\
+        ><!--<![endif]-->\r\n\r\n<head>\r\n  <meta charset=\"utf-8\" />\n<link rel=\"\
+        shortcut icon\" href=\"https://www.armadale.wa.gov.au/favicon.ico\" type=\"\
+        image/vnd.microsoft.icon\" />\n<meta name=\"google-site-verification\" content=\"\
+        6eeivKMSi5O33uhbU5sGySWECPHbDbjC9zGZRlD4_d0\" />\n<meta name=\"description\"\
+        \ content=\"Find out about lost cats and dogs and currently impounded animals.\"\
+        \ />\n<meta name=\"keywords\" content=\"pound, cat, dog, impounded cat, impounded\
+        \ dog, picked up cat, picked up dog, animal management\" />\n<meta name=\"\
+        generator\" content=\"Drupal 7 (http://drupal.org)\" />\n<link rel=\"canonical\"\
+        \ href=\"https://www.armadale.wa.gov.au/lost-cats-and-dogs-animal-management-facility\"\
+        \ />\n<link rel=\"shortlink\" href=\"https://www.armadale.wa.gov.au/node/9010\"\
+        \ />\n  <title>Lost cats and dogs (Animal Management Facility) | City of Armadale</title>\r\
+        \n\r\n      <meta name=\"MobileOptimized\" content=\"width\">\r\n    <meta\
+        \ name=\"HandheldFriendly\" content=\"true\">\r\n    <meta name=\"viewport\"\
+        \ content=\"width=device-width\">\r\n  \r\n  <style>\n@import url(\"https://www.armadale.wa.gov.au/modules/system/system.base.css?qb5ye1\"\
+        );\n</style>\n<style>\n@import url(\"https://www.armadale.wa.gov.au/modules/comment/comment.css?qb5ye1\"\
+        );\n@import url(\"https://www.armadale.wa.gov.au/sites/all/modules/date/date_api/date.css?qb5ye1\"\
+        );\n@import url(\"https://www.armadale.wa.gov.au/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?qb5ye1\"\
+        );\n@import url(\"https://www.armadale.wa.gov.au/sites/all/modules/date/date_repeat_field/date_repeat_field.css?qb5ye1\"\
+        );\n@import url(\"https://www.armadale.wa.gov.au/modules/field/theme/field.css?qb5ye1\"\
+        );\n@import url(\"https://www.armadale.wa.gov.au/modules/node/node.css?qb5ye1\"\
+        );\n@import url(\"https://www.armadale.wa.gov.au/modules/search/search.css?qb5ye1\"\
+        );\n@import url(\"https://www.armadale.wa.gov.au/sites/all/modules/toc_node/css/toc_node.css?qb5ye1\"\
+        );\n@import url(\"https://www.armadale.wa.gov.au/modules/user/user.css?qb5ye1\"\
+        );\n@import url(\"https://www.armadale.wa.gov.au/sites/all/modules/webform_confirm_email/webform_confirm_email.css?qb5ye1\"\
+        );\n@import url(\"https://www.armadale.wa.gov.au/sites/all/modules/views/css/views.css?qb5ye1\"\
+        );\n@import url(\"https://www.armadale.wa.gov.au/sites/all/modules/ckeditor/css/ckeditor.css?qb5ye1\"\
+        );\n</style>\n<style>\n@import url(\"https://www.armadale.wa.gov.au/sites/all/modules/council_documents/council_documents.css?qb5ye1\"\
+        );\n@import url(\"https://www.armadale.wa.gov.au/sites/all/modules/ctools/css/ctools.css?qb5ye1\"\
+        );\n@import url(\"https://www.armadale.wa.gov.au/sites/all/themes/seven_custom/css/auth.css?qb5ye1\"\
+        );\n</style>\n<link type=\"text/css\" rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/all.css\"\
+        \ media=\"all\" />\n<style>\n@import url(\"https://www.armadale.wa.gov.au/sites/all/themes/armadale/css/magnific-popup.css?qb5ye1\"\
+        );\n@import url(\"https://www.armadale.wa.gov.au/sites/all/libraries/superfish/css/superfish.css?qb5ye1\"\
+        );\n@import url(\"https://www.armadale.wa.gov.au/sites/all/libraries/superfish/css/superfish-smallscreen.css?qb5ye1\"\
+        );\n</style>\n<style>\n@import url(\"https://www.armadale.wa.gov.au/sites/all/themes/armadale/css/flexslider.css?qb5ye1\"\
+        );\n@import url(\"https://www.armadale.wa.gov.au/sites/all/themes/armadale/css/jquery-ui.css?qb5ye1\"\
+        );\n@import url(\"https://www.armadale.wa.gov.au/sites/all/themes/armadale/css/styles.css?qb5ye1\"\
+        );\n@import url(\"https://www.armadale.wa.gov.au/sites/all/themes/armadale/css/mp-styles.css?qb5ye1\"\
+        );\n@import url(\"https://www.armadale.wa.gov.au/sites/all/themes/armadale/css/layouts/responsive-custom.css?qb5ye1\"\
+        );\n@import url(\"https://www.armadale.wa.gov.au/sites/all/themes/armadale/css/armadale_hills.css?qb5ye1\"\
+        );\n</style>\n  <script src=\"https://www.armadale.wa.gov.au/sites/all/themes/armadale/js/jquery-3.4.0.js?v=3.4.0\"\
+        ></script>\n<script src=\"https://www.armadale.wa.gov.au/misc/jquery-extend-3.4.0.js?v=1.4.4\"\
+        ></script>\n<script src=\"https://www.armadale.wa.gov.au/misc/jquery.once.js?v=1.2\"\
+        ></script>\n<script src=\"https://www.armadale.wa.gov.au/misc/drupal.js?qb5ye1\"\
+        ></script>\n<script src=\"https://www.armadale.wa.gov.au/sites/all/modules/google_analytics/googleanalytics.js?qb5ye1\"\
+        ></script>\n<script>(function(i,s,o,g,r,a,m){i[\"GoogleAnalyticsObject\"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new\
+        \ Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,\"\
+        script\",\"https://www.google-analytics.com/analytics.js\",\"ga\");ga(\"create\"\
+        , \"UA-1169654-1\", {\"cookieDomain\":\"auto\"});ga(\"set\", \"anonymizeIp\"\
+        , true);ga(\"send\", \"pageview\");</script>\n<script src=\"https://www.armadale.wa.gov.au/sites/all/themes/armadale/js/break-responsive.js?qb5ye1\"\
+        ></script>\n<script src=\"https://www.google.com/jsapi\"></script>\n<script\
+        \ src=\"https://www.armadale.wa.gov.au/sites/all/themes/armadale/js/jquery.magnific-popup.min.js?qb5ye1\"\
+        ></script>\n<script>jQuery.noConflict();</script>\n<script src=\"https://www.armadale.wa.gov.au/sites/all/libraries/superfish/jquery.hoverIntent.minified.js?qb5ye1\"\
+        ></script>\n<script src=\"https://www.armadale.wa.gov.au/sites/all/libraries/superfish/sftouchscreen.js?qb5ye1\"\
+        ></script>\n<script src=\"https://www.armadale.wa.gov.au/sites/all/libraries/superfish/sfsmallscreen.js?qb5ye1\"\
+        ></script>\n<script src=\"https://www.armadale.wa.gov.au/sites/all/libraries/superfish/supposition.js?qb5ye1\"\
+        ></script>\n<script src=\"https://www.armadale.wa.gov.au/sites/all/libraries/superfish/superfish.js?qb5ye1\"\
+        ></script>\n<script src=\"https://www.armadale.wa.gov.au/sites/all/libraries/superfish/supersubs.js?qb5ye1\"\
+        ></script>\n<script src=\"https://www.armadale.wa.gov.au/sites/all/modules/superfish/superfish.js?qb5ye1\"\
+        ></script>\n<script src=\"https://www.armadale.wa.gov.au/sites/all/themes/armadale/js/jquery.flexslider.js?qb5ye1\"\
+        ></script>\n<script src=\"https://www.armadale.wa.gov.au/sites/all/themes/armadale/js/jquery-ui.min.js?qb5ye1\"\
+        ></script>\n<script src=\"https://www.armadale.wa.gov.au/sites/all/themes/armadale/js/script.js?qb5ye1\"\
+        ></script>\n<script>jQuery.extend(Drupal.settings, {\"basePath\":\"\\/\",\"\
+        pathPrefix\":\"\",\"ajaxPageState\":{\"theme\":\"armadale\",\"theme_token\"\
+        :\"GzbK8FO7stjk_tKU1mHLkBvy_TjwvQbLBgUpt3GdBaY\",\"js\":{\"sites\\/all\\/themes\\\
+        /armadale\\/js\\/jquery-3.4.0.js\":1,\"misc\\/jquery-extend-3.4.0.js\":1,\"\
+        misc\\/jquery.once.js\":1,\"misc\\/drupal.js\":1,\"sites\\/all\\/modules\\\
+        /google_analytics\\/googleanalytics.js\":1,\"0\":1,\"sites\\/all\\/themes\\\
+        /armadale\\/js\\/break-responsive.js\":1,\"https:\\/\\/www.google.com\\/jsapi\"\
+        :1,\"sites\\/all\\/themes\\/armadale\\/js\\/jquery.magnific-popup.min.js\"\
+        :1,\"1\":1,\"sites\\/all\\/libraries\\/superfish\\/jquery.hoverIntent.minified.js\"\
+        :1,\"sites\\/all\\/libraries\\/superfish\\/sftouchscreen.js\":1,\"sites\\\
+        /all\\/libraries\\/superfish\\/sfsmallscreen.js\":1,\"sites\\/all\\/libraries\\\
+        /superfish\\/supposition.js\":1,\"sites\\/all\\/libraries\\/superfish\\/superfish.js\"\
+        :1,\"sites\\/all\\/libraries\\/superfish\\/supersubs.js\":1,\"sites\\/all\\\
+        /modules\\/superfish\\/superfish.js\":1,\"sites\\/all\\/themes\\/armadale\\\
+        /js\\/jquery.flexslider.js\":1,\"sites\\/all\\/themes\\/armadale\\/js\\/jquery-ui.min.js\"\
+        :1,\"sites\\/all\\/themes\\/armadale\\/js\\/script.js\":1},\"css\":{\"modules\\\
+        /system\\/system.base.css\":1,\"modules\\/system\\/system.menus.css\":1,\"\
+        modules\\/system\\/system.messages.css\":1,\"modules\\/system\\/system.theme.css\"\
+        :1,\"modules\\/comment\\/comment.css\":1,\"sites\\/all\\/modules\\/date\\\
+        /date_api\\/date.css\":1,\"sites\\/all\\/modules\\/date\\/date_popup\\/themes\\\
+        /datepicker.1.7.css\":1,\"sites\\/all\\/modules\\/date\\/date_repeat_field\\\
+        /date_repeat_field.css\":1,\"modules\\/field\\/theme\\/field.css\":1,\"modules\\\
+        /node\\/node.css\":1,\"modules\\/search\\/search.css\":1,\"sites\\/all\\/modules\\\
+        /toc_node\\/css\\/toc_node.css\":1,\"modules\\/user\\/user.css\":1,\"sites\\\
+        /all\\/modules\\/webform_confirm_email\\/webform_confirm_email.css\":1,\"\
+        sites\\/all\\/modules\\/views\\/css\\/views.css\":1,\"sites\\/all\\/modules\\\
+        /ckeditor\\/css\\/ckeditor.css\":1,\"sites\\/all\\/modules\\/council_documents\\\
+        /council_documents.css\":1,\"sites\\/all\\/modules\\/ctools\\/css\\/ctools.css\"\
+        :1,\"sites\\/all\\/themes\\/seven_custom\\/css\\/auth.css\":1,\"https:\\/\\\
+        /use.fontawesome.com\\/releases\\/v5.8.2\\/css\\/all.css\":1,\"sites\\/all\\\
+        /themes\\/armadale\\/css\\/magnific-popup.css\":1,\"sites\\/all\\/libraries\\\
+        /superfish\\/css\\/superfish.css\":1,\"sites\\/all\\/libraries\\/superfish\\\
+        /css\\/superfish-smallscreen.css\":1,\"sites\\/all\\/themes\\/armadale\\/system.menus.css\"\
+        :1,\"sites\\/all\\/themes\\/armadale\\/system.messages.css\":1,\"sites\\/all\\\
+        /themes\\/armadale\\/system.theme.css\":1,\"sites\\/all\\/themes\\/armadale\\\
+        /css\\/flexslider.css\":1,\"sites\\/all\\/themes\\/armadale\\/css\\/jquery-ui.css\"\
+        :1,\"sites\\/all\\/themes\\/armadale\\/css\\/styles.css\":1,\"sites\\/all\\\
+        /themes\\/armadale\\/css\\/mp-styles.css\":1,\"sites\\/all\\/themes\\/armadale\\\
+        /css\\/layouts\\/responsive-custom.css\":1,\"sites\\/all\\/themes\\/armadale\\\
+        /css\\/armadale_hills.css\":1}},\"googleanalytics\":{\"trackOutbound\":1,\"\
+        trackMailto\":1,\"trackDownload\":1,\"trackDownloadExtensions\":\"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip\"\
+        },\"superfish\":{\"1\":{\"id\":\"1\",\"sf\":{\"animation\":{\"opacity\":\"\
+        show\"},\"speed\":\"fast\",\"autoArrows\":false,\"dropShadows\":false},\"\
+        plugins\":{\"touchscreen\":{\"mode\":\"window_width\",\"breakpoint\":1024,\"\
+        breakpointUnit\":\"px\"},\"smallscreen\":{\"mode\":\"window_width\",\"breakpoint\"\
+        :1024,\"breakpointUnit\":\"px\",\"accordionButton\":\"0\",\"title\":\"Menu\"\
+        },\"supposition\":true,\"supersubs\":true}}}});</script>\n      <!--[if lt\
+        \ IE 9]>\r\n    <script src=\"/sites/all/themes/zen/js/html5-respond.js\"\
+        ></script>\r\n    <![endif]-->\r\n\t\r\n  </head>\r\n<body class=\"html not-front\
+        \ not-logged-in no-sidebars page-node page-node- page-node-9010 node-type-page\
+        \ section-lost-cats-and-dogs-animal-management-facility\" >\r\n      <!--<img\
+        \ src=\"sites/all/themes/armadale/images/logo_ribbon.png\" style=\"width:\
+        \ 100%; position: absolute; z-index: -1000; top: -220px; position: fixed;\"\
+        \ />-->\r\n\r\n\r\n\r\n<div id=\"page\">\r\n\t<div id=\"alert-accessibility\"\
+        >  \r\n\t  <div class=\"region region-alert-accessibility\">\n    <div id=\"\
+        block-views-out-for-comments-block-2\" class=\"block block-views first last\
+        \ odd\">\n\n      \n  <div class=\"view view-out-for-comments view-id-out_for_comments\
+        \ view-display-id-block_2 view-dom-id-d85ee7c5ef07563fbc8651e63040d01a\">\r\
+        \n        \r\n  \t\r\n\t\r\n  \r\n\t\r\n  \t\t\r\n\t    <div class=\"view-content\"\
+        >\r\n\t\t\t\t\t\t\r\n        <div class=\"views-row views-row-1 views-row-odd\
+        \ views-row-first\">\r\n      \r\n  <div class=\"views-field views-field-nid\"\
+        >        <span class=\"field-content\"><span id=\"vid\">9931</span></span>\
+        \  </div>  \r\n  <div class=\"views-field views-field-field-url\">       \
+        \ <div class=\"field-content alertBannerContainer Alert\"><p><a class=\"close-notice\"\
+        \ href=\"/\" title=\"Close notice\">X</a><span><i class=\"fas fa-exclamation-circle\"\
+        ></i>&nbsp;Severe weather warning issued for Friday 29 June\n <a href=\"/severe-weather-warning-friday-29-june\"\
+        >VIEW NOTICE</a>&nbsp;<i class=\"fas fa-angle-right fa-sm\"></i></span></p></div>\
+        \  </div>  </div>\r\n  <div class=\"views-row views-row-2 views-row-even views-row-last\"\
+        >\r\n      \r\n  <div class=\"views-field views-field-nid\">        <span\
+        \ class=\"field-content\"><span id=\"vid\">9860</span></span>  </div>  \r\n\
+        \  <div class=\"views-field views-field-field-url\">        <div class=\"\
+        field-content alertBannerContainer Announcement\"><p><a class=\"close-notice\"\
+        \ href=\"/\" title=\"Close notice\">X</a><span><i class=\"fas fa-exclamation-circle\"\
+        ></i>&nbsp;Restricted burning period - midnight 28 April until midnight 31\
+        \ May, permits are now required for any burning conducted during the day.\n\
+        \ <a href=\"/restricted-burning-period-midnight-28-april-until-midnight-31-may\"\
+        >VIEW NOTICE</a>&nbsp;<i class=\"fas fa-angle-right fa-sm\"></i></span></p></div>\
+        \  </div>  </div>\r\n    </div>\r\n\t\t\t\r\n  \r\n  \r\n  \r\n  \r\n    \
+        \  <div class=\"view-footer\">\r\n      <div class=\"container\"><a class=\"\
+        skip\" href=\"#main-content\">Skip to content</a><a href=\"/accessibility\"\
+        \ title=\"Read more on our website accessibility\">Accessibility</a><a href=\"\
+        #\" class=\"open-notice\"><i class=\"fas fa-exclamation-circle\"></i>&nbsp;Alerts\
+        \ (2)</a></div>\n    </div>\r\n  \r\n  \r\n</div>\n</div>\n  </div>\n\t</div>\r\
+        \n\t\r\n  <header class=\"header\" id=\"header\">\r\n\t    \r\n          <a\
+        \ href=\"/\" title=\"Home\" rel=\"home\" class=\"header__logo\" id=\"logo\"\
+        ><img src=\"https://www.armadale.wa.gov.au/sites/default/files/assets/COALogo.png\"\
+        \ alt=\"Home\" class=\"header__logo-image\" width=\"197\" height=\"72\" /></a>\r\
+        \n    \r\n    \r\n    \r\n    \r\n  </header>\r\n\t<div id=\"mobile-search\"\
+        ><a href=\"#\">Search</a></div>\r\n  <div id=\"navigation\">\r\n\r\n    \r\
+        \n      <div class=\"region region-navigation\">\n    <div id=\"block-superfish-1\"\
+        \ class=\"block block-superfish first last odd\">\n\n      \n  <ul  id=\"\
+        superfish-1\" class=\"menu sf-menu sf-main-menu sf-horizontal sf-style-none\
+        \ sf-total-items-5 sf-parent-items-5 sf-single-items-0\"><li id=\"menu-483-1\"\
+        \ class=\"first odd sf-item-1 sf-depth-1 sf-total-children-12 sf-parent-children-0\
+        \ sf-single-children-13 menuparent\"><a href=\"/council\" title=\"Find out\
+        \ abut the City of Armadale and Council, including rates, Council meetings,\
+        \ work opportunities and more.\" class=\"sf-depth-1 sf-depth-1 menuparent\"\
+        >Council</a><ul class=\"sf-megamenu\"><li class=\"sf-megamenu-wrapper first\
+        \ odd sf-item-1 sf-depth-1 sf-total-children-12 sf-parent-children-0 sf-single-children-13\
+        \ menuparent\"><ol><li id=\"menu-483-1\" class=\"first odd sf-item-1 sf-depth-1\
+        \ sf-clone-parent sf-no-children\"><a href=\"/council\" title=\"Find out abut\
+        \ the City of Armadale and Council, including rates, Council meetings, work\
+        \ opportunities and more.\" class=\"sf-depth-1\">Council</a></li><li id=\"\
+        menu-5711-1\" class=\"middle even sf-item-2 sf-depth-2 sf-clone-parent sf-no-children\"\
+        ><a href=\"/about-armadale-1\" class=\"sf-depth-2\">About Armadale</a></li><li\
+        \ id=\"menu-5710-1\" class=\"middle odd sf-item-3 sf-depth-2 sf-clone-parent\
+        \ sf-no-children\"><a href=\"/about-council\" class=\"menu-node-unpublished\
+        \ menu-node-unpublished sf-depth-2\" title=\"\">About Council</a></li><li\
+        \ id=\"menu-1593-1\" class=\"middle even sf-item-4 sf-depth-2 sf-clone-parent\
+        \ sf-no-children\"><a href=\"/council-elections\" title=\"Council elections\"\
+        \ class=\"sf-depth-2\">Council elections</a></li><li id=\"menu-784-1\" class=\"\
+        middle odd sf-item-5 sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"\
+        /council-rates-and-rebates\" title=\"Council rates and rebates\" class=\"\
+        sf-depth-2\">Council rates and rebates</a></li><li id=\"menu-781-1\" class=\"\
+        middle even sf-item-6 sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"\
+        /online-payments-and-renewals\" class=\"sf-depth-2\">Online payments and renewals</a></li><li\
+        \ id=\"menu-5712-1\" class=\"middle odd sf-item-7 sf-depth-2 sf-clone-parent\
+        \ sf-no-children\"><a href=\"/infringements-and-appeals\" class=\"menu-node-unpublished\
+        \ menu-node-unpublished sf-depth-2\" title=\"Find out about infringements,\
+        \ how to pay and what to do if you want to make an appeal.\">Infringements\
+        \ and appeals</a></li><li id=\"menu-4109-1\" class=\"middle even sf-item-8\
+        \ sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"/jobs-and-careers\"\
+        \ class=\"menu-node-unpublished menu-node-unpublished menu-node-unpublished\
+        \ sf-depth-2\">Jobs and careers</a></li><li id=\"menu-653-1\" class=\"middle\
+        \ odd sf-item-9 sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"/tenders-and-eoi\"\
+        \ title=\"Tenders and Contracts\" class=\"sf-depth-2\">Tenders and Contracts</a></li><li\
+        \ id=\"menu-655-1\" class=\"middle even sf-item-10 sf-depth-2 sf-clone-parent\
+        \ sf-no-children\"><a href=\"/news-and-media-releases\" title=\"Access media\
+        \ releases and the City&#039;s enewsletters.\" class=\"sf-depth-2\">News and\
+        \ media releases</a></li><li id=\"menu-654-1\" class=\"middle odd sf-item-11\
+        \ sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"/public-notices-out-comment\"\
+        \ title=\"Public notices/Out for comment\" class=\"sf-depth-2\">Public notices/Open\
+        \ for comment</a></li><li id=\"menu-5706-1\" class=\"last even sf-item-12\
+        \ sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"/publications-and-governance\"\
+        \ class=\"menu-node-unpublished menu-node-unpublished menu-node-unpublished\
+        \ sf-depth-2\" title=\"Access local laws, policies, plans, strategies and\
+        \ advice on Freedom of Information.\">Publications and governance</a></li><li\
+        \ id=\"menu-5741-1\" class=\"middle odd sf-item-13 sf-depth-2 sf-clone-parent\
+        \ sf-no-children\"><a href=\"/contact-us-0\" title=\"Access address and contact\
+        \ details for the City. You can also contact us online.\" class=\"sf-depth-2\"\
+        >Contact us</a></li></ol></li></ul></li><li id=\"menu-649-1\" class=\"middle\
+        \ even sf-item-2 sf-depth-1 sf-clone-parent sf-total-children-9 sf-parent-children-0\
+        \ sf-single-children-10 menuparent\"><a href=\"/community-business\" title=\"\
+        Access support for community and business in the City of Armadale.\" class=\"\
+        sf-depth-1 sf-depth-1 menuparent\">Community &amp; Business</a><ul class=\"\
+        sf-megamenu\"><li class=\"sf-megamenu-wrapper middle even sf-item-2 sf-depth-1\
+        \ sf-clone-parent sf-total-children-9 sf-parent-children-0 sf-single-children-10\
+        \ menuparent\"><ol><li id=\"menu-649-1\" class=\"first odd sf-item-1 sf-depth-1\
+        \ sf-clone-parent sf-no-children\"><a href=\"/community-business\" title=\"\
+        Access support for community and business in the City of Armadale.\" class=\"\
+        sf-depth-1\">Community &amp; Business</a></li><li id=\"menu-684-1\" class=\"\
+        middle even sf-item-2 sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"\
+        /whats-events-workshops\" title=\"Find out what&#039;s happening in the City\
+        \ and how to get involved.\" class=\"sf-depth-2\">What&#039;s on (events &amp;\
+        \ workshops)</a></li><li id=\"menu-963-1\" class=\"middle odd sf-item-3 sf-depth-2\
+        \ sf-clone-parent sf-no-children\"><a href=\"/health-fitness-and-wellbeing\"\
+        \ title=\"Find out about things to do to stay fit, active and healthy.\" class=\"\
+        menu-node-unpublished menu-node-unpublished menu-node-unpublished menu-node-unpublished\
+        \ menu-node-unpublished sf-depth-2\">Health, fitness and wellbeing</a></li><li\
+        \ id=\"menu-998-1\" class=\"middle even sf-item-4 sf-depth-2 sf-clone-parent\
+        \ sf-no-children\"><a href=\"/libraries\" class=\"menu-node-unpublished menu-node-unpublished\
+        \ menu-node-unpublished menu-node-unpublished sf-depth-2\" title=\"Find out\
+        \ about libraries in the City of Armadale.\">Libraries</a></li><li id=\"menu-5742-1\"\
+        \ class=\"middle odd sf-item-5 sf-depth-2 sf-clone-parent sf-no-children\"\
+        ><a href=\"/art-museums-and-visitors-centre\" title=\"Find out about the Minnawarra\
+        \ Art Awards, History House Museum and Visitors Centre.\" class=\"sf-depth-2\"\
+        >Art, museums and visitors centre</a></li><li id=\"menu-776-1\" class=\"middle\
+        \ even sf-item-6 sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"/venues-and-facilities-hire\"\
+        \ title=\"Find out about facilities available for hire, including halls, rooms\
+        \ and venues.\" class=\"sf-depth-2\">Venues and facilities for hire</a></li><li\
+        \ id=\"menu-5709-1\" class=\"middle odd sf-item-7 sf-depth-2 sf-clone-parent\
+        \ sf-no-children\"><a href=\"/community-support-and-development\" class=\"\
+        menu-node-unpublished menu-node-unpublished menu-node-unpublished sf-depth-2\"\
+        \ title=\"Access support programs for our community, grants, and the community\
+        \ events guide.\">Community support and development</a></li><li id=\"menu-744-1\"\
+        \ class=\"middle even sf-item-8 sf-depth-2 sf-clone-parent sf-no-children\"\
+        ><a href=\"/business-support\" title=\"Access support, resources, grants and\
+        \ advice for businesses in the City of Armadale.\" class=\"sf-depth-2\">Business\
+        \ support</a></li><li id=\"menu-5174-1\" class=\"last odd sf-item-9 sf-depth-2\
+        \ sf-clone-parent sf-no-children\"><a href=\"/australian-citizenship-and-ceremonies\"\
+        \ class=\"menu-node-unpublished menu-node-unpublished sf-depth-2\" title=\"\
+        Australian citizenship and ceremonies\">Australian citizenship and ceremonies</a></li><li\
+        \ id=\"menu-3094-1\" class=\"middle even sf-item-10 sf-depth-2 sf-clone-parent\
+        \ sf-no-children\"><a href=\"/nbn-armadale\" class=\"sf-depth-2\">NBN in Armadale</a></li></ol></li></ul></li><li\
+        \ id=\"menu-650-1\" class=\"middle odd sf-item-3 sf-depth-1 sf-clone-parent\
+        \ sf-total-children-9 sf-parent-children-0 sf-single-children-10 menuparent\"\
+        ><a href=\"/building-planning\" title=\"Access local planning, mapping, building\
+        \ and development/planning permits and approvals.\" class=\"sf-depth-1 sf-depth-1\
+        \ menuparent\">Building &amp; Planning</a><ul class=\"sf-megamenu\"><li class=\"\
+        sf-megamenu-wrapper middle odd sf-item-3 sf-depth-1 sf-clone-parent sf-total-children-9\
+        \ sf-parent-children-0 sf-single-children-10 menuparent\"><ol><li id=\"menu-650-1\"\
+        \ class=\"first odd sf-item-1 sf-depth-1 sf-clone-parent sf-no-children\"\
+        ><a href=\"/building-planning\" title=\"Access local planning, mapping, building\
+        \ and development/planning permits and approvals.\" class=\"sf-depth-1\">Building\
+        \ &amp; Planning</a></li><li id=\"menu-780-1\" class=\"middle even sf-item-2\
+        \ sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"/online-mapping-intramaps\"\
+        \ title=\"Online mapping (Intramaps)\" class=\"sf-depth-2\">Online mapping\
+        \ (Intramaps)</a></li><li id=\"menu-3036-1\" class=\"middle odd sf-item-3\
+        \ sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"/commercial-and-industrial-land-0\"\
+        \ title=\"Find out about commercial and industrial parks and precincts, and\
+        \ properties for sale.\" class=\"sf-depth-2\">Commercial and industrial land</a></li><li\
+        \ id=\"menu-1624-1\" class=\"middle even sf-item-4 sf-depth-2 sf-clone-parent\
+        \ sf-no-children\"><a href=\"/building-demolition-and-renovating\" title=\"\
+        Find out about requirements and permits for buildings, demolition and renovations.\"\
+        \ class=\"sf-depth-2\">Building, demolition and renovating</a></li><li id=\"\
+        menu-1587-1\" class=\"middle odd sf-item-5 sf-depth-2 sf-clone-parent sf-no-children\"\
+        ><a href=\"/land-development-and-subdivisions\" class=\"menu-node-unpublished\
+        \ menu-node-unpublished menu-node-unpublished menu-node-unpublished menu-node-unpublished\
+        \ menu-node-unpublished menu-node-unpublished menu-node-unpublished sf-depth-2\"\
+        \ title=\"Find out about land development applications, subdivisions, contributions\
+        \ and landscaping.\">Land development and subdivisions</a></li><li id=\"menu-1607-1\"\
+        \ class=\"middle even sf-item-6 sf-depth-2 sf-clone-parent sf-no-children\"\
+        ><a href=\"/development-approvalplanning-applications\" title=\"Find out about\
+        \ development approval/planning applications and how to apply.\" class=\"\
+        menu-node-unpublished menu-node-unpublished menu-node-unpublished menu-node-unpublished\
+        \ menu-node-unpublished menu-node-unpublished sf-depth-2\">Development approval/planning\
+        \ applications</a></li><li id=\"menu-5718-1\" class=\"middle odd sf-item-7\
+        \ sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"/business-licences-and-permits\"\
+        \ title=\"Find requirements for business related permits, approvals, licenses\
+        \ and registration.\" class=\"sf-depth-2\">Business licences and permits</a></li><li\
+        \ id=\"menu-4107-1\" class=\"middle even sf-item-8 sf-depth-2 sf-clone-parent\
+        \ sf-no-children\"><a href=\"/city-planning-works-and-projects\" title=\"\
+        Find out about major projects, road works, and parks and reserves upgrades.\"\
+        \ class=\"menu-node-unpublished menu-node-unpublished menu-node-unpublished\
+        \ menu-node-unpublished menu-node-unpublished sf-depth-2\">City planning,\
+        \ works and projects</a></li><li id=\"menu-782-1\" class=\"last odd sf-item-9\
+        \ sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"/local-planning-tps-strategy-policies-and-plans-0\"\
+        \ title=\"Access the Town Planning Scheme, Local Planning Strategy, planning\
+        \ policies and plans.\" class=\"menu-node-unpublished sf-depth-2\">Local planning\
+        \ (TPS, strategy, policies and plans)</a></li><li id=\"menu-5748-1\" class=\"\
+        middle even sf-item-10 sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"\
+        /information-sheets-forms-and-fees-building-planning\" title=\"Access a full\
+        \ list of building and planning related information sheets and fees.\" class=\"\
+        sf-depth-2\">Information sheets, forms and fees</a></li></ol></li></ul></li><li\
+        \ id=\"menu-4915-1\" class=\"active-trail middle even sf-item-4 sf-depth-1\
+        \ sf-clone-parent sf-total-children-8 sf-parent-children-0 sf-single-children-9\
+        \ menuparent\"><a href=\"/rangers-and-public-health\" class=\"menu-node-unpublished\
+        \ menu-node-unpublished menu-node-unpublished menu-node-unpublished sf-depth-1\
+        \ sf-depth-1 menuparent\" title=\"Find out about ranger services, public health\
+        \ and safety, parking and animal registration.\">Rangers &amp; Public Health</a><ul\
+        \ class=\"sf-megamenu\"><li class=\"sf-megamenu-wrapper active-trail middle\
+        \ even sf-item-4 sf-depth-1 sf-clone-parent sf-total-children-8 sf-parent-children-0\
+        \ sf-single-children-9 menuparent\"><ol><li id=\"menu-4915-1\" class=\"active-trail\
+        \ first odd sf-item-1 sf-depth-1 sf-clone-parent sf-no-children\"><a href=\"\
+        /rangers-and-public-health\" class=\"menu-node-unpublished menu-node-unpublished\
+        \ menu-node-unpublished menu-node-unpublished sf-depth-1\" title=\"Find out\
+        \ about ranger services, public health and safety, parking and animal registration.\"\
+        >Rangers &amp; Public Health</a></li><li id=\"menu-5912-1\" class=\"middle\
+        \ even sf-item-2 sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"/hospitality-businesses-and-covid-19\"\
+        \ title=\"COVID-19 - Meet you legal requirements when reopening or operating\
+        \ your businesses\" class=\"menu-node-unpublished menu-node-unpublished menu-node-unpublished\
+        \ menu-node-unpublished menu-node-unpublished menu-node-unpublished sf-depth-2\"\
+        >Hospitality Businesses and COVID-19</a></li><li id=\"menu-777-1\" class=\"\
+        middle odd sf-item-3 sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"\
+        /public-health\" title=\"Find out about air pollution, noise, food safety,\
+        \ pests and how to make a complaint.\" class=\"sf-depth-2\">Public health</a></li><li\
+        \ id=\"menu-4926-1\" class=\"active-trail middle even sf-item-4 sf-depth-2\
+        \ sf-clone-parent sf-no-children\"><a href=\"/cats-and-dogs\" class=\"menu-node-unpublished\
+        \ menu-node-unpublished menu-node-unpublished menu-node-unpublished sf-depth-2\"\
+        \ title=\"Find out about pet ownership responsibilities, lost pets and cat\
+        \ and dog registration.\">Cats and dogs</a></li><li id=\"menu-4929-1\" class=\"\
+        middle odd sf-item-5 sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"\
+        /livestock-poultry-and-bees\" class=\"menu-node-unpublished menu-node-unpublished\
+        \ menu-node-unpublished menu-node-unpublished menu-node-unpublished menu-node-unpublished\
+        \ menu-node-unpublished sf-depth-2\" title=\"Find out about keeping of livestock,\
+        \ poultry and bees and what to do about nuisance bees.\">Livestock, poultry\
+        \ and bees</a></li><li id=\"menu-4931-1\" class=\"middle even sf-item-6 sf-depth-2\
+        \ sf-clone-parent sf-no-children\"><a href=\"/parking-and-vehicle-control\"\
+        \ class=\"menu-node-unpublished menu-node-unpublished menu-node-unpublished\
+        \ menu-node-unpublished sf-depth-2\" title=\"Find out about parking, parking\
+        \ infringements, off-road vehicles and impounded vehicles.\">Parking and vehicle\
+        \ control</a></li><li id=\"menu-5729-1\" class=\"middle odd sf-item-7 sf-depth-2\
+        \ sf-clone-parent sf-no-children\"><a href=\"/security-safety-and-crime-prevention\"\
+        \ title=\"Find out about graffiti removal, community safety, crime prevention\
+        \ and CCTV.\" class=\"sf-depth-2\">Security, safety and crime prevention</a></li><li\
+        \ id=\"menu-5910-1\" class=\"last even sf-item-8 sf-depth-2 sf-clone-parent\
+        \ sf-no-children\"><a href=\"/covid-19-information-hub\" class=\"sf-depth-2\"\
+        >COVID-19 Information Hub</a></li><li id=\"menu-4917-1\" class=\"middle odd\
+        \ sf-item-9 sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"/fire-and-emergency-management\"\
+        \ class=\"menu-node-unpublished menu-node-unpublished menu-node-unpublished\
+        \ sf-depth-2\" title=\"Find out about burning permits, firebreaks, bushfire\
+        \ management and emergency services.\">Fire and emergency management</a></li></ol></li></ul></li><li\
+        \ id=\"menu-787-1\" class=\"last odd sf-item-5 sf-depth-1 sf-clone-parent\
+        \ sf-total-children-10 sf-parent-children-0 sf-single-children-11 menuparent\"\
+        ><a href=\"/waste-and-environment\" title=\"Access to waste and recycling,\
+        \ trees and streetscapes and environmental management.\" class=\"sf-depth-1\
+        \ sf-depth-1 menuparent\">Waste &amp; Environment</a><ul class=\"sf-megamenu\"\
+        ><li class=\"sf-megamenu-wrapper last odd sf-item-5 sf-depth-1 sf-clone-parent\
+        \ sf-total-children-10 sf-parent-children-0 sf-single-children-11 menuparent\"\
+        ><ol><li id=\"menu-787-1\" class=\"first odd sf-item-1 sf-depth-1 sf-clone-parent\
+        \ sf-no-children\"><a href=\"/waste-and-environment\" title=\"Access to waste\
+        \ and recycling, trees and streetscapes and environmental management.\" class=\"\
+        sf-depth-1\">Waste &amp; Environment</a></li><li id=\"menu-5755-1\" class=\"\
+        middle even sf-item-2 sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"\
+        /my-waste-collection-day\" class=\"sf-depth-2\">My Waste Collection Day</a></li><li\
+        \ id=\"menu-1152-1\" class=\"middle odd sf-item-3 sf-depth-2 sf-clone-parent\
+        \ sf-no-children\"><a href=\"/bins-and-collections\" class=\"menu-node-unpublished\
+        \ menu-node-unpublished menu-node-unpublished menu-node-unpublished menu-node-unpublished\
+        \ menu-node-unpublished menu-node-unpublished sf-depth-2\" title=\"Find out\
+        \ about bin collections, what goes in each bin and reporting an issue.\">Bins\
+        \ and collection</a></li><li id=\"menu-1594-1\" class=\"middle even sf-item-4\
+        \ sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"/verge-collections\"\
+        \ title=\"Find out about junk and green waste verge collection, including\
+        \ dates.\" class=\"sf-depth-2\">Verge collections</a></li><li id=\"menu-5732-1\"\
+        \ class=\"middle odd sf-item-5 sf-depth-2 sf-clone-parent sf-no-children\"\
+        ><a href=\"/waste-disposal-and-recycling-centres-0\" class=\"sf-depth-2\"\
+        >Waste disposal and recycling centres</a></li><li id=\"menu-4933-1\" class=\"\
+        middle even sf-item-6 sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"\
+        /litter-illegal-dumping-and-untidy-properties\" class=\"menu-node-unpublished\
+        \ menu-node-unpublished menu-node-unpublished sf-depth-2\" title=\"Find out\
+        \ about litter, illegal dumping, dumped shopping trolleys and untidy properties.\"\
+        >Litter, illegal dumping and untidy properties</a></li><li id=\"menu-4761-1\"\
+        \ class=\"middle odd sf-item-7 sf-depth-2 sf-clone-parent sf-no-children\"\
+        ><a href=\"/composting-and-worm-farms\" class=\"sf-depth-2\">Resources to\
+        \ Reduce Waste</a></li><li id=\"menu-5733-1\" class=\"middle even sf-item-8\
+        \ sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"/trees-verges-and-streetscapes\"\
+        \ title=\"Find out about street tree planting and pruning and verge maintenance.\"\
+        \ class=\"sf-depth-2\">Trees, verges and streetscapes</a></li><li id=\"menu-5734-1\"\
+        \ class=\"middle odd sf-item-9 sf-depth-2 sf-clone-parent sf-no-children\"\
+        ><a href=\"/residential-stormwater\" class=\"menu-node-unpublished menu-node-unpublished\
+        \ sf-depth-2\">Residential stormwater</a></li><li id=\"menu-982-1\" class=\"\
+        last even sf-item-10 sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"\
+        /sewage-and-effluent-disposal\" title=\"Find out about effluent disposal systems\
+        \ and how to apply to install a system.\" class=\"menu-node-unpublished menu-node-unpublished\
+        \ menu-node-unpublished menu-node-unpublished menu-node-unpublished menu-node-unpublished\
+        \ menu-node-unpublished menu-node-unpublished menu-node-unpublished menu-node-unpublished\
+        \ menu-node-unpublished menu-node-unpublished menu-node-unpublished menu-node-unpublished\
+        \ menu-node-unpublished menu-node-unpublished menu-node-unpublished sf-depth-2\"\
+        >Sewage and effluent disposal</a></li><li id=\"menu-775-1\" class=\"middle\
+        \ odd sf-item-11 sf-depth-2 sf-clone-parent sf-no-children\"><a href=\"/environmental-management-and-protection\"\
+        \ class=\"menu-node-unpublished menu-node-unpublished menu-node-unpublished\
+        \ sf-depth-2\" title=\"Find out about environmental management plan and programs\
+        \ and what you can do to help.\">Environment management and protection</a></li></ol></li></ul></li></ul>\n\
+        </div>\n  </div>\n\t\t\r\n  </div>\r\n\r\n  <div id=\"search\">\r\n\t\t<div\
+        \ id=\"search-container\">\r\n\t\t\t<div id=\"title-crumb\">\r\n\t\t\t\t\r\
+        \n\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t<h1 class=\"page__title title\" id=\"\
+        page-title\">Lost cats and dogs (Animal Management Facility)</h1>\r\n\t\t\t\
+        \t\t\t\t\t\t\r\n\t\t\t\t<h2 class=\"element-invisible\">Lost cats and dogs\
+        \ (Animal Management Facility)</h2>\t\t\r\n\r\n\t\t\t\t<nav class=\"breadcrumb\"\
+        \ role=\"navigation\"><h2 class=\"element-invisible\">You are here</h2><ol><li><a\
+        \ href=\"/\">Home</a></li><li><a href=\"/rangers-and-public-health\" class=\"\
+        menu-node-unpublished menu-node-unpublished menu-node-unpublished menu-node-unpublished\"\
+        \ title=\"Find out about ranger services, public health and safety, parking\
+        \ and animal registration.\">Rangers &amp; Public Health</a></li><li><a href=\"\
+        /cats-and-dogs\" class=\"menu-node-unpublished menu-node-unpublished menu-node-unpublished\
+        \ menu-node-unpublished\" title=\"Find out about pet ownership responsibilities,\
+        \ lost pets and cat and dog registration.\">Cats and dogs</a></li><li>Lost\
+        \ cats and dogs (Animal Management Facility)</li></ol></nav>\t\t\t</div>\r\
+        \n\t\t\t<div id=\"search-bg\">\r\n\t\t\t\t  <div class=\"region region-search\"\
+        >\n    <div id=\"block-block-9\" class=\"block block-block first last odd\"\
+        >\n\n      \n  <p><a class=\"close-search\">X</a></p>\n\n<form action=\"/search\"\
+        \ id=\"search-form\" method=\"get\"><input id=\"edit-search-block-form--2\"\
+        \ name=\"coa\" placeholder=\"SEARCH\" title=\"Site search\" type=\"text\"\
+        \ /> <input class=\"form-submit\" type=\"submit\" value=\"search\" />\_</form>\n\
+        </div>\n  </div>\n\t\t\t</div>\t\t\r\n\t\t</div>\r\n  </div>\r\n  \t\r\n \
+        \ <div id=\"main\">\t\t\r\n    <div id=\"content\" class=\"column\" role=\"\
+        main\">      \r\n      <a id=\"main-content\"></a>\r\n\t        \r\n     \
+        \ \r\n\r\n\t\t\t\r\n                                     \r\n\t\t\t\t\t\t\r\
+        \n\t\t\t\t\t\t\r\n\t\t\t\r\n\t\t\t      \n\n\n<article class=\"node-9010 node\
+        \ node-page view-mode-full clearfix\" about=\"/lost-cats-and-dogs-animal-management-facility\"\
+        \ typeof=\"foaf:Document\">\r\n\t<!--<h2 class=\"hidden\"></h2>-->\r\n\t\t\
+        \t\r\n\t\t\t\t\t<header>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span property=\"dc:title\"\
+        \ content=\"Lost cats and dogs (Animal Management Facility)\" class=\"rdf-meta\
+        \ element-hidden\"></span><span property=\"sioc:num_replies\" content=\"0\"\
+        \ datatype=\"xsd:integer\" class=\"rdf-meta element-hidden\"></span>\r\n\t\
+        \t\t\t\r\n\t\t\t\t\t\t\t</header>\r\n\t\t\r\n\t\t<div class=\"field field-name-field-page-introduction\
+        \ field-type-text-long field-label-hidden\"><div class=\"field-items\"><div\
+        \ class=\"field-item even\">The City of Armadale is committed to the safety\
+        \ and wellbeing of our community and staff. Due to the outbreak of Covid-19,\
+        \ attendance at the City's Animal Management Facility is now by appointment\
+        \ only.</div></div></div><div class=\"toc-wrapper\">\r\n\t<div id=\"table-of-contents-links\"\
+        >\r\n\t\t\t<a name=\"table-of-contents\"></a>\r\n\t\t\t<h3>On This Page</h3>\r\
+        \n\t\t\t<div class=\"item-list\"><ul class=\"toc-node-bullets\"><li class=\"\
+        toc-node-level-1 first\"><a href=\"/lost-cats-and-dogs-animal-management-facility#toc-1\"\
+        ><span class=\"toc-text\">How we handle lost pets</span></a></li>\n<li class=\"\
+        toc-node-level-1\"><a href=\"/lost-cats-and-dogs-animal-management-facility#toc-2\"\
+        ><span class=\"toc-text\">Reclaiming your pet</span></a></li>\n<li class=\"\
+        toc-node-level-1\"><a href=\"/lost-cats-and-dogs-animal-management-facility#toc-3\"\
+        ><span class=\"toc-text\">Impound fees</span></a></li>\n<li class=\"toc-node-level-1\"\
+        ><a href=\"/lost-cats-and-dogs-animal-management-facility#toc-4\"><span class=\"\
+        toc-text\">Pound location and opening hours</span></a></li>\n<li class=\"\
+        toc-node-level-1\"><a href=\"/lost-cats-and-dogs-animal-management-facility#toc-5\"\
+        ><span class=\"toc-text\">Rehoming</span></a></li>\n<li class=\"toc-node-level-1\
+        \ last\"><a href=\"/lost-cats-and-dogs-animal-management-facility#toc-6\"\
+        ><span class=\"toc-text\">Currently impounded animals</span></a></li>\n</ul></div>\t\
+        </div>\r\n</div>\n<div class=\"paragraphs-items paragraphs-items-field-elements\
+        \ paragraphs-items-field-elements-full paragraphs-items-full\">\n  <div class=\"\
+        field field-name-field-elements field-type-paragraphs field-label-hidden\"\
+        ><div class=\"field-items\"><div class=\"field-item even\"><div class=\"entity\
+        \ entity-paragraphs-item paragraphs-item-simple-paragraphs\" about=\"\" typeof=\"\
+        \">\n  <div class=\"content\">\n    <div class=\"field field-name-field-text\
+        \ field-type-text-long field-label-hidden\"><div class=\"field-items\"><div\
+        \ class=\"field-item even\"><p>If you have lost your pet and their picture\
+        \ is not below, please call the City on 9394 5000.</p>\n<div class=\"toc-item-anchor\"\
+        ><a name=\"toc-1\"></a></div><h2 class=\" toc-headings\">How we handle lost\
+        \ pets</h2>\n<p>Once a cat or dog comes into the rangers possession they are\
+        \ checked for a microchip. We will&nbsp;always try and unite pet and owner.</p>\n\
+        <p>If we are unable to get hold of an owner or the dog is unable&nbsp;to be\
+        \ secured it may be impounded. Impounding is always a last resort.</p>\n<div\
+        \ class=\"toc-item-anchor\"><a name=\"toc-2\"></a></div><h2 class=\" toc-headings\"\
+        >Reclaiming your pet</h2>\n<p>If you pet is in the pound please call the City\
+        \ on 9394 5000 for costs of getting your&nbsp;pet out.</p>\n<p>The following\
+        \ is required by law for the animals to be released:</p>\n<ul>\n<li>Registration</li>\n\
+        <li>Microchipping</li>\n<li>Sterilisation (cats only).</li>\n</ul>\n<div class=\"\
+        toc-item-anchor\"><a name=\"toc-3\"></a></div><h2 class=\" toc-headings\"\
+        >Impound fees</h2>\n<ul>\n<li>Seizure or impounding of a dog or cat: $100</li>\n\
+        <li>Maintenance and sustenance of dog/cat per day: $20 (for example, if your\
+        \ dog is impounded for four days the fee is $180)</li>\n<li>Microchipping\
+        \ fee: $65&nbsp;(via a voucher receipt for a local vet)</li>\n</ul>\n<p>Fees\
+        \ must be paid in full on collection of pet. We cannot offer discounts or\
+        \ part payments.</p>\n<div class=\"toc-item-anchor\"><a name=\"toc-4\"></a></div><h2\
+        \ class=\" toc-headings\">Pound location and opening hours</h2>\n<p><strong>Location</strong></p>\n\
+        <p>Capstick Lane, Kelmscott (formerly known as 21 Kilburn Lane)</p>\n<p><strong>Opening\
+        \ hours</strong></p>\n<p>By appointment only.</p>\n<div class=\"toc-item-anchor\"\
+        ><a name=\"toc-5\"></a></div><h2 class=\" toc-headings\">Rehoming</h2>\n<p>The\
+        \ City does not rehome direct from the pound. All unclaimed animals fit for\
+        \ adoption are given&nbsp;to animal rescue and rehoming organisations.</p>\n\
+        <p>If you want&nbsp;to rescue/re-home an animal please contact an organisation\
+        \ in your area to&nbsp;discuss adoption.</p>\n<div class=\"toc-item-anchor\"\
+        ><a name=\"toc-6\"></a></div><h2 class=\" toc-headings\">Currently impounded\
+        \ animals</h2>\n</div></div></div>  </div>\n</div>\n</div></div></div></div>\n\
+        \r\n\t\t\r\n\t\t\t\t\r\n\t<h3 class=\"hidden\">Lost cats and dogs (Animal\
+        \ Management Facility)</h3>\r\n</article>\r\n\n<div id=\"block-views-impounded-animals-block-1\"\
+        \ class=\"block block-views even\">\n\n      \n  <div class=\"view view-impounded-animals\
+        \ view-id-impounded_animals view-display-id-block_1 centerDiv view-dom-id-03e3e905715f277cb3a65bf873628323\"\
+        >\r\n        \r\n  \t\r\n\t\r\n  \r\n\t\r\n  \t\t\r\n\t    <div class=\"view-content\"\
+        >\r\n\t\t\t\t\t\t\r\n        <div class=\"views-row views-row-1 views-row-odd\
+        \ views-row-first views-row-last\">\r\n      \r\n  <div class=\"views-field\
+        \ views-field-field-species\">        <div class=\"field-content\"><div class=\"\
+        animal-image\"><a href=\"https://www.armadale.wa.gov.au/sites/default/files/assets/images/animal/206_1.JPG\"\
+        ><img typeof=\"foaf:Image\" src=\"https://www.armadale.wa.gov.au/sites/default/files/assets/styles/event_feature__640x408_/public/images/animal/206_1.JPG?itok=gOHFbeAe\"\
+        \ width=\"640\" height=\"408\" alt=\"Image of impounded animal: 206\" title=\"\
+        Image of impounded animal: 206\" /></a></div>\n<div class=\"result-wrapper\"\
+        >\n\n<div class=\"impound-number icon\"><h3>206</h3></div>\n<div class=\"\
+        cat species icon\">Male&nbsp;cat</div>\n<div class=\"breed\"><strong>Breed:</strong>&nbsp;Dsh</div>\n\
+        <div class=\"date-found icon\"><span class=\"date-display-single\" property=\"\
+        dc:date\" datatype=\"xsd:dateTime\" content=\"2020-05-28T00:00:00+08:00\"\
+        >28 May 2020</span></div>\n<div class=\"location-found\"><strong>Location\
+        \ found:</strong>&nbsp;Foothills Vet</div>\n<div class=\"animal-color\"><strong>Color:</strong>&nbsp;Grey</div>\n\
+        <div class=\"generic-comments\">Short-haired, No collar, No ID, No microchip,\
+        \ Unsterilised</div>\n<div class=\"additional-comments\"></div>\n</div><div\
+        \ class=\"clear\"></div></div>  </div>  </div>\r\n    </div>\r\n\t\t\t\r\n\
+        \  \r\n  \r\n  \r\n  \r\n  \r\n  \r\n</div>\n</div>\n<div id=\"block-views-last-modified-block\"\
+        \ class=\"block block-views last odd\">\n\n      \n  <div class=\"view view-last-modified\
+        \ view-id-last_modified view-display-id-block view-dom-id-f76af2e10b840fc72442d690ba910909\"\
+        >\r\n        \r\n  \t\r\n\t\r\n  \r\n\t\r\n  \t\t\r\n\t    <div class=\"view-content\"\
+        >\r\n\t\t\t\t\t\t\r\n        <div class=\"views-row views-row-1 views-row-odd\
+        \ views-row-first views-row-last\">\r\n      \r\n  <div class=\"views-field\
+        \ views-field-field-elements\">        <div class=\"field-content\"><p>Page\
+        \ Last Reviewed 31 March 2020</p></div>  </div>  </div>\r\n    </div>\r\n\t\
+        \t\t\r\n  \r\n  \r\n  \r\n  \r\n  \r\n  \r\n</div>\n</div>\n          </div>\r\
+        \n\r\n\r\n\r\n    \r\n    \r\n  </div>\r\n\t\t\r\n\r\n\t\r\n  <div id=\"footer-wrapper\"\
+        >\r\n      <footer id=\"footer\" class=\"region region-footer\">\n    <div\
+        \ id=\"block-block-2\" class=\"block block-block first odd\">\n\n      \n\
+        \  <div class=\"parallax-window\" data-image-src=\"/sites/all/themes/armadale/images/parallax.jpg\"\
+        \ data-parallax=\"scroll\">\n<div id=\"parallax-container\">\n<div class=\"\
+        footer-info address\">\n<h4>Address</h4>\n\n<p>7 Orchard Avenue<br />\nArmadale,\
+        \ WA 6112</p>\n</div>\n\n<div class=\"footer-info phone\">\n<h4>Phone</h4>\n\
+        \n<p>08 9394 5000</p>\n\n<h4>After Hours</h4>\n\n<p>1300 886 885</p>\n</div>\n\
+        \n<div class=\"footer-info email\">\n<h4>Email</h4>\n\n<p><a href=\"mailto:info@armadale.wa.gov.au\"\
+        >info@armadale.wa.gov.au</a></p>\n</div>\n\n<div class=\"footer-info enews\"\
+        >\n<h4>Keep up to date</h4>\n\n<div class=\"subscribe\"><a href=\"/in-the-know-enewsletter-subscription\"\
+        >Subscribe to In The Know\_</a></div>\n</div>\n</div>\n</div>\n\n</div>\n\
+        <div id=\"block-block-20\" class=\"block block-block last even\">\n\n    \
+        \  \n  <p class=\"backtotop\"><a href=\"#\">TOP</a></p>\n</div>\n  </footer>\n\
+        \   \r\n\t\t<img src=\"https://www.armadale.wa.gov.au/sites/all/themes/armadale/images/footer_logo.png\"\
+        \ width=\"213\" height=\"74\" alt=\"City of Armadale\" />\r\n\t\t<div id=\"\
+        social-icons\">\r\n\t\t\t<ul>\r\n\t\t\t\t<li><a href=\"https://www.facebook.com/CityofArmadale\"\
+        \ title=\"Facebook page\"><span class=\"hidden\">Facebook</span><i class=\"\
+        fab fa-facebook-f\"></i></a></li>\r\n\t\t\t\t<li><a href=\"http://www.twitter.com/CityofArmadale\"\
+        \ title=\"Twitter page\"><span class=\"hidden\">Twitter</span><i class=\"\
+        fab fa-twitter\"></i></a></li>\r\n\t\t\t</ul>\r\n\t\t</div>\r\n  </div>\r\n\
+        \  <div id=\"bottom-footer-wrapper\">\r\n  \t<a href=\"/terms-and-conditions\"\
+        >Terms and Conditions</a>\r\n  \t<a href=\"/privacy-statement\">Privacy Statement</a>\
+        \  \r\n  \t<a href=\"/website-feedback\">Website Feedback</a>    \r\n  \t\
+        <a href=\"/sitemap\">Sitemap</a> \r\n  \tCopyright&nbsp;&copy;&nbsp;2020&nbsp;City&nbsp;of&nbsp;Armadale.\
+        \ All rights reserved.<a href=\"/user\" class=\"user-icon\">Login icon</a>\t\
+        </div>\r\n\t<div id=\"opaque\"></div>\r\n</div>  </body>\r\n</html>\r\n"
+    headers:
+      Cache-Control:
+      - no-cache, must-revalidate
+      Content-Language:
+      - en
+      Content-Length:
+      - '42666'
+      Content-Security-Policy:
+      - 'default-src ''self'' ''unsafe-inline''; style-src ''self'' ''unsafe-inline''
+        https://hello.myfonts.net https://cdn-images.mailchimp.com https://hosteduxprod.blob.core.windows.net
+        https://www.google.com https://use.fontawesome.com http://fonts.googleapis.com
+        https://www.googletagmanager.com; script-src ''self'' ''unsafe-inline'' ''unsafe-eval''
+        https://code.jquery.com https://armadale.us5.list-manage.com https://s3.amazonaws.com
+        http://clients1.google.com http://cse.google.com https://cse.google.com https://ui.customsearch.ai
+        https://www.google.com http://maps.googleapis.com https://www.googletagmanager.com
+        https://js.adsrvr.org https://insight.adsrvr.org https://www.google-analytics.com;
+        frame-src ''self'' https://jobs.armadale.wa.gov.au https://google.com https://cse.google.com
+        https://www.googletagmanager.com https://insight.adsrvr.org http://9206867.fls.doubleclick.net;
+        img-src ''self'' data: https://www.googletagmanager.com https://ssl.gstatic.com
+        http://clients1.google.com https://www.googleapis.com https://www.google.com
+        http://googletagmanager.com http://maps.gstatic.com http://maps.googleapis.com
+        https://maps.googleapis.com https://www.google-analytics.com https://stats.g.doubleclick.net;
+        font-src ''self'' https://use.fontawesome.com https://fonts.gstatic.com; connect-src
+        ''self'' https://ui.customsearch.ai'
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Sun, 31 May 2020 04:41:08 GMT
+      Expires:
+      - Sun, 19 Nov 1978 05:00:00 GMT
+      Link:
+      - <https://www.armadale.wa.gov.au/lost-cats-and-dogs-animal-management-facility>;
+        rel="canonical",<https://www.armadale.wa.gov.au/node/9010>; rel="shortlink"
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Server:
+      - Microsoft-IIS/10.0
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Generator:
+      - Drupal 7 (http://drupal.org)
+      X-Powered-By:
+      - ASP.NET
+      X-UA-Compatible:
+      - IE=edge,chrome=1
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+    url: https://www.armadale.wa.gov.au/lost-cats-and-dogs-animal-management-facility
+recorded_with: betamax/0.8.1

@@ -1,0 +1,283 @@
+http_interactions:
+- recorded_at: '2020-05-31T04:41:09'
+  request:
+    body:
+      encoding: utf-8
+      string: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.23.0
+    method: GET
+    uri: http://www.swanamf.com.au/dogs
+  response:
+    body:
+      encoding: utf-8
+      string: "<!DOCTYPE HTML>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Kennel\
+        \ Manager</title>\n  <link rel=\"stylesheet\" href=\"/web_display/bootstrap.css\"\
+        >\n  <link rel=\"stylesheet\" href=\"web_display/resources/pound_animal.css\"\
+        \ />\n  <script language=\"javascript\">\n      var template = '<style>\\\
+        nh2 {text-decoration: underline;}\\n<\\/style>\\n\\n<h1 style=\\\"font-size:300%\\\
+        \">Dogs Currently Impounded Within the City of Swan<\\/h1>\\n\\nThis display\
+        \ updates daily during opening hours. For animals impounded after hours the\
+        \ display will be updated at the next available opportunity. Dogs will generally\
+        \ remain displayed for 7 days unless positively identified or released. If\
+        \ you are keeping watch for your lost pet please <b><i>refresh your browser\
+        \ regularly <\\/i><\\/b>.\\n\\n<p style=\\\"font-size:110%\\\">If your pet\
+        \ is missing, you are encouraged to phone or visit the City\u2019s Pound daily.\
+        \ If you believe that your pet is currently impounded, please call (08) 9267\
+        \ 9494 or email City of Swan Animal Management Facility at <a href=\\\"mailto:info@swanAMF.com.au\\\
+        \">info@SwanAMF.com.au<\\/a> for further information on how to claim your\
+        \ pet.<\\/p>\\n\\nFor full details of current registration fees please visit\
+        \ City Of Swan: <a href=\\\"http://www.swan.wa.gov.au/Residents/Animals/Dogs/Dog_registration\\\
+        \" target=\\\"_blank\\\"> Registration Fees and Charges<\\/a> . For detailed\
+        \ impoundment information including current impoundment and sustenance fees\
+        \ please visit City Of Swan: <a href=\\\"https://www.swan.wa.gov.au/Services-support/Animals/Pound-details#Fees-2\\\
+        \" target=\\\"_blank\\\">Impoundment Information<\\/a> .<\\/p>\\n\\n\\n\\\
+        n\\n\\n \\n    <h2> Contact Information:<\\/h2>\\n\\n     <p style=\\\"font-size:110%\\\
+        \">\\n    Animal Management Facility \u2013 Cats and Dogs (on behalf of the\
+        \ City of Swan)<br />\\n    12 Midas Road, MALAGA  W.A. 6090<br />\\n    Telephone:\
+        \  (08) 9267 9494<br />\\n    Email: <a href=\\\"mailto:info@swanAMF.com.au\\\
+        \">info@SwanAMF.com.au<\\/a><br />\\n <p style=\\\"font-size:110%\\\">To see\
+        \ the <b> CATS<\\/b> currently impounded, please visit <a href=\\\"http://www.swanamf.com.au/cats\\\
+        \"> www.swanamf.com.au/cats<\\/a><\\/p>\\n\\n\\n    <h2>Opening Hours:<\\\
+        /h2>\\n    <p style=\\\"font-size:110%\\\"> \\nMonday to Friday  - 9am to\
+        \ 3pm <\\/br>\\nSaturday                - 9am to 12pm <\\/br>\\nPUBLIC HOLIDAYS\
+        \ - Closed<\\/br><\\/br>\\n\\nTo report your missing pet after hours, please\
+        \ call (08) 92679494 and leave a detailed voicemail message. Your enquiry\
+        \ will be attended to during next business day.  You can also email details\
+        \ and photo of your missing pet.  Otherwise if assistance is required after\
+        \ hours please contact Customer Support After Hours Calls Service on (08)\
+        \ 92679267.<\\/br>\\n<p> Methods of Payment: Cash and EFTPOS<\\/br>\\nPlease\
+        \ Note : Premium credit cards and cheques are NOT accepted<\\/p>\\n  \\n<b>IMPORTANT\
+        \ - Adoption Enquiries: <\\/b> The pound does not co-ordinate adoptions. The\
+        \ sheer number of calls received ties up valuable resources and prevents actual\
+        \ bonafide enquiries from getting through. You can register an interest by\
+        \ contacting the pound VIA EMAIL ONLY quoting the reference number. If the\
+        \ pet in question is sent to an approved rescue your details will be attached\
+        \ to the record as in interested party. Approved homes may already be listed\
+        \ so nothing is guaranteed. \\n<\\/br><\\/br>Thank you for your understanding.\\\
+        n  <\\/p>\\n<tpl for=\\\".\\\">\\n<div class=\\\"pound_animal_wrap\\\" >\\\
+        n<div class=\\\"pound_animal\\\"><img class=\\\"pound_animal_img\\\" src=\\\
+        \"{photo_url}\\\" />\\n<div class=\\\"x-editable pound_animal_desc\\\"><span\
+        \ class=\\\"x-editable pound_animal_label\\\">Breed <\\/span>{breed:htmlEncode}<\\\
+        /div>\\n<div class=\\\"x-editable pound_animal_desc\\\"><span class=\\\"x-editable\
+        \ pound_animal_label\\\">Colour:<\\/span>{colour:htmlEncode}<\\/div>\\n<div\
+        \ class=\\\"x-editable pound_animal_desc\\\"><span class=\\\"x-editable pound_animal_label\\\
+        \">Suburb:<\\/span>{suburb:htmlEncode}<\\/div>\\n<div class=\\\"x-editable\
+        \ pound_animal_desc\\\"><span class=\\\"x-editable pound_animal_label\\\"\
+        >Date:<\\/span>{impounded_at:date(\\\"d/m/Y\\\")}<\\/div>\\n<div class=\\\"\
+        x-editable pound_animal_desc\\\"><span class=\\\"x-editable pound_animal_label\\\
+        \">Ref #:<\\/span>{name:htmlEncode}<\\/div>\\n<\\/div>\\n<\\/div>\\n<\\/tpl>';\n\
+        \      var template_name = 'COS Dog Template';\n      var preload_data = '[]';\n\
+        \  </script>\n</head>\n<body>\n<div id=\"page-loader\">\n  <img style=\"position:absolute;\
+        \ width:101px; height:105px; left:50%; top:45%; margin-left:-50px; margin-top:\
+        \ -50px;\" src=\"/images/logo.png\" />\n  <img style=\"position:absolute;\
+        \ width:43px; height:11px; left:50%; top:53%; margin-left:-21px; margin-top:\
+        \ -5px;\" src=\"/images/apploading.gif\" />\n\n  <!-- load js files here to\
+        \ ensure loader images display first -->\n  <script src=\"/web_display/ext/ext-all-dev.js\"\
+        ></script>\n  <script type=\"text/javascript\">\n      Ext.Loader.setPath('WebDisplay',\
+        \ '/web_display/app');\n      Ext.require([\n          'WebDisplay.model.Animal',\n\
+        \          'WebDisplay.store.Animal',\n          'WebDisplay.view.Viewport',\n\
+        \          'WebDisplay.view.AnimalTemplate',\n          'WebDisplay.view.Main'\n\
+        \      ])\n\n      Ext.onReady(function() {\n          var viewport = Ext.create('WebDisplay.view.Viewport');\n\
+        \      }, this);\n\n  </script>\n</div>\n</body>\n</html>\n"
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Sun, 31 May 2020 04:41:10 GMT
+      ETag:
+      - '"ea5a4b4c75f00d6b8d763bbb3c24b618"'
+      Server:
+      - Apache/2.2.15 (CentOS)
+      Status:
+      - 200 OK
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - 3aef1705-df64-4269-a5dc-1c632ad3a667
+      X-Runtime:
+      - '0.060644'
+      X-UA-Compatible:
+      - chrome=1
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+    url: http://www.swanamf.com.au/dogs
+- recorded_at: '2020-05-31T04:41:09'
+  request:
+    body:
+      encoding: utf-8
+      string: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.23.0
+    method: GET
+    uri: http://www.swanamf.com.au/cats
+  response:
+    body:
+      encoding: utf-8
+      string: "<!DOCTYPE HTML>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Kennel\
+        \ Manager</title>\n  <link rel=\"stylesheet\" href=\"/web_display/bootstrap.css\"\
+        >\n  <link rel=\"stylesheet\" href=\"web_display/resources/pound_animal.css\"\
+        \ />\n  <script language=\"javascript\">\n      var template = '<style>\\\
+        nh2 {text-decoration: underline;}\\n<\\/style>\\n\\n<h1 style=\\\"font-size:300%\\\
+        \">Cats Currently Impounded Within the City of Swan<\\/h1>\\n\\nThis display\
+        \ updates daily during opening hours. For animals impounded after hours the\
+        \ display will be updated at the next available opportunity. Cats will generally\
+        \ remain displayed for 7 days unless positively identified or released. If\
+        \ you are keeping watch for your lost pet please <b><i> refresh your browser\
+        \ regularly <\\/i> <\\/font><\\/b>.\\n\\n<p style=\\\"font-size:110%\\\">If\
+        \ your pet is missing, you are encouraged to phone or visit the City\u2019\
+        s Pound daily. If you believe that your pet is currently impounded, please\
+        \ call (08) 9267 9494 or email City of Swan Animal Management Facility at\
+        \ <a href=\\\"mailto:info@swanAMF.com.au\\\">info@SwanAMF.com.au<\\/a> for\
+        \ further information on how to claim your pet.<\\/p>\\n\\nFor full details\
+        \ of current registration fees please visit City Of Swan: <a href=\\\"http://www.swan.wa.gov.au/Residents/Animals/Dogs/Dog_registration\\\
+        \" target=\\\"_blank\\\"> Registration Fees and Charges<\\/a> . For detailed\
+        \ impoundment information including current impoundment and sustenance fees\
+        \ please visit City Of Swan: <a href=\\\"https://www.swan.wa.gov.au/Services-support/Animals/Pound-details#Fees-2\\\
+        \" target=\\\"_blank\\\">Impoundment Information<\\/a> .<\\/p>\\n\\n\\n\\\
+        n\\n\\n \\n    <h2> Contact Information:<\\/h2>\\n\\n     <p style=\\\"font-size:110%\\\
+        \">\\n    Animal Management Facility \u2013 Cats and Dogs (on behalf of the\
+        \ City of Swan)<br />\\n    12 Midas Road, MALAGA  W.A. 6090<br />\\n    Telephone:\
+        \  (08) 9267 9494<br />\\n    Email: <a href=\\\"mailto:info@swanAMF.com.au\\\
+        \">info@SwanAMF.com.au<\\/a><br />\\n <p style=\\\"font-size:110%\\\">To see\
+        \ the <b>DOGS<\\/b> currently impounded, please visit <a href=\\\"http://www.swanamf.com.au/dogs\\\
+        \"> www.swanamf.com.au/dogs<\\/a><\\/p>\\n\\n\\n    <h2>Opening Hours:<\\\
+        /h2>\\n    <p style=\\\"font-size:110%\\\"> \\nMonday to Friday  - 9am to\
+        \ 3pm <\\/br>\\nSaturday                - 9am to 12pm <\\/br>\\nPUBLIC HOLIDAYS\
+        \ - Closed<\\/br><\\/br>\\n\\nTo report your missing pet after hours, please\
+        \ call (08) 92679494 and leave a detailed voicemail message. Your enquiry\
+        \ will be attended to during next business day.  You can also email details\
+        \ and photo of your missing pet.  Otherwise if assistance is required after\
+        \ hours please contact Customer Support After Hours Calls Service on (08)\
+        \ 92679267.<\\/br>\\n<p> Methods of Payment: Cash and EFTPOS<\\/br>\\nPlease\
+        \ Note : Premium credit cards and cheques are NOT accepted<\\/p>\\n    <\\\
+        /p>\\n<b>IMPORTANT - Adoption Enquiries: <\\/b> The pound does not co-ordinate\
+        \ adoptions. The sheer number of calls received ties up valuable resources\
+        \ and prevents actual bonafide enquiries from getting through. You can register\
+        \ an interest by contacting the pound VIA EMAIL ONLY quoting the reference\
+        \ number. If the pet in question is sent to an approved rescue your details\
+        \ will be attached to the record as in interested party. Approved homes may\
+        \ already be listed so nothing is guaranteed. \\n<\\/br><\\/br>Thank you for\
+        \ your understanding.\\n  <\\/p>\\n\\n<tpl for=\\\".\\\">\\n<div class=\\\"\
+        pound_animal_wrap\\\" >\\n<div class=\\\"pound_animal\\\"><img class=\\\"\
+        pound_animal_img\\\" src=\\\"{photo_url}\\\" />\\n<div class=\\\"x-editable\
+        \ pound_animal_desc\\\"><span class=\\\"x-editable pound_animal_label\\\"\
+        >Breed:<\\/span>{breed:htmlEncode}<\\/div>\\n<div class=\\\"x-editable pound_animal_desc\\\
+        \"><span class=\\\"x-editable pound_animal_label\\\">Colour:<\\/span>{colour:htmlEncode}<\\\
+        /div>\\n<div class=\\\"x-editable pound_animal_desc\\\"><span class=\\\"x-editable\
+        \ pound_animal_label\\\">Suburb:<\\/span>{suburb:htmlEncode}<\\/div>\\n<div\
+        \ class=\\\"x-editable pound_animal_desc\\\"><span class=\\\"x-editable pound_animal_label\\\
+        \">Date:<\\/span>{impounded_at:date(\\\"d/m/Y\\\")}<\\/div>\\n<div class=\\\
+        \"x-editable pound_animal_desc\\\"><span class=\\\"x-editable pound_animal_label\\\
+        \">Ref #:<\\/span>{name:htmlEncode}<\\/div>\\n<\\/div>\\n<\\/div>\\n<\\/tpl>';\n\
+        \      var template_name = 'COS Cat Template';\n      var preload_data = '[{\\\
+        \"id\\\":20587,\\\"breed\\\":\\\"DSH Cat\\\",\\\"colour\\\":\\\"White\\\"\
+        ,\\\"name\\\":\\\"CAT-33-2020-05-26\\\",\\\"name_with_category\\\":\\\"CAT-33-2020-05-26\
+        \ (Pound Domestic Cat)\\\",\\\"birthdate\\\":null,\\\"can_share\\\":false,\\\
+        \"can_socialise\\\":false,\\\"notes\\\":\\\"\\\",\\\"description\\\":\\\"\\\
+        \\nPet Details\\\\nName:\\\\nSPOT\\\\nSpecies:\\\\nCAT\\\\nBreed:\\\\nDOMESTIC\
+        \ SHORT HAIR\\\\nSex:\\\\nMALE\\\\nDate of Birth:\\\\n20/05/2012\\\\nColour:\\\
+        \\nWHITE\\\\nMarkings:\\\",\\\"special_diet\\\":false,\\\"diet\\\":\\\"\\\"\
+        ,\\\"impounded_at\\\":\\\"2020-05-26T13:13:00.000+08:00\\\",\\\"sex\\\":\\\
+        \"Unknown\\\",\\\"animal_category\\\":\\\"Pound Domestic Cat\\\",\\\"sterilised\\\
+        \":\\\"Yes\\\",\\\"species_name\\\":\\\"Cat\\\",\\\"species_abbreviation\\\
+        \":\\\"C\\\",\\\"suburb\\\":\\\"MIDVALE\\\",\\\"shire\\\":\\\"Swan Cats\\\"\
+        ,\\\"photo_url\\\":\\\"/images/animals/20587/photos/original.jpg?1590470590\\\
+        \",\\\"photo_thumbnail_url\\\":\\\"/images/animals/20587/photos/thumb.jpg?1590470590\\\
+        \"},{\\\"id\\\":20589,\\\"breed\\\":\\\"USH Juvenile\\\",\\\"colour\\\":\\\
+        \"White, brown/black \\\",\\\"name\\\":\\\"CAT-34-2020-05-27\\\",\\\"name_with_category\\\
+        \":\\\"CAT-34-2020-05-27 (Pound Feral Cat)\\\",\\\"birthdate\\\":null,\\\"\
+        can_share\\\":false,\\\"can_socialise\\\":false,\\\"notes\\\":\\\"\\\",\\\"\
+        description\\\":\\\"\\\",\\\"special_diet\\\":false,\\\"diet\\\":\\\"\\\"\
+        ,\\\"impounded_at\\\":\\\"2020-05-27T12:20:00.000+08:00\\\",\\\"sex\\\":\\\
+        \"Unknown\\\",\\\"animal_category\\\":\\\"Pound Feral Cat\\\",\\\"sterilised\\\
+        \":\\\"Unknown\\\",\\\"species_name\\\":\\\"Cat\\\",\\\"species_abbreviation\\\
+        \":\\\"C\\\",\\\"suburb\\\":\\\"MIDLAND\\\",\\\"shire\\\":\\\"Swan Cats\\\"\
+        ,\\\"photo_url\\\":\\\"/images/animals/20589/photos/original.JPG?1590554273\\\
+        \",\\\"photo_thumbnail_url\\\":\\\"/images/animals/20589/photos/thumb.JPG?1590554273\\\
+        \"},{\\\"id\\\":20599,\\\"breed\\\":\\\"DSH Cat\\\",\\\"colour\\\":\\\"Black\
+        \ and White\\\",\\\"name\\\":\\\"CAT-37-2020-05-30\\\",\\\"name_with_category\\\
+        \":\\\"CAT-37-2020-05-30 (Pound Domestic Cat)\\\",\\\"birthdate\\\":null,\\\
+        \"can_share\\\":false,\\\"can_socialise\\\":false,\\\"notes\\\":\\\"\\\",\\\
+        \"description\\\":\\\"nasty wound under arm pit - emailed vets to complain\\\
+        \",\\\"special_diet\\\":false,\\\"diet\\\":\\\"\\\",\\\"impounded_at\\\":\\\
+        \"2020-05-30T12:48:00.000+08:00\\\",\\\"sex\\\":\\\"Unknown\\\",\\\"animal_category\\\
+        \":\\\"Pound Domestic Cat\\\",\\\"sterilised\\\":\\\"Unknown\\\",\\\"species_name\\\
+        \":\\\"Cat\\\",\\\"species_abbreviation\\\":\\\"C\\\",\\\"suburb\\\":\\\"\
+        ELLENBROOK\\\",\\\"shire\\\":\\\"Swan Cats\\\",\\\"photo_url\\\":\\\"/images/animals/20599/photos/original.jpg?1590814402\\\
+        \",\\\"photo_thumbnail_url\\\":\\\"/images/animals/20599/photos/thumb.jpg?1590814402\\\
+        \"}]';\n  </script>\n</head>\n<body>\n<div id=\"page-loader\">\n  <img style=\"\
+        position:absolute; width:101px; height:105px; left:50%; top:45%; margin-left:-50px;\
+        \ margin-top: -50px;\" src=\"/images/logo.png\" />\n  <img style=\"position:absolute;\
+        \ width:43px; height:11px; left:50%; top:53%; margin-left:-21px; margin-top:\
+        \ -5px;\" src=\"/images/apploading.gif\" />\n\n  <!-- load js files here to\
+        \ ensure loader images display first -->\n  <script src=\"/web_display/ext/ext-all-dev.js\"\
+        ></script>\n  <script type=\"text/javascript\">\n      Ext.Loader.setPath('WebDisplay',\
+        \ '/web_display/app');\n      Ext.require([\n          'WebDisplay.model.Animal',\n\
+        \          'WebDisplay.store.Animal',\n          'WebDisplay.view.Viewport',\n\
+        \          'WebDisplay.view.AnimalTemplate',\n          'WebDisplay.view.Main'\n\
+        \      ])\n\n      Ext.onReady(function() {\n          var viewport = Ext.create('WebDisplay.view.Viewport');\n\
+        \      }, this);\n\n  </script>\n</div>\n</body>\n</html>\n"
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Sun, 31 May 2020 04:41:10 GMT
+      ETag:
+      - '"61215dc6427c6299ce4e028e691ea3f4"'
+      Server:
+      - Apache/2.2.15 (CentOS)
+      Status:
+      - 200 OK
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - 710edc4f-19f5-4d03-b2e2-e1d5b0d79d54
+      X-Runtime:
+      - '0.102897'
+      X-UA-Compatible:
+      - chrome=1
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+    url: http://www.swanamf.com.au/cats
+recorded_with: betamax/0.8.1

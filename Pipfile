@@ -25,6 +25,7 @@ responses = "*"
 ipdb = "*"
 pdbpp = "*"
 pre-commit = "*"
+betamax-serializers = "*"
 
 [requires]
 python_version = "3.8"

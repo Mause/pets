@@ -1,0 +1,144 @@
+http_interactions:
+- recorded_at: '2020-05-31T04:41:11'
+  request:
+    body:
+      encoding: utf-8
+      string: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.23.0
+    method: GET
+    uri: https://eservices.gosnells.wa.gov.au/data/impounds
+  response:
+    body:
+      encoding: utf-8
+      string: "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <meta charset=\"utf-8\"\
+        \ />\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n\
+        \    <title>Animals currently impounded :: City of Gosnells</title>\r\n  \
+        \  <link rel=\"shortcut icon\" href=\"https://www.gosnells.wa.gov.au/files/templates/00000000-0000-0000-0000-000000000000/0509650e-6570-4c85-99be-550d423317ed/favicon.ico\"\
+        \ type=\"image/x-icon\">\r\n    <link href=\"/Data/Content/www.css\" type=\"\
+        text/css\" rel=\"stylesheet\" />\r\n    <style type=\"text/css\">\r\n    \
+        \    body {\r\n            background-image: url(http://www.gosnells.wa.gov.au/files/templates/00000000-0000-0000-0000-000000000000/0509650e-6570-4c85-99be-550d423317ed/main_bg-resp.jpg);\r\
+        \n            background-color: #f5f7f9;\r\n            background-repeat:\
+        \ no-repeat;\r\n        }\r\n        .contentdiv {\r\n            background-color:\
+        \ #FFFFFF;\r\n            padding: 10px;\r\n            margin-top:23px;\r\
+        \n        }\r\n        .logotop {\r\n            margin-top: 23px;\r\n   \
+        \     }\r\n        .mainwidth {\r\n            max-width: 100%;\r\n      \
+        \      width:1200px;\r\n        }\r\n    </style>\r\n\r\n    <script src=\"\
+        https://www.gosnells.wa.gov.au/files/templates/00000000-0000-0000-0000-000000000000/0509650e-6570-4c85-99be-550d423317ed/jquery.js\"\
+        \ language=\"javascript\" type=\"text/javascript\"></script>\r\n</head>\r\n\
+        <body>\r\n  \r\n    <div class=\"mainwidth\">\r\n        <div class=\"logotop\"\
+        ><a href=\"http://www.gosnells.wa.gov.au/home\"><img src=\"http://www.gosnells.wa.gov.au/files/templates/00000000-0000-0000-0000-000000000000/0509650e-6570-4c85-99be-550d423317ed/logo_main.gif\"\
+        \ alt=\"City of Gosnells\" width=\"217\" height=\"49\" style=\"border:0px;\"\
+        ></a></div>\r\n        <div class=\"contentdiv\">\r\n            \r\n\r\n\r\
+        \n\r\n<style type=\"text/css\">\r\n    table {\r\n        width: 55%;\r\n\
+        \        max-width: 1200px;\r\n    }\r\n\r\n        table td:first-of-type\
+        \ {\r\n            background: #d6e0e7;\r\n            width: 100px;\r\n \
+        \       }\r\n\r\n        table th, table td {\r\n            padding: 7px;\r\
+        \n        }\r\n        td:nth-of-type(4)  {\r\n            width:210px;\r\n\
+        \            max-width: 210px;\r\n        }\r\n\r\n        td:nth-of-type(4)\
+        \ img {\r\n            max-width:200px;\r\n        }\r\n        table th {\r\
+        \n            border: 1px solid #2386B0;\r\n        }\r\n    div.right {\r\
+        \n        float: right;\r\n        width: 43%;\r\n        margin-right: 10px;\r\
+        \n        margin-bottom: 20px;\r\n    }\r\n    @media (max-width: 870px) {\r\
+        \n        div.right {\r\n            float: none;\r\n            width: 96%;\r\
+        \n            max-width: 96%;\r\n        }\r\n\r\n        td:nth-of-type(4)\
+        \ {\r\n            width: 100%;\r\n            max-width: 96%;\r\n       \
+        \ }\r\n\r\n            td:nth-of-type(4) img {\r\n                max-width:\
+        \ 96%;\r\n            }\r\n\r\n        table {\r\n            width: 95%;\r\
+        \n            max-width: 550px;\r\n        }\r\n    }\r\n    @media (max-width:\
+        \ 500px) {\r\n        table {\r\n            width: 95%;\r\n        }\r\n\r\
+        \n            table td {\r\n                position: relative;\r\n      \
+        \      }\r\n\r\n\r\n\r\n        thead tr {\r\n            position: absolute;\r\
+        \n            top: -9999px;\r\n            left: -9999px;\r\n        }\r\n\
+        \r\n        td:before {\r\n            float: left;\r\n            height:\
+        \ 20px;\r\n            width: 45%;\r\n            padding-right: 10px;\r\n\
+        \            white-space: nowrap;\r\n        }\r\n\r\n        table th, table\
+        \ td {\r\n            display: block;\r\n            width: 96%;\r\n     \
+        \       padding: 7px 2%;\r\n        }\r\n\r\n            table td:first-of-type\
+        \ {\r\n                width: 96%;\r\n            }\r\n\r\n        td:nth-of-type(1):before\
+        \ {\r\n            content: \"Impound number\";\r\n        }\r\n\r\n     \
+        \   td:nth-of-type(2):before {\r\n            content: \"Impound date\";\r\
+        \n        }\r\n\r\n        td:nth-of-type(3):before {\r\n            content:\
+        \ \"Gender\";\r\n        }\r\n\r\n        td:nth-of-type(4):before {\r\n \
+        \           content: \"Photo\";\r\n        }\r\n\r\n        .googlemaps {\r\
+        \n            display:none;\r\n        }\r\n    }\r\n\r\n        h2 {\r\n\
+        \            margin-top: 23px;\r\n        }\r\n    .clear {\r\n        clear:\
+        \ both;\r\n    }\r\n    p.marginright {\r\n        margin-right:10px;\r\n\
+        \    }\r\n</style>\r\n\r\n<h1>Animals currently impounded </h1>\r\n\r\n<div\
+        \ class=\"right\">\r\n\r\n    <h2>Related links</h2>\r\n\r\n    <ul>\r\n \
+        \       <li><a href=\"http://www.gosnells.wa.gov.au/About_our_City/Facilities/Impound_Management_Facility/Dogs_currently_impounded\"\
+        >Impound fees and information</a></li>\r\n        <li><a href=\"http://www.gosnells.wa.gov.au/About_our_City/Facilities/Impound_Management_Facility\"\
+        >Impound management facility</a></li>\r\n    </ul>\r\n\r\n<h2>Contact the\
+        \ Impound Management Facility</h2>\r\n\r\n<p>Phone Ranger Services on 9397\
+        \ 3000.</p>\r\n\r\n<p>Opening hours:</p>\r\n<ul>\r\n    <li>3.30pm to 4.30pm\
+        \ Monday to Friday</li>\r\n    <li>9am to 9.30 am Saturday, Sunday and Public\
+        \ Holidays</li>\r\n    <li>Closed on Christmas day and Good Friday.</li>\r\
+        \n</ul>\r\n\r\n<iframe width=\"100%\" height=\"300\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.7628476424493!2d115.98283631516361!3d-32.04860998119802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32be2f18d9ce49%3A0xcd8c57c2123012ef!2sCity+of+Gosnells+Pound!5e0!3m2!1sen!2sau!4v1491870445721\"\
+        \ class=\"googlemaps\"></iframe>\r\n\r\n</div>\r\n\r\n\r\n    <table>\r\n\
+        \        <thead>\r\n            <tr>\r\n                <th>Impound number</th>\r\
+        \n                <th>Impound date</th>\r\n                <th>Gender</th>\r\
+        \n                <th>Photo</th>\r\n            </tr>\r\n        </thead>\r\
+        \n        <tbody>\r\n                <tr>\r\n                    <td>IMP20/0182</td>\r\
+        \n                    <td>30 May 2020\r\n                   <br /><strong>Owner\
+        \ has been notified</strong>\r\n                    </td>\r\n            \
+        \        <td>Female</td>\r\n                    <td>\r\n                 \
+        \   <a href=\"https://eservices.gosnells.wa.gov.au/Data/remote.axd/eservices.gosnells.wa.gov.au/ImpoundImgs//74039_$P1RAMAP_Tibetan\
+        \ Mastiff x.jpg?width=800\" target=\"_blank\"><img src=\"https://eservices.gosnells.wa.gov.au/Data/remote.axd/eservices.gosnells.wa.gov.au/ImpoundImgs//74039_$P1RAMAP_Tibetan\
+        \ Mastiff x.jpg?width=200\" width=\"200\" alt=\"Photo of impound number IMP20/0182\"\
+        \ /></a>\r\n\r\n                    </td>\r\n                </tr>\r\n   \
+        \             <tr>\r\n                    <td>IMP20/0181</td>\r\n        \
+        \            <td>30 May 2020\r\n                   <br /><strong>Owner has\
+        \ been notified</strong>\r\n                    </td>\r\n                \
+        \    <td>Male</td>\r\n                    <td>\r\n                    <a href=\"\
+        https://eservices.gosnells.wa.gov.au/Data/remote.axd/eservices.gosnells.wa.gov.au/ImpoundImgs//74035_$P1RAMAP_Kx86zUV0kUK_MUs6CXCyHw.jpg?width=800\"\
+        \ target=\"_blank\"><img src=\"https://eservices.gosnells.wa.gov.au/Data/remote.axd/eservices.gosnells.wa.gov.au/ImpoundImgs//74035_$P1RAMAP_Kx86zUV0kUK_MUs6CXCyHw.jpg?width=200\"\
+        \ width=\"200\" alt=\"Photo of impound number IMP20/0181\" /></a>\r\n\r\n\
+        \                    </td>\r\n                </tr>\r\n                <tr>\r\
+        \n                    <td>IMP20/0179</td>\r\n                    <td>27 May\
+        \ 2020\r\n                   \r\n                    </td>\r\n           \
+        \         <td>Male</td>\r\n                    <td>\r\n                  \
+        \  <a href=\"https://eservices.gosnells.wa.gov.au/Data/remote.axd/eservices.gosnells.wa.gov.au/ImpoundImgs//73748_$P1RAMAP_1aqLXPH-x06txGHzeXjL7g.jpg?width=800\"\
+        \ target=\"_blank\"><img src=\"https://eservices.gosnells.wa.gov.au/Data/remote.axd/eservices.gosnells.wa.gov.au/ImpoundImgs//73748_$P1RAMAP_1aqLXPH-x06txGHzeXjL7g.jpg?width=200\"\
+        \ width=\"200\" alt=\"Photo of impound number IMP20/0179\" /></a>\r\n\r\n\
+        \                    </td>\r\n                </tr>\r\n        </tbody>\r\n\
+        \    </table>\r\n\r\n<div class=\"clear\"></div>\r\n        </div>\r\n   \
+        \ </div>\r\n        <script>\r\n            (function (i, s, o, g, r, a, m)\
+        \ {\r\n                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function\
+        \ () {\r\n                    (i[r].q = i[r].q || []).push(arguments)\r\n\
+        \                }, i[r].l = 1 * new Date(); a = s.createElement(o),\r\n \
+        \               m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g;\
+        \ m.parentNode.insertBefore(a, m)\r\n            })(window, document, 'script',\
+        \ '//www.google-analytics.com/analytics.js', 'ga');\r\n\r\n            ga('create',\
+        \ 'UA-62576793-1', 'auto');\r\n            ga('send', 'pageview');\r\n   \
+        \     </script>\r\n</body>\r\n</html>\r\n"
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '8125'
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Sun, 31 May 2020 04:41:11 GMT
+      Server:
+      - Microsoft-IIS/8.5
+      X-AspNet-Version:
+      - 4.0.30319
+      X-AspNetMvc-Version:
+      - '4.0'
+      X-Powered-By:
+      - ASP.NET
+      - ARR/3.0
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://eservices.gosnells.wa.gov.au/data/impounds
+recorded_with: betamax/0.8.1

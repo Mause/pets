@@ -1,0 +1,59 @@
+http_interactions:
+- recorded_at: '2020-05-31T04:41:08'
+  request:
+    body:
+      encoding: utf-8
+      string: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.23.0
+    method: GET
+    uri: http://rtcdn.cincopa.com/jsonv2.aspx?fid=AcCALWejDppN
+  response:
+    body:
+      encoding: utf-8
+      string: '{"items":[{"content_url":"https://mediacdnl3.cincopa.com/C161blackandwhitekitten.JPG?o=1\u0026res=1354\u0026p=y\u0026pid=872206\u0026ph4=0kzDAYzQlDQ09D","storage":79,"gps":{"dir":"","lat":"-32.241078","alt":"22","long":"115.813911"},"thumbnail_url":"https://mediacdnl3.cincopa.com/C161blackandwhitekitten.JPG?o=2\u0026res=1354\u0026p=y\u0026pid=872206\u0026ph4=0kzDAYzQlDQ09D","description":"Black
+        and white DSH - Found in Parmelia","versions":{"jpg_1200x900":{"filesize":"159417","name":"1200x900","url":"https://mediacdnl3.cincopa.com/v2/872206/1354!0kzDAYzQlDQ09D/4/C161blackandwhitekitten.JPG","mime":"image/jpeg"},"original":{"filesize":"330322","name":"original","url":"https://mediacdnl3.cincopa.com/v2/872206/1354!0kzDAYzQlDQ09D/0/C161blackandwhitekitten.JPG","mime":"image/jpeg"},"jpg_200x150":{"filesize":"7302","name":"200x150","url":"https://mediacdnl3.cincopa.com/v2/872206/1354!0kzDAYzQlDQ09D/2/C161blackandwhitekitten.JPG","mime":"image/jpeg"},"jpg_100x75":{"filesize":"2591","name":"100x75","url":"https://mediacdnl3.cincopa.com/v2/872206/1354!0kzDAYzQlDQ09D/3/C161blackandwhitekitten.JPG","mime":"image/jpeg"},"jpg_600x450":{"filesize":"48644","name":"600x450","url":"https://mediacdnl3.cincopa.com/v2/872206/1354!0kzDAYzQlDQ09D/1/C161blackandwhitekitten.JPG","mime":"image/jpeg"}},"id":"205914611","content_type":"image/jpeg","rid":"AACDjYE7Bo08","modified":"2020-05-25T07:40:41.0000000Z","aspect_ratio":"0.56","title":"Impound
+        C161","filename":"C 161 black and white kitten.JPG"}],"title":"Impounded Animals","description":""}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE, PUT, HEAD
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, max-age=60
+      Content-Length:
+      - '1545'
+      Content-Type:
+      - application/javascript; charset=utf-8
+      Date:
+      - Sun, 31 May 2020 04:41:10 GMT
+      Expires:
+      - Sun, 31 May 2020 04:42:11 GMT
+      Last-Modified:
+      - Sun, 31 May 2020 04:41:11 GMT
+      Server:
+      - Microsoft-IIS/8.5
+      Timing-Allow-Origin:
+      - '*'
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      cpcache:
+      - 'json_cached '
+      fpm:
+      - rt-FP20
+    status:
+      code: 200
+      message: OK
+    url: http://rtcdn.cincopa.com/jsonv2.aspx?fid=AcCALWejDppN
+recorded_with: betamax/0.8.1
