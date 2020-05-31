@@ -395,11 +395,16 @@ def default(obj):
 
 
 def main():
-    for source in tqdm(sources):
-        data = list(source())
+    i = tqdm(sources)
+    for source in i:
+        i.set_description(source.__name__)
+        try:
+            data = list(source())
 
-        with open(f'sources/{source.__name__}.json', 'w') as fh:
-            json.dump(data, fh, indent=2, default=default)
+            with open(f'sources/{source.__name__}.json', 'w') as fh:
+                json.dump(data, fh, indent=2, default=default)
+        except Exception as e:
+            print(source, 'failed with', e)
 
 
 if __name__ == '__main__':
