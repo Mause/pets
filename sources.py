@@ -399,7 +399,7 @@ def main():
     for source in i:
         i.set_description(source.__name__)
         try:
-            data = list(source())
+            data = list(source(Session()))
 
             with open(f'sources/{source.__name__}.json', 'w') as fh:
                 json.dump(data, fh, indent=2, default=default)
