@@ -46,7 +46,7 @@ class Pet(object):
 
 
 def get(session: Session, url: str, *args, **kwargs):
-    r = session.get(*args, **kwargs)
+    r = session.get(url, *args, **kwargs)
     r.raise_for_status()
     return fromstring(r.text)
 
