@@ -1,7 +1,8 @@
 import json
 import re
+from dataclasses import asdict, dataclass
 from functools import lru_cache
-from typing import Callable, Iterable, List
+from typing import Callable, Iterable, Iterator, List, Optional, Tuple, TypeVar
 from urllib.parse import urljoin
 
 import arrow
@@ -15,6 +16,7 @@ from tqdm import tqdm
 
 _ctx = lru_cache()(HTMLTranslator().css_to_xpath)
 parser = arrow.parser.DateTimeParser('en_au', 100)
+T = TypeVar('T')
 
 
 def ctx(el, selector):
@@ -29,20 +31,16 @@ def parse(string, fmt=None):
     return arrow.Arrow.fromdatetime(t)
 
 
-@attr.s
-class Pet(object):
-    location = attr.ib()
-    image = attr.ib()
-    breed = attr.ib()
-    color = attr.ib()
-    gender = attr.ib()
-    found_on = attr.ib()
-    source = attr.ib()
-    url = attr.ib()
-
-    @found_on.validator
-    def validate(self, attr, value):
-        assert isinstance(value, arrow.Arrow)
+@dataclass
+class Pet:
+    location: Optional[str]
+    image: Optional[str]
+    breed: Optional[str]
+    color: Optional[str]
+    gender: Optional[str]
+    found_on: arrow.Arrow
+    source: str
+    url: str
 
 
 def get(session: Session, url: str, *args, **kwargs):
@@ -318,7 +316,7 @@ def gosnells(session):
         )
 
 
-def adjacent(iterable):
+def adjacent(iterable: List[T]) -> Iterator[Tuple[T]]:
     iterable = iter(iterable)
     try:
         while True:
@@ -393,7 +391,7 @@ def default(obj):
     if isinstance(obj, arrow.Arrow):
         return obj.isoformat()
     else:
-        return attr.asdict(obj)
+        return asdict(obj)
 
 
 def main():
