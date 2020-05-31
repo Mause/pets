@@ -316,11 +316,11 @@ def gosnells(session):
         )
 
 
-def adjacent(iterable: List[T]) -> Iterator[Tuple[T]]:
-    iterable = iter(iterable)
+def adjacent(iterable: List[T]) -> Iterator[Tuple[T, T]]:
+    i = iter(iterable)
     try:
         while True:
-            yield (next(iterable), next(iterable))
+            yield (next(i), next(i))
     except StopIteration:
         pass
 
