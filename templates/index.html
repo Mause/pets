@@ -24,10 +24,10 @@
 
     <table>
       <tbody>
-        <tr><td>Location:</td><td>{{listing.location}}</td></tr>
-        <tr><td>Breed:</td><td>{{listing.breed}}</td></tr>
-        <tr><td>Color:</td><td>{{listing.color}}</td></tr>
-        <tr><td>Gender:</td><td>{{listing.gender}}</td></tr>
+        <tr><td>Location:</td><td>{{listing.location or 'Unknown'}}</td></tr>
+        <tr><td>Breed:</td><td>{{listing.breed or 'Unknown'}}</td></tr>
+        <tr><td>Color:</td><td>{{listing.color or 'Unknown'}}</td></tr>
+        <tr><td>Gender:</td><td>{{listing.gender or 'Unknown'}}</td></tr>
         <tr><td>Found on:</td><td>{{listing.found_on.format('DD/MM/YYYY')}}</td></tr>
         <tr><td>Source:</td><td>{{listing.source}}</td></tr>
         <tr><td><a href="{{listing.url}}">More information</a></td></tr>
