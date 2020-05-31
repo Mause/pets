@@ -1,5 +1,5 @@
 http_interactions:
-- recorded_at: '2020-05-31T04:41:08'
+- recorded_at: '2020-05-31T04:44:19'
   request:
     body:
       encoding: utf-8
@@ -8,7 +8,7 @@ http_interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - none
       Connection:
       - keep-alive
       User-Agent:
@@ -35,11 +35,11 @@ http_interactions:
       Content-Type:
       - application/javascript; charset=utf-8
       Date:
-      - Sun, 31 May 2020 04:41:10 GMT
+      - Sun, 31 May 2020 04:44:21 GMT
       Expires:
-      - Sun, 31 May 2020 04:42:11 GMT
+      - Sun, 31 May 2020 04:45:22 GMT
       Last-Modified:
-      - Sun, 31 May 2020 04:41:11 GMT
+      - Sun, 31 May 2020 04:44:22 GMT
       Server:
       - Microsoft-IIS/8.5
       Timing-Allow-Origin:

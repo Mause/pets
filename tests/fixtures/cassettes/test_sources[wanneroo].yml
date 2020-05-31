@@ -1,5 +1,5 @@
 http_interactions:
-- recorded_at: '2020-05-31T04:41:02'
+- recorded_at: '2020-05-31T04:44:12'
   request:
     body:
       encoding: utf-8
@@ -8,7 +8,7 @@ http_interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - none
       Connection:
       - keep-alive
       User-Agent:
@@ -17,19 +17,17 @@ http_interactions:
     uri: http://www.wanneroo.wa.gov.au/animals/dogs
   response:
     body:
-      base64_string: H4sIAAAAAAAAAwMAAAAAAAAAAAA=
       encoding: UTF-8
+      string: ''
     headers:
       Connection:
       - Keep-Alive
-      Content-Encoding:
-      - gzip
       Content-Length:
-      - '20'
+      - '0'
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Sun, 31 May 2020 04:41:03 GMT
+      - Sun, 31 May 2020 04:44:13 GMT
       Keep-Alive:
       - timeout=5, max=100
       Location:
@@ -42,7 +40,7 @@ http_interactions:
       code: 302
       message: Found
     url: http://www.wanneroo.wa.gov.au/animals/dogs
-- recorded_at: '2020-05-31T04:41:03'
+- recorded_at: '2020-05-31T04:44:13'
   request:
     body:
       encoding: utf-8
@@ -51,7 +49,7 @@ http_interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - none
       Connection:
       - keep-alive
       User-Agent:
@@ -60,21 +58,242 @@ http_interactions:
     uri: https://www.wanneroo.wa.gov.au/animals/dogs
   response:
     body:
-      base64_string: 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
       encoding: UTF-8
+      string: "<!DOCTYPE html>\n<!--[if IE 7]>          <html class=\"no-js ie9 ie8\
+        \ ie7\"  lang=\"en\"> <![endif]-->\n<!--[if IE 8]>          <html class=\"\
+        no-js ie9 ie8\"  lang=\"en\"> <![endif]-->\n<!--[if IE 9]>          <html\
+        \ class=\"no-js ie9\"  lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> \
+        \ <html class=\"no-js\"  lang=\"en\"> <!--<![endif]-->\n    <head>\n    \t\
+        <link rel=\"alternate\" type=\"application/rss+xml\" title=\"RSS\" href=\"\
+        https://www.wanneroo.wa.gov.au/rss/news\">\n        <link rel=\"search\" type=\"\
+        application/opensearchdescription+xml\" title=\"City of Wanneroo\" href=\"\
+        https://www.wanneroo.wa.gov.au/site/scripts/opensearch.php\">\n        <link\
+        \ rel=\"shortcut icon\" type=\"image/x-icon\" href=\"//www.wanneroo.wa.gov.au/site/favicon.ico?v=2\"\
+        >\n        <link href='//fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic,500,500italic,700,700italic,900,900italic'\
+        \ rel='stylesheet' type='text/css'>\n        <link rel=\"stylesheet\" type=\"\
+        text/css\" href=\"//www.wanneroo.wa.gov.au/site/styles/generic/base.css\"\
+        >\n        <link rel=\"stylesheet\" type=\"text/css\" href=\"//www.wanneroo.wa.gov.au/site/styles/standard.css?v1.70.0\"\
+        >\n        <!--[if lte IE 9]>\n            <script src=\"//www.wanneroo.wa.gov.au/site/js/html5shiv.js\"\
+        ></script>\n        <![endif]-->\n<!-- Global site tag (gtag.js) - Google\
+        \ Analytics -->\r\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-49670030-1\"\
+        ></script>\r\n<script>\r\n  window.dataLayer = window.dataLayer || [];\r\n\
+        \  function gtag(){dataLayer.push(arguments);}\r\n  gtag('js', new Date());\r\
+        \n\r\n  gtag('config', 'UA-49670030-1');\r\n</script>\r\n<!-- Facebook Pixel\
+        \ Code -->\r\n<script>\r\n!function(f,b,e,v,n,t,s)\r\n{if(f.fbq)return;n=f.fbq=function(){n.callMethod?\r\
+        \nn.callMethod.apply(n,arguments):n.queue.push(arguments)};\r\nif(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\r\
+        \nn.queue=[];t=b.createElement(e);t.async=!0;\r\nt.src=v;s=b.getElementsByTagName(e)[0];\r\
+        \ns.parentNode.insertBefore(t,s)}(window, document,'script',\r\n'https://connect.facebook.net/en_US/fbevents.js';);\r\
+        \nfbq('init', '{367990463887414}');\r\nfbq('track', 'PageView');\r\n</script>\r\
+        \n<noscript>\r\n<img height=\"1\" width=\"1\" style=\"display:none\"\r\nsrc=\"\
+        https://www.facebook.com/tr?id={367990463887414}&ev=PageView&noscript=1\"\
+        />;\r\n</noscript>\r\n<!-- End Facebook Pixel Code -->        <link rel=\"\
+        schema.dcterms\" href=\"http://purl.org/dc/terms\">\n        <meta name=\"\
+        author\" content=\"City of Wanneroo\">\n        <meta name=\"generator\" content=\"\
+        http://www.jadu.net\">\n        <meta name=\"revisit-after\" content=\"2 days\"\
+        >\n        <meta name=\"robots\" content=\"index,follow\">\n        <meta\
+        \ name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n   \
+        \     <meta name=\"dcterms.creator\" content=\"City of Wanneroo\">\n     \
+        \   <meta name=\"dcterms.coverage\" content=\"Wanneroo, Perth, Western Australia,\
+        \ Australia\">\n        <meta name=\"dcterms.format\" content=\"text/html\"\
+        >\n        <meta name=\"dcterms.identifier\" content=\"https://www.wanneroo.wa.gov.au/animals/dogs\"\
+        >\n        <meta name=\"dcterms.language\" content=\"en\">\n        <meta\
+        \ name=\"dcterms.publisher\" content=\"City of Wanneroo\">\n        <meta\
+        \ name=\"dcterms.rightsHolder\" content=\"City of Wanneroo\">\n        <meta\
+        \ name=\"dcterms.description\" content=\"City of Wanneroo is committed to\
+        \ providing accessible web content for all\">\n        <meta name=\"dcterms.subject\"\
+        \ content=\"Accessibility, dda, disability discrimination act, disabled access,\
+        \ access keys, City of Wanneroo, Local Government, Council, Employment, Planning,\
+        \ Waste Collection, Zoning, Infrastructure, Rates Payments, Lost Pets, Search,\
+        \ Community, Events, Emergency Management, Library, Libraries, Bush Fire,\
+        \ Environment, Tourism\">\n        <meta name=\"dcterms.title\" content=\"\
+        City of Wanneroo accessibility features\">\n        <meta name=\"description\"\
+        \ content=\"City of Wanneroo is committed to providing accessible web content\
+        \ for all\">\n        <meta name=\"keywords\" content=\"Accessibility, dda,\
+        \ disability discrimination act, disabled access, access keys, City of Wanneroo,\
+        \ Local Government, Council, Employment, Planning, Waste Collection, Zoning,\
+        \ Infrastructure, Rates Payments, Lost Pets, Search, Community, Events, Emergency\
+        \ Management, Library, Libraries, Bush Fire, Environment, Tourism\">\n   \
+        \     <script type=\"text/javascript\" src=\"//www.wanneroo.wa.gov.au/site/javascript/swfobject.js\"\
+        ></script>\n        <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\"\
+        ></script>\n        <script type=\"text/javascript\">\n            jQuery.noConflict();\n\
+        \    \t\tjQuery('html').removeClass('no-js');\n\t\t</script>\n        <title>Dogs\
+        \ in the Animal Care Centre - City of Wanneroo</title>\n    </head>\n    <body\
+        \ class=\"body\">\n    <nav aria-label=\"skip links\">\n        <ul class=\"\
+        skip-links item-list\">\n            <li class=\"item-list__item\"><a class=\"\
+        skip-links__link\" href=\"https://www.wanneroo.wa.gov.au/animals/dogs#content\"\
+        \ rel=\"nofollow\">Skip to content</a></li>\n        </ul>\n    </nav>\n<!--\
+        \ googleoff: index -->\n        <section aria-label=\"Navigation Button\"\
+        >\n            <a class=\"show-hide-toolpane\" href=\"#\">Menu</a>\n     \
+        \   </section>\n        <aside class=\"toolpane\" aria-label=\"Navigation\"\
+        >\n            <div class=\"toolpane-inner\">\n                <span class=\"\
+        h3\">Navigation</span>\n                <ul class=\"item-list item-list__rich\
+        \ categories\">\n                                        <li>\n          \
+        \              <a id=\"skipToNavAnchor\" href=\"https://www.wanneroo.wa.gov.au/info/20003/council\"\
+        >Council</a>\n                    </li>\n                    <li>\n      \
+        \                  <a href=\"https://www.wanneroo.wa.gov.au/info/20040/libraries\"\
+        >Libraries</a>\n                    </li>\n                    <li>\n    \
+        \                    <a href=\"https://www.wanneroo.wa.gov.au/info/20001/sport_and_leisure\"\
+        >Sport &amp; leisure</a>\n                    </li>\n                    <li>\n\
+        \                        <a href=\"https://www.wanneroo.wa.gov.au/info/20004/community\"\
+        >Community</a>\n                    </li>\n                    <li>\n    \
+        \                    <a href=\"https://www.wanneroo.wa.gov.au/info/20005/business\"\
+        >Business</a>\n                    </li>\n                    <li>\n     \
+        \                   <a href=\"https://www.wanneroo.wa.gov.au/info/20006/animals_and_pets\"\
+        >Animals and pets</a>\n                    </li>\n                    <li>\n\
+        \                        <a href=\"https://www.wanneroo.wa.gov.au/info/20008/waste_and_recycling\"\
+        >Waste and Recycling</a>\n                    </li>\n                    <li>\n\
+        \                        <a href=\"https://www.wanneroo.wa.gov.au/info/20009/things_to_do\"\
+        >Things to do</a>\n                    </li>\n                    <li>\n \
+        \                       <a href=\"https://www.wanneroo.wa.gov.au/info/20017/planning_and_building\"\
+        >Planning and building</a>\n                    </li>\n                  \
+        \  <li>\n                        <a href=\"https://www.wanneroo.wa.gov.au/info/20035/community_health_and_safety\"\
+        >Community health and safety</a>\n                    </li>\n            \
+        \        <li>\n                        <a href=\"https://www.wanneroo.wa.gov.au/info/20041/environment\"\
+        >Environment</a>\n                    </li>\n                    <li>\n  \
+        \                      <a href=\"https://www.wanneroo.wa.gov.au/info/20062/youth\"\
+        >Youth</a>\n                    </li>\n                    <li>\n        \
+        \                <a href=\"https://www.wanneroo.wa.gov.au/info/20125/your_say\"\
+        >Your Say</a>\n                    </li>\n                </ul>\n        \
+        \        <div class=\"account\">\n                    <span class=\"h3\">My\
+        \ Wanneroo</span>\n                    <a class=\"button\" href=\"https://www.wanneroo.wa.gov.au/register\"\
+        >Register</a>\n                    <a class=\"button\" href=\"https://www.wanneroo.wa.gov.au/account/signin\"\
+        >Sign in</a>\n                    <p class=\"subext\"><a href=\"https://www.wanneroo.wa.gov.au/account/forgot_password\"\
+        >Forgot your password?</a><br /><a href=\"/accounthelp\">Account and registration\
+        \ help</a></p>\n                </div>\n                <div class=\"social\"\
+        >\n                    <span class=\"h3\">Social media</span>\n          \
+        \          <a href=\"https://www.facebook.com/CityofWanneroo\"><img alt=\"\
+        Facebook\" src=\"/site/img/icons/social/facebook.png\"></a><a href=\"https://twitter.com/CityofWanneroo\"\
+        ><img alt=\"Twitter\" src=\"/site/img/icons/social/twitter.png\"></a><a href=\"\
+        https://www.youtube.com/user/CityWanneroo\"><img alt=\"Youtube\" src=\"/site/img/icons/social/youtube.png\"\
+        ></a><a href=\"/enewslettersubscription\"><img alt=\"Enewsletter subscription\"\
+        \ src=\"/site/img/icons/social/enewsletters.png\"></a>\n                </div>\n\
+        \n\n            </div>\n        </aside>\n<!-- googleon: index -->\n    \t\
+        <!-- googleoff: index -->\n    \t<header>\n    \t\t<div class=\"container\"\
+        >\n        \t\t<div class=\"logo\"><a href=\"https://www.wanneroo.wa.gov.au\"\
+        >City of Wanneroo: Celebrating 20 years as a city</a></div>\n    \t\t</div>\n\
+        \            <a class=\"show-hide-language\" href=\"https://www.wanneroo.wa.gov.au/translations\"\
+        ><span>Language</span></a>\n            <form action=\"/site_search/results/\"\
+        \ method=\"get\" class=\"form__search\">\n                <a class=\"search-show-hide\"\
+        \ href=\"#\"><span>Search this site</span></a>\n                <label class=\"\
+        visually-hidden\" for=\"search-site\">Search this site</label>\n         \
+        \       <input class=\"field\" type=\"text\" size=\"18\" name=\"q\" placeholder=\"\
+        Search\" id=\"search-site\" title=\"search-site\">\n                <input\
+        \ type=\"submit\" class=\"button button__primary\" value=\"\uE956\">\n   \
+        \         </form>\n    \t</header>\n    \t<!-- googleon: index -->\n    <main\
+        \ class=\"wrapper\">\n        <div id=\"content\" tabindex=\"-1\" class=\"\
+        skip-links__anchor visually-hidden\"></div>\n        <div class=\"container\"\
+        >\n    <!--googleoff: snippet-->\n        <div class=\"alert announcement\"\
+        >\n            <h2 class=\"title box-header icon-info-circled\">COVID-19 recovery\
+        \ information and updates</h2>\n            <p><span>With the announcement\
+        \ of the State Government&rsquo;s plan to move into Phase 3 of its COVID-19\
+        \ recovery roadmap, City services and facilities are currently being reviewed\
+        \ for reopening in early June 2020. </span>             <a href=\"https://www.wanneroo.wa.gov.au/COVID-19recovery\"\
+        >Click here to find out more</a>\n</p>\n        </div>\n    <!--googleon:\
+        \ snippet-->\n<a href=\"/\" class=\"home__button button button__primary\"\
+        >Home</a>\n        <h1>Dogs in the Animal Care Centre</h1>\n<!-- googleoff:\
+        \ all -->\n                <nav class=\"breadcrumb\" aria-label=\"Breadcrumb\
+        \ Navigation\">\n            <ol class=\"breadcrumb-list\">\n            \
+        \    <li>\n                    <a href=\"https://www.wanneroo.wa.gov.au\"\
+        \ rel=\"home\">Home</a>\n                </li>\n                <li>\n   \
+        \                 <span>Animal Care Centre</span>\n                </li>\n\
+        \            </ol>\n        </nav>\n<!-- googleon: all -->\n\n\n<p class=\"\
+        summary\">\n            There are currently\n        3 lost dogs        recorded\
+        \ in Wanneroo.\n    </p>\n\n    <p>Browse the listing below, or <a href=\"\
+        #refine\">refine your search</a>.</p>\n\n<a class=\"item-list__article boxed\"\
+        \ href=\"/animals/dogs/6245-white-female-koolie-x-kelpie\">\n            <img\
+        \ src=\"/lost-animals/images/5ed2005883946.jpg\" alt=\"\" class=\"mobile-show\"\
+        >\n        <h2>White female Koolie x Kelpie</h2>\n        <p>\n          \
+        \  Admitted 4 days ago            on <strong>28/05/2020</strong>\n       \
+        \                     from <strong>Clarkson - 6030</strong>\n            \
+        \        </p>\n    <p>Animal number: <strong>DOG-6245</strong></p>\n</a>\n\
+        <a class=\"item-list__article boxed\" href=\"/animals/dogs/6246-black-white-female-husky\"\
+        >\n            <img src=\"/lost-animals/images/5ed222b185d3a.jpg\" alt=\"\"\
+        \ class=\"mobile-show\">\n        <h2>Black &amp; white female Husky</h2>\n\
+        \        <p>\n            Admitted yesterday            on <strong>30/05/2020</strong>\n\
+        \                            from <strong>Sinagra - 6065</strong>\n      \
+        \              </p>\n    <p>Animal number: <strong>DOG-6246</strong></p>\n\
+        </a>\n<a class=\"item-list__article boxed\" href=\"/animals/dogs/6247-black-white-female-husky\"\
+        >\n            <img src=\"/lost-animals/images/5ed221b7e64ec.jpg\" alt=\"\"\
+        \ class=\"mobile-show\">\n        <h2>Black &amp; white female Husky</h2>\n\
+        \        <p>\n            Admitted yesterday            on <strong>30/05/2020</strong>\n\
+        \                            from <strong>Sinagra - 6065</strong>\n      \
+        \              </p>\n    <p>Animal number: <strong>DOG-6247</strong></p>\n\
+        </a>\n    <h2 id=\"refine\">Refine your search</h2>\n    <div class=\"boxed\
+        \ boxed__primary filter-results\">\n        \n\t<form action=\"/animals/dogs\"\
+        \ method=\"get\"  class=\"form form--horizontal\">\n\t\t\t\t\n\t\t\n\t\t\t\
+        \t\n\t\t\t\t\t\t\n    <div  class=\"form__group form__field_breed\"><label\
+        \ for=\"form1__field__breed\"  class=\"control__label\">Breed\n          \
+        \  \n        </label><div  class=\"controls\"><select id=\"form1__field__breed\"\
+        \ name=\"breed\"  class=\"form__control select\"><option value=\"\" selected></option><option\
+        \ value=\"Husky\">Husky</option><option value=\"Koolie x Kelpie\">Koolie x\
+        \ Kelpie</option></select></div></div>\n\n\t\t\t\n\t\t\t\n\t\t    \n     \
+        \       <div  class=\"form__actions\">\n                            \t\t\t\
+        \t\t\t\t\n\n<button type=\"submit\"  class=\"btn btn--primary\">    Filter</button>\n\
+        \n\t\t\t\t\t\n                    </div>\n        </form>\n\n\t    </div>\n\
+        <p class=\"subtext\">If your pet has wandered from home and you believe it\
+        \ has been impounded, you should contact the Animal Care Centre by completing\
+        \ our dedicated online form or call us on 9405 5000 (during office hours)\
+        \ or 1300 138 393 (after hours). If one of our Rangers has found your pet\
+        \ and it\u2019s wearing a current Council registration tag, we will contact\
+        \ you.</p>\n<p class=\"subtext\">The Animal Care Centre is located at the\
+        \ City of Wanneroo Ashby Operations Centre, 1204 Wanneroo Road, Ashby. If\
+        \ your pet is impounded you will need to call the City on 9405 5000 to make\
+        \ an appointment to collect the animal. The Centre is closed on Christmas\
+        \ Day and Good Friday. Pets that have been picked up by Rangers and are not\
+        \ claimed are re-homed where possible.</p>\n\n     </div>\n </main>\n<!--\
+        \ googleoff: index -->\n    <footer>\n\t\t<div class=\"container\">\n    \t\
+        \t<div class=\"social\">\n        \t\t<a href=\"https://www.facebook.com/CityofWanneroo\"\
+        ><img alt=\"Facebook\" src=\"/site/img/icons/social/facebook.png\"></a><a\
+        \ href=\"https://twitter.com/CityofWanneroo\"><img alt=\"Twitter\" src=\"\
+        /site/img/icons/social/twitter.png\"></a><a href=\"https://www.youtube.com/user/CityWanneroo\"\
+        ><img alt=\"Youtube\" src=\"/site/img/icons/social/youtube.png\"></a><a href=\"\
+        /enewslettersubscription\"><img alt=\"Enewsletter subscription\" src=\"/site/img/icons/social/enewsletters.png\"\
+        ></a>\n    \t\t</div>\n            <div class=\"languages\">\n           \
+        \     <ul class=\"languages__list\">\n                    <li class=\"languages__list-item\"\
+        ><a class=\"languages__link\" href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=vi&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >Vi\u1EC7t</a></li>\n                    <li class=\"languages__list-item\"\
+        ><a class=\"languages__link\" href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=af&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >Afrikaans</a></li>\n                    <li class=\"languages__list-item\"\
+        ><a class=\"languages__link\" href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=it&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >Italiano</a></li>\n                    <li class=\"languages__list-item\"\
+        ><a class=\"languages__link\" href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=mk&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >\u041C\u0430\u043A\u0435\u0434\u043E\u043D\u0441\u043A\u0438</a></li>\n \
+        \                   <li class=\"languages__list-item\"><a class=\"languages__link\"\
+        \ href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=ar&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >\u0627\u0644\u0639\u0631\u0628\u064A\u0629</a></li>\n                   \
+        \ <li class=\"languages__list-item\"><a class=\"languages__link\" href=\"\
+        https://www.wanneroo.wa.gov.au/translations\">Language Translations</a></li>\n\
+        \                </ul>\n            </div>\n\t\t<p class=\"subtext\">ACKNOWLEDGEMENT\
+        \ OF COUNTRY The City of Wanneroo acknowledges the Traditional Custodians\
+        \ of the land we are working on, the Whadjuk people. We would like to pay\
+        \ respect to the Elders of the Noongar nation, past, present and future, who\
+        \ have walked and cared for the land and we acknowledge and respect their\
+        \ continuing culture and the contributions made to the life of this City and\
+        \ this region. </p>\n\t\t<p class=\"subtext\">\n            <a href=\"/terms\"\
+        \ class=\"smallprint__link\">Terms</a><span>All content &copy; 2020 City of\
+        \ Wanneroo. 23 Dundebar Road, Wanneroo WA 6065 | Locked Bag 1, Wanneroo WA\
+        \ 6946</span>\n        </p>\n\t\t</div>\n\t</footer>\n\t<!-- googleon: index\
+        \ -->\n        <script src=\"//www.wanneroo.wa.gov.au/site/javascript/almond.min.js\"\
+        ></script>\n        <script src=\"//www.wanneroo.wa.gov.au/site/javascript/util.min.js\"\
+        ></script>\n        <script src=\"//www.wanneroo.wa.gov.au/site/js/main.js?v1.70.0\"\
+        ></script>\n        <!--[if lte IE 9]>\n            <script src=\"//www.wanneroo.wa.gov.au/site/js/matchmediapolyfill.js\"\
+        ></script>\n        <![endif]-->\n<script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\
+        \  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\
+        \  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\
+        \  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\
+        \   ga('create', 'UA-49670030-1', 'wanneroo.wa.gov.au');  ga('send', 'pageview');\
+        \ </script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new\
+        \ Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-K93NJGG');</script><!--\
+        \ End Google Tag Manager --></script>\n    </body>\n</html>"
     headers:
       Cache-Control:
       - no-store, no-cache, must-revalidate
       Connection:
       - Keep-Alive
-      Content-Encoding:
-      - gzip
-      Content-Length:
-      - '5048'
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Sun, 31 May 2020 04:41:04 GMT
+      - Sun, 31 May 2020 04:44:14 GMT
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Keep-Alive:
@@ -84,10 +303,12 @@ http_interactions:
       Server:
       - Apache
       Set-Cookie:
-      - c1cjzHyDXC2fEzdg=c3122fee9224686e276339ef1ff0dd4f; path=/; secure; HttpOnly
+      - c1cjzHyDXC2fEzdg=e0f8b1ed8433f94aab3b31760d727cdd; path=/; secure; HttpOnly
       - TestCookie=Test; path=/; domain=www.wanneroo.wa.gov.au; HttpOnly
       Strict-Transport-Security:
       - max-age=2592000
+      Transfer-Encoding:
+      - chunked
       Vary:
       - Accept-Encoding
       X-UA-Compatible:
@@ -96,7 +317,7 @@ http_interactions:
       code: 200
       message: OK
     url: https://www.wanneroo.wa.gov.au/animals/dogs
-- recorded_at: '2020-05-31T04:41:03'
+- recorded_at: '2020-05-31T04:44:13'
   request:
     body:
       encoding: utf-8
@@ -105,7 +326,7 @@ http_interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - none
       Connection:
       - keep-alive
       Cookie:
@@ -116,19 +337,17 @@ http_interactions:
     uri: http://www.wanneroo.wa.gov.au/animals/dogs/6245-white-female-koolie-x-kelpie
   response:
     body:
-      base64_string: H4sIAAAAAAAAAwMAAAAAAAAAAAA=
       encoding: UTF-8
+      string: ''
     headers:
       Connection:
       - Keep-Alive
-      Content-Encoding:
-      - gzip
       Content-Length:
-      - '20'
+      - '0'
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Sun, 31 May 2020 04:41:04 GMT
+      - Sun, 31 May 2020 04:44:15 GMT
       Keep-Alive:
       - timeout=5, max=99
       Location:
@@ -141,7 +360,7 @@ http_interactions:
       code: 302
       message: Found
     url: http://www.wanneroo.wa.gov.au/animals/dogs/6245-white-female-koolie-x-kelpie
-- recorded_at: '2020-05-31T04:41:04'
+- recorded_at: '2020-05-31T04:44:14'
   request:
     body:
       encoding: utf-8
@@ -150,32 +369,238 @@ http_interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - none
       Connection:
       - keep-alive
       Cookie:
-      - TestCookie=Test; c1cjzHyDXC2fEzdg=c3122fee9224686e276339ef1ff0dd4f
+      - TestCookie=Test; c1cjzHyDXC2fEzdg=e0f8b1ed8433f94aab3b31760d727cdd
       User-Agent:
       - python-requests/2.23.0
     method: GET
     uri: https://www.wanneroo.wa.gov.au/animals/dogs/6245-white-female-koolie-x-kelpie
   response:
     body:
-      base64_string: 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
       encoding: UTF-8
+      string: "<!DOCTYPE html>\n<!--[if IE 7]>          <html class=\"no-js ie9 ie8\
+        \ ie7\"  lang=\"en\"> <![endif]-->\n<!--[if IE 8]>          <html class=\"\
+        no-js ie9 ie8\"  lang=\"en\"> <![endif]-->\n<!--[if IE 9]>          <html\
+        \ class=\"no-js ie9\"  lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> \
+        \ <html class=\"no-js\"  lang=\"en\"> <!--<![endif]-->\n    <head>\n    \t\
+        <link rel=\"alternate\" type=\"application/rss+xml\" title=\"RSS\" href=\"\
+        https://www.wanneroo.wa.gov.au/rss/news\">\n        <link rel=\"search\" type=\"\
+        application/opensearchdescription+xml\" title=\"City of Wanneroo\" href=\"\
+        https://www.wanneroo.wa.gov.au/site/scripts/opensearch.php\">\n        <link\
+        \ rel=\"shortcut icon\" type=\"image/x-icon\" href=\"//www.wanneroo.wa.gov.au/site/favicon.ico?v=2\"\
+        >\n        <link href='//fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic,500,500italic,700,700italic,900,900italic'\
+        \ rel='stylesheet' type='text/css'>\n        <link rel=\"stylesheet\" type=\"\
+        text/css\" href=\"//www.wanneroo.wa.gov.au/site/styles/generic/base.css\"\
+        >\n        <link rel=\"stylesheet\" type=\"text/css\" href=\"//www.wanneroo.wa.gov.au/site/styles/standard.css?v1.70.0\"\
+        >\n        <!--[if lte IE 9]>\n            <script src=\"//www.wanneroo.wa.gov.au/site/js/html5shiv.js\"\
+        ></script>\n        <![endif]-->\n<!-- Global site tag (gtag.js) - Google\
+        \ Analytics -->\r\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-49670030-1\"\
+        ></script>\r\n<script>\r\n  window.dataLayer = window.dataLayer || [];\r\n\
+        \  function gtag(){dataLayer.push(arguments);}\r\n  gtag('js', new Date());\r\
+        \n\r\n  gtag('config', 'UA-49670030-1');\r\n</script>\r\n<!-- Facebook Pixel\
+        \ Code -->\r\n<script>\r\n!function(f,b,e,v,n,t,s)\r\n{if(f.fbq)return;n=f.fbq=function(){n.callMethod?\r\
+        \nn.callMethod.apply(n,arguments):n.queue.push(arguments)};\r\nif(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\r\
+        \nn.queue=[];t=b.createElement(e);t.async=!0;\r\nt.src=v;s=b.getElementsByTagName(e)[0];\r\
+        \ns.parentNode.insertBefore(t,s)}(window, document,'script',\r\n'https://connect.facebook.net/en_US/fbevents.js';);\r\
+        \nfbq('init', '{367990463887414}');\r\nfbq('track', 'PageView');\r\n</script>\r\
+        \n<noscript>\r\n<img height=\"1\" width=\"1\" style=\"display:none\"\r\nsrc=\"\
+        https://www.facebook.com/tr?id={367990463887414}&ev=PageView&noscript=1\"\
+        />;\r\n</noscript>\r\n<!-- End Facebook Pixel Code -->        <link rel=\"\
+        schema.dcterms\" href=\"http://purl.org/dc/terms\">\n        <meta name=\"\
+        author\" content=\"City of Wanneroo\">\n        <meta name=\"generator\" content=\"\
+        http://www.jadu.net\">\n        <meta name=\"revisit-after\" content=\"2 days\"\
+        >\n        <meta name=\"robots\" content=\"index,follow\">\n        <meta\
+        \ name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n   \
+        \     <meta name=\"dcterms.creator\" content=\"City of Wanneroo\">\n     \
+        \   <meta name=\"dcterms.coverage\" content=\"Wanneroo, Perth, Western Australia,\
+        \ Australia\">\n        <meta name=\"dcterms.format\" content=\"text/html\"\
+        >\n        <meta name=\"dcterms.identifier\" content=\"https://www.wanneroo.wa.gov.au/animals/dogs/6245-white-female-koolie-x-kelpie\"\
+        >\n        <meta name=\"dcterms.language\" content=\"en\">\n        <meta\
+        \ name=\"dcterms.publisher\" content=\"City of Wanneroo\">\n        <meta\
+        \ name=\"dcterms.rightsHolder\" content=\"City of Wanneroo\">\n        <meta\
+        \ name=\"dcterms.description\" content=\"City of Wanneroo is committed to\
+        \ providing accessible web content for all\">\n        <meta name=\"dcterms.subject\"\
+        \ content=\"Accessibility, dda, disability discrimination act, disabled access,\
+        \ access keys, City of Wanneroo, Local Government, Council, Employment, Planning,\
+        \ Waste Collection, Zoning, Infrastructure, Rates Payments, Lost Pets, Search,\
+        \ Community, Events, Emergency Management, Library, Libraries, Bush Fire,\
+        \ Environment, Tourism\">\n        <meta name=\"dcterms.title\" content=\"\
+        City of Wanneroo accessibility features\">\n        <meta name=\"description\"\
+        \ content=\"City of Wanneroo is committed to providing accessible web content\
+        \ for all\">\n        <meta name=\"keywords\" content=\"Accessibility, dda,\
+        \ disability discrimination act, disabled access, access keys, City of Wanneroo,\
+        \ Local Government, Council, Employment, Planning, Waste Collection, Zoning,\
+        \ Infrastructure, Rates Payments, Lost Pets, Search, Community, Events, Emergency\
+        \ Management, Library, Libraries, Bush Fire, Environment, Tourism\">\n   \
+        \     <script type=\"text/javascript\" src=\"//www.wanneroo.wa.gov.au/site/javascript/swfobject.js\"\
+        ></script>\n        <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\"\
+        ></script>\n        <script type=\"text/javascript\">\n            jQuery.noConflict();\n\
+        \    \t\tjQuery('html').removeClass('no-js');\n\t\t</script>\n        <title>White\
+        \ female Koolie x Kelpie dog - Animal Care Centre - City of Wanneroo</title>\n\
+        \    </head>\n    <body class=\"body\">\n    <nav aria-label=\"skip links\"\
+        >\n        <ul class=\"skip-links item-list\">\n            <li class=\"item-list__item\"\
+        ><a class=\"skip-links__link\" href=\"https://www.wanneroo.wa.gov.au/animals/dogs/6245-white-female-koolie-x-kelpie#content\"\
+        \ rel=\"nofollow\">Skip to content</a></li>\n        </ul>\n    </nav>\n<!--\
+        \ googleoff: index -->\n        <section aria-label=\"Navigation Button\"\
+        >\n            <a class=\"show-hide-toolpane\" href=\"#\">Menu</a>\n     \
+        \   </section>\n        <aside class=\"toolpane\" aria-label=\"Navigation\"\
+        >\n            <div class=\"toolpane-inner\">\n                <span class=\"\
+        h3\">Navigation</span>\n                <ul class=\"item-list item-list__rich\
+        \ categories\">\n                                        <li>\n          \
+        \              <a id=\"skipToNavAnchor\" href=\"https://www.wanneroo.wa.gov.au/info/20003/council\"\
+        >Council</a>\n                    </li>\n                    <li>\n      \
+        \                  <a href=\"https://www.wanneroo.wa.gov.au/info/20040/libraries\"\
+        >Libraries</a>\n                    </li>\n                    <li>\n    \
+        \                    <a href=\"https://www.wanneroo.wa.gov.au/info/20001/sport_and_leisure\"\
+        >Sport &amp; leisure</a>\n                    </li>\n                    <li>\n\
+        \                        <a href=\"https://www.wanneroo.wa.gov.au/info/20004/community\"\
+        >Community</a>\n                    </li>\n                    <li>\n    \
+        \                    <a href=\"https://www.wanneroo.wa.gov.au/info/20005/business\"\
+        >Business</a>\n                    </li>\n                    <li>\n     \
+        \                   <a href=\"https://www.wanneroo.wa.gov.au/info/20006/animals_and_pets\"\
+        >Animals and pets</a>\n                    </li>\n                    <li>\n\
+        \                        <a href=\"https://www.wanneroo.wa.gov.au/info/20008/waste_and_recycling\"\
+        >Waste and Recycling</a>\n                    </li>\n                    <li>\n\
+        \                        <a href=\"https://www.wanneroo.wa.gov.au/info/20009/things_to_do\"\
+        >Things to do</a>\n                    </li>\n                    <li>\n \
+        \                       <a href=\"https://www.wanneroo.wa.gov.au/info/20017/planning_and_building\"\
+        >Planning and building</a>\n                    </li>\n                  \
+        \  <li>\n                        <a href=\"https://www.wanneroo.wa.gov.au/info/20035/community_health_and_safety\"\
+        >Community health and safety</a>\n                    </li>\n            \
+        \        <li>\n                        <a href=\"https://www.wanneroo.wa.gov.au/info/20041/environment\"\
+        >Environment</a>\n                    </li>\n                    <li>\n  \
+        \                      <a href=\"https://www.wanneroo.wa.gov.au/info/20062/youth\"\
+        >Youth</a>\n                    </li>\n                    <li>\n        \
+        \                <a href=\"https://www.wanneroo.wa.gov.au/info/20125/your_say\"\
+        >Your Say</a>\n                    </li>\n                </ul>\n        \
+        \        <div class=\"account\">\n                    <span class=\"h3\">My\
+        \ Wanneroo</span>\n                    <a class=\"button\" href=\"https://www.wanneroo.wa.gov.au/register\"\
+        >Register</a>\n                    <a class=\"button\" href=\"https://www.wanneroo.wa.gov.au/account/signin\"\
+        >Sign in</a>\n                    <p class=\"subext\"><a href=\"https://www.wanneroo.wa.gov.au/account/forgot_password\"\
+        >Forgot your password?</a><br /><a href=\"/accounthelp\">Account and registration\
+        \ help</a></p>\n                </div>\n                <div class=\"social\"\
+        >\n                    <span class=\"h3\">Social media</span>\n          \
+        \          <a href=\"https://www.facebook.com/CityofWanneroo\"><img alt=\"\
+        Facebook\" src=\"/site/img/icons/social/facebook.png\"></a><a href=\"https://twitter.com/CityofWanneroo\"\
+        ><img alt=\"Twitter\" src=\"/site/img/icons/social/twitter.png\"></a><a href=\"\
+        https://www.youtube.com/user/CityWanneroo\"><img alt=\"Youtube\" src=\"/site/img/icons/social/youtube.png\"\
+        ></a><a href=\"/enewslettersubscription\"><img alt=\"Enewsletter subscription\"\
+        \ src=\"/site/img/icons/social/enewsletters.png\"></a>\n                </div>\n\
+        \n\n            </div>\n        </aside>\n<!-- googleon: index -->\n    \t\
+        <!-- googleoff: index -->\n    \t<header>\n    \t\t<div class=\"container\"\
+        >\n        \t\t<div class=\"logo\"><a href=\"https://www.wanneroo.wa.gov.au\"\
+        >City of Wanneroo: Celebrating 20 years as a city</a></div>\n    \t\t</div>\n\
+        \            <a class=\"show-hide-language\" href=\"https://www.wanneroo.wa.gov.au/translations\"\
+        ><span>Language</span></a>\n            <form action=\"/site_search/results/\"\
+        \ method=\"get\" class=\"form__search\">\n                <a class=\"search-show-hide\"\
+        \ href=\"#\"><span>Search this site</span></a>\n                <label class=\"\
+        visually-hidden\" for=\"search-site\">Search this site</label>\n         \
+        \       <input class=\"field\" type=\"text\" size=\"18\" name=\"q\" placeholder=\"\
+        Search\" id=\"search-site\" title=\"search-site\">\n                <input\
+        \ type=\"submit\" class=\"button button__primary\" value=\"\uE956\">\n   \
+        \         </form>\n    \t</header>\n    \t<!-- googleon: index -->\n    <main\
+        \ class=\"wrapper\">\n        <div id=\"content\" tabindex=\"-1\" class=\"\
+        skip-links__anchor visually-hidden\"></div>\n        <div class=\"container\"\
+        >\n    <!--googleoff: snippet-->\n        <div class=\"alert announcement\"\
+        >\n            <h2 class=\"title box-header icon-info-circled\">COVID-19 recovery\
+        \ information and updates</h2>\n            <p><span>With the announcement\
+        \ of the State Government&rsquo;s plan to move into Phase 3 of its COVID-19\
+        \ recovery roadmap, City services and facilities are currently being reviewed\
+        \ for reopening in early June 2020. </span>             <a href=\"https://www.wanneroo.wa.gov.au/COVID-19recovery\"\
+        >Click here to find out more</a>\n</p>\n        </div>\n    <!--googleon:\
+        \ snippet-->\n<a href=\"/\" class=\"home__button button button__primary\"\
+        >Home</a>\n        <h1>White female Koolie x Kelpie dog</h1>\n<!-- googleoff:\
+        \ all -->\n                <nav class=\"breadcrumb\" aria-label=\"Breadcrumb\
+        \ Navigation\">\n            <ol class=\"breadcrumb-list\">\n            \
+        \    <li>\n                    <a href=\"https://www.wanneroo.wa.gov.au\"\
+        \ rel=\"home\">Home</a>\n                </li>\n                <li>\n   \
+        \                 <a href=\"/animals\">Animal Care Centre</a>\n          \
+        \      </li><li><span>DOG-6245</span></li>\n            </ol>\n        </nav>\n\
+        <!-- googleon: all -->\n\n        <h2>Animal reference: <strong>DOG-6245</strong></h2>\n\
+        \                    <img class=\"main-image\" src=\"/lost-animals/images/5ed2005883946.jpg\"\
+        \ alt=\" \">\n                <ul class=\"item-list item-list__arrows item-list__larger\
+        \ item-list__floatingimage\">\n            <li>Sex: <strong>Female</strong></li>\
+        \            <li>Colour: <strong>White</strong></li>            <li>Breed:\
+        \ <strong>Koolie x Kelpie</strong></li>\n                                \
+        \                <li>Collar Details:\n                                   \
+        \     <strong>pink and black fabric collar with geometric patterns</strong>\n\
+        \                                    </li>\n                             \
+        \   \n            <li>Admitted from: <strong>Clarkson - 6030</strong></li>\
+        \            <li>Admission date: <strong>28/05/2020</strong></li>\n      \
+        \  </ul>\n\n        \n<a class=\"button button__secondary icon-link-ext\"\
+        \ href=\"/dogcollection?animalreference=DOG-6245\" target=\"_blank\" style=\"\
+        \n    margin-left: 10px;\n    margin-top: 10px;\n    padding-top: 20px;\n\
+        \    padding-bottom: 20px;\n\">I believe this is my dog</a>\n<a class=\"button\
+        \ button__secondary icon-link-ext\" href=\"/adoptdog?animalreference=DOG-6245\"\
+        \ target=\"_blank\" style=\"\n    margin-left: 10px;\n    margin-top: 10px;\n\
+        \    padding-top: 20px;\n    padding-bottom: 20px;\n\">I'm interested in adopting\
+        \ this dog</a>\n\n\n        <p class=\"subtext\">If your pet has wandered\
+        \ from home and you believe it has been impounded, you should contact the\
+        \ Animal Care Centre by completing our dedicated online form or call us on\
+        \ 9405 5000 (during office hours) or 1300 138 393 (after hours). If one of\
+        \ our Rangers has found your pet and it\u2019s wearing a current Council registration\
+        \ tag, we will contact you.</p>\n        <p class=\"subtext\">The Animal Care\
+        \ Centre is located at the City of Wanneroo Ashby Operations Centre, 1204\
+        \ Wanneroo Road, Ashby. If your pet is impounded you will need to call the\
+        \ City on 9405 5000 to make an appointment to collect the animal. The Centre\
+        \ is closed on Christmas Day and Good Friday. Pets that have been picked up\
+        \ by Rangers and are not claimed are re-homed where possible.</p>\n\n    \
+        \ </div>\n </main>\n<!-- googleoff: index -->\n    <footer>\n\t\t<div class=\"\
+        container\">\n    \t\t<div class=\"social\">\n        \t\t<a href=\"https://www.facebook.com/CityofWanneroo\"\
+        ><img alt=\"Facebook\" src=\"/site/img/icons/social/facebook.png\"></a><a\
+        \ href=\"https://twitter.com/CityofWanneroo\"><img alt=\"Twitter\" src=\"\
+        /site/img/icons/social/twitter.png\"></a><a href=\"https://www.youtube.com/user/CityWanneroo\"\
+        ><img alt=\"Youtube\" src=\"/site/img/icons/social/youtube.png\"></a><a href=\"\
+        /enewslettersubscription\"><img alt=\"Enewsletter subscription\" src=\"/site/img/icons/social/enewsletters.png\"\
+        ></a>\n    \t\t</div>\n            <div class=\"languages\">\n           \
+        \     <ul class=\"languages__list\">\n                    <li class=\"languages__list-item\"\
+        ><a class=\"languages__link\" href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=vi&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >Vi\u1EC7t</a></li>\n                    <li class=\"languages__list-item\"\
+        ><a class=\"languages__link\" href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=af&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >Afrikaans</a></li>\n                    <li class=\"languages__list-item\"\
+        ><a class=\"languages__link\" href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=it&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >Italiano</a></li>\n                    <li class=\"languages__list-item\"\
+        ><a class=\"languages__link\" href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=mk&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >\u041C\u0430\u043A\u0435\u0434\u043E\u043D\u0441\u043A\u0438</a></li>\n \
+        \                   <li class=\"languages__list-item\"><a class=\"languages__link\"\
+        \ href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=ar&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >\u0627\u0644\u0639\u0631\u0628\u064A\u0629</a></li>\n                   \
+        \ <li class=\"languages__list-item\"><a class=\"languages__link\" href=\"\
+        https://www.wanneroo.wa.gov.au/translations\">Language Translations</a></li>\n\
+        \                </ul>\n            </div>\n\t\t<p class=\"subtext\">ACKNOWLEDGEMENT\
+        \ OF COUNTRY The City of Wanneroo acknowledges the Traditional Custodians\
+        \ of the land we are working on, the Whadjuk people. We would like to pay\
+        \ respect to the Elders of the Noongar nation, past, present and future, who\
+        \ have walked and cared for the land and we acknowledge and respect their\
+        \ continuing culture and the contributions made to the life of this City and\
+        \ this region. </p>\n\t\t<p class=\"subtext\">\n            <a href=\"/terms\"\
+        \ class=\"smallprint__link\">Terms</a><span>All content &copy; 2020 City of\
+        \ Wanneroo. 23 Dundebar Road, Wanneroo WA 6065 | Locked Bag 1, Wanneroo WA\
+        \ 6946</span>\n        </p>\n\t\t</div>\n\t</footer>\n\t<!-- googleon: index\
+        \ -->\n        <script src=\"//www.wanneroo.wa.gov.au/site/javascript/almond.min.js\"\
+        ></script>\n        <script src=\"//www.wanneroo.wa.gov.au/site/javascript/util.min.js\"\
+        ></script>\n        <script src=\"//www.wanneroo.wa.gov.au/site/js/main.js?v1.70.0\"\
+        ></script>\n        <!--[if lte IE 9]>\n            <script src=\"//www.wanneroo.wa.gov.au/site/js/matchmediapolyfill.js\"\
+        ></script>\n        <![endif]-->\n<script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\
+        \  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\
+        \  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\
+        \  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\
+        \   ga('create', 'UA-49670030-1', 'wanneroo.wa.gov.au');  ga('send', 'pageview');\
+        \ </script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new\
+        \ Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-K93NJGG');</script><!--\
+        \ End Google Tag Manager --></script>\n    </body>\n</html>"
     headers:
       Cache-Control:
       - no-store, no-cache, must-revalidate
       Connection:
       - Keep-Alive
-      Content-Encoding:
-      - gzip
-      Content-Length:
-      - '4871'
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Sun, 31 May 2020 04:41:04 GMT
+      - Sun, 31 May 2020 04:44:15 GMT
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Keep-Alive:
@@ -188,6 +613,8 @@ http_interactions:
       - TestCookie=Test; path=/; domain=www.wanneroo.wa.gov.au; HttpOnly
       Strict-Transport-Security:
       - max-age=2592000
+      Transfer-Encoding:
+      - chunked
       Vary:
       - Accept-Encoding
       X-UA-Compatible:
@@ -196,7 +623,7 @@ http_interactions:
       code: 200
       message: OK
     url: https://www.wanneroo.wa.gov.au/animals/dogs/6245-white-female-koolie-x-kelpie
-- recorded_at: '2020-05-31T04:41:04'
+- recorded_at: '2020-05-31T04:44:14'
   request:
     body:
       encoding: utf-8
@@ -205,7 +632,7 @@ http_interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - none
       Connection:
       - keep-alive
       Cookie:
@@ -216,19 +643,17 @@ http_interactions:
     uri: http://www.wanneroo.wa.gov.au/animals/dogs/6246-black-white-female-husky
   response:
     body:
-      base64_string: H4sIAAAAAAAAAwMAAAAAAAAAAAA=
       encoding: UTF-8
+      string: ''
     headers:
       Connection:
       - Keep-Alive
-      Content-Encoding:
-      - gzip
       Content-Length:
-      - '20'
+      - '0'
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Sun, 31 May 2020 04:41:05 GMT
+      - Sun, 31 May 2020 04:44:15 GMT
       Keep-Alive:
       - timeout=5, max=98
       Location:
@@ -241,7 +666,7 @@ http_interactions:
       code: 302
       message: Found
     url: http://www.wanneroo.wa.gov.au/animals/dogs/6246-black-white-female-husky
-- recorded_at: '2020-05-31T04:41:04'
+- recorded_at: '2020-05-31T04:44:15'
   request:
     body:
       encoding: utf-8
@@ -250,32 +675,234 @@ http_interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - none
       Connection:
       - keep-alive
       Cookie:
-      - TestCookie=Test; c1cjzHyDXC2fEzdg=c3122fee9224686e276339ef1ff0dd4f
+      - TestCookie=Test; c1cjzHyDXC2fEzdg=e0f8b1ed8433f94aab3b31760d727cdd
       User-Agent:
       - python-requests/2.23.0
     method: GET
     uri: https://www.wanneroo.wa.gov.au/animals/dogs/6246-black-white-female-husky
   response:
     body:
-      base64_string: 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
       encoding: UTF-8
+      string: "<!DOCTYPE html>\n<!--[if IE 7]>          <html class=\"no-js ie9 ie8\
+        \ ie7\"  lang=\"en\"> <![endif]-->\n<!--[if IE 8]>          <html class=\"\
+        no-js ie9 ie8\"  lang=\"en\"> <![endif]-->\n<!--[if IE 9]>          <html\
+        \ class=\"no-js ie9\"  lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> \
+        \ <html class=\"no-js\"  lang=\"en\"> <!--<![endif]-->\n    <head>\n    \t\
+        <link rel=\"alternate\" type=\"application/rss+xml\" title=\"RSS\" href=\"\
+        https://www.wanneroo.wa.gov.au/rss/news\">\n        <link rel=\"search\" type=\"\
+        application/opensearchdescription+xml\" title=\"City of Wanneroo\" href=\"\
+        https://www.wanneroo.wa.gov.au/site/scripts/opensearch.php\">\n        <link\
+        \ rel=\"shortcut icon\" type=\"image/x-icon\" href=\"//www.wanneroo.wa.gov.au/site/favicon.ico?v=2\"\
+        >\n        <link href='//fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic,500,500italic,700,700italic,900,900italic'\
+        \ rel='stylesheet' type='text/css'>\n        <link rel=\"stylesheet\" type=\"\
+        text/css\" href=\"//www.wanneroo.wa.gov.au/site/styles/generic/base.css\"\
+        >\n        <link rel=\"stylesheet\" type=\"text/css\" href=\"//www.wanneroo.wa.gov.au/site/styles/standard.css?v1.70.0\"\
+        >\n        <!--[if lte IE 9]>\n            <script src=\"//www.wanneroo.wa.gov.au/site/js/html5shiv.js\"\
+        ></script>\n        <![endif]-->\n<!-- Global site tag (gtag.js) - Google\
+        \ Analytics -->\r\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-49670030-1\"\
+        ></script>\r\n<script>\r\n  window.dataLayer = window.dataLayer || [];\r\n\
+        \  function gtag(){dataLayer.push(arguments);}\r\n  gtag('js', new Date());\r\
+        \n\r\n  gtag('config', 'UA-49670030-1');\r\n</script>\r\n<!-- Facebook Pixel\
+        \ Code -->\r\n<script>\r\n!function(f,b,e,v,n,t,s)\r\n{if(f.fbq)return;n=f.fbq=function(){n.callMethod?\r\
+        \nn.callMethod.apply(n,arguments):n.queue.push(arguments)};\r\nif(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\r\
+        \nn.queue=[];t=b.createElement(e);t.async=!0;\r\nt.src=v;s=b.getElementsByTagName(e)[0];\r\
+        \ns.parentNode.insertBefore(t,s)}(window, document,'script',\r\n'https://connect.facebook.net/en_US/fbevents.js';);\r\
+        \nfbq('init', '{367990463887414}');\r\nfbq('track', 'PageView');\r\n</script>\r\
+        \n<noscript>\r\n<img height=\"1\" width=\"1\" style=\"display:none\"\r\nsrc=\"\
+        https://www.facebook.com/tr?id={367990463887414}&ev=PageView&noscript=1\"\
+        />;\r\n</noscript>\r\n<!-- End Facebook Pixel Code -->        <link rel=\"\
+        schema.dcterms\" href=\"http://purl.org/dc/terms\">\n        <meta name=\"\
+        author\" content=\"City of Wanneroo\">\n        <meta name=\"generator\" content=\"\
+        http://www.jadu.net\">\n        <meta name=\"revisit-after\" content=\"2 days\"\
+        >\n        <meta name=\"robots\" content=\"index,follow\">\n        <meta\
+        \ name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n   \
+        \     <meta name=\"dcterms.creator\" content=\"City of Wanneroo\">\n     \
+        \   <meta name=\"dcterms.coverage\" content=\"Wanneroo, Perth, Western Australia,\
+        \ Australia\">\n        <meta name=\"dcterms.format\" content=\"text/html\"\
+        >\n        <meta name=\"dcterms.identifier\" content=\"https://www.wanneroo.wa.gov.au/animals/dogs/6246-black-white-female-husky\"\
+        >\n        <meta name=\"dcterms.language\" content=\"en\">\n        <meta\
+        \ name=\"dcterms.publisher\" content=\"City of Wanneroo\">\n        <meta\
+        \ name=\"dcterms.rightsHolder\" content=\"City of Wanneroo\">\n        <meta\
+        \ name=\"dcterms.description\" content=\"City of Wanneroo is committed to\
+        \ providing accessible web content for all\">\n        <meta name=\"dcterms.subject\"\
+        \ content=\"Accessibility, dda, disability discrimination act, disabled access,\
+        \ access keys, City of Wanneroo, Local Government, Council, Employment, Planning,\
+        \ Waste Collection, Zoning, Infrastructure, Rates Payments, Lost Pets, Search,\
+        \ Community, Events, Emergency Management, Library, Libraries, Bush Fire,\
+        \ Environment, Tourism\">\n        <meta name=\"dcterms.title\" content=\"\
+        City of Wanneroo accessibility features\">\n        <meta name=\"description\"\
+        \ content=\"City of Wanneroo is committed to providing accessible web content\
+        \ for all\">\n        <meta name=\"keywords\" content=\"Accessibility, dda,\
+        \ disability discrimination act, disabled access, access keys, City of Wanneroo,\
+        \ Local Government, Council, Employment, Planning, Waste Collection, Zoning,\
+        \ Infrastructure, Rates Payments, Lost Pets, Search, Community, Events, Emergency\
+        \ Management, Library, Libraries, Bush Fire, Environment, Tourism\">\n   \
+        \     <script type=\"text/javascript\" src=\"//www.wanneroo.wa.gov.au/site/javascript/swfobject.js\"\
+        ></script>\n        <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\"\
+        ></script>\n        <script type=\"text/javascript\">\n            jQuery.noConflict();\n\
+        \    \t\tjQuery('html').removeClass('no-js');\n\t\t</script>\n        <title>Black\
+        \ &amp; white female Husky dog - Animal Care Centre - City of Wanneroo</title>\n\
+        \    </head>\n    <body class=\"body\">\n    <nav aria-label=\"skip links\"\
+        >\n        <ul class=\"skip-links item-list\">\n            <li class=\"item-list__item\"\
+        ><a class=\"skip-links__link\" href=\"https://www.wanneroo.wa.gov.au/animals/dogs/6246-black-white-female-husky#content\"\
+        \ rel=\"nofollow\">Skip to content</a></li>\n        </ul>\n    </nav>\n<!--\
+        \ googleoff: index -->\n        <section aria-label=\"Navigation Button\"\
+        >\n            <a class=\"show-hide-toolpane\" href=\"#\">Menu</a>\n     \
+        \   </section>\n        <aside class=\"toolpane\" aria-label=\"Navigation\"\
+        >\n            <div class=\"toolpane-inner\">\n                <span class=\"\
+        h3\">Navigation</span>\n                <ul class=\"item-list item-list__rich\
+        \ categories\">\n                                        <li>\n          \
+        \              <a id=\"skipToNavAnchor\" href=\"https://www.wanneroo.wa.gov.au/info/20003/council\"\
+        >Council</a>\n                    </li>\n                    <li>\n      \
+        \                  <a href=\"https://www.wanneroo.wa.gov.au/info/20040/libraries\"\
+        >Libraries</a>\n                    </li>\n                    <li>\n    \
+        \                    <a href=\"https://www.wanneroo.wa.gov.au/info/20001/sport_and_leisure\"\
+        >Sport &amp; leisure</a>\n                    </li>\n                    <li>\n\
+        \                        <a href=\"https://www.wanneroo.wa.gov.au/info/20004/community\"\
+        >Community</a>\n                    </li>\n                    <li>\n    \
+        \                    <a href=\"https://www.wanneroo.wa.gov.au/info/20005/business\"\
+        >Business</a>\n                    </li>\n                    <li>\n     \
+        \                   <a href=\"https://www.wanneroo.wa.gov.au/info/20006/animals_and_pets\"\
+        >Animals and pets</a>\n                    </li>\n                    <li>\n\
+        \                        <a href=\"https://www.wanneroo.wa.gov.au/info/20008/waste_and_recycling\"\
+        >Waste and Recycling</a>\n                    </li>\n                    <li>\n\
+        \                        <a href=\"https://www.wanneroo.wa.gov.au/info/20009/things_to_do\"\
+        >Things to do</a>\n                    </li>\n                    <li>\n \
+        \                       <a href=\"https://www.wanneroo.wa.gov.au/info/20017/planning_and_building\"\
+        >Planning and building</a>\n                    </li>\n                  \
+        \  <li>\n                        <a href=\"https://www.wanneroo.wa.gov.au/info/20035/community_health_and_safety\"\
+        >Community health and safety</a>\n                    </li>\n            \
+        \        <li>\n                        <a href=\"https://www.wanneroo.wa.gov.au/info/20041/environment\"\
+        >Environment</a>\n                    </li>\n                    <li>\n  \
+        \                      <a href=\"https://www.wanneroo.wa.gov.au/info/20062/youth\"\
+        >Youth</a>\n                    </li>\n                    <li>\n        \
+        \                <a href=\"https://www.wanneroo.wa.gov.au/info/20125/your_say\"\
+        >Your Say</a>\n                    </li>\n                </ul>\n        \
+        \        <div class=\"account\">\n                    <span class=\"h3\">My\
+        \ Wanneroo</span>\n                    <a class=\"button\" href=\"https://www.wanneroo.wa.gov.au/register\"\
+        >Register</a>\n                    <a class=\"button\" href=\"https://www.wanneroo.wa.gov.au/account/signin\"\
+        >Sign in</a>\n                    <p class=\"subext\"><a href=\"https://www.wanneroo.wa.gov.au/account/forgot_password\"\
+        >Forgot your password?</a><br /><a href=\"/accounthelp\">Account and registration\
+        \ help</a></p>\n                </div>\n                <div class=\"social\"\
+        >\n                    <span class=\"h3\">Social media</span>\n          \
+        \          <a href=\"https://www.facebook.com/CityofWanneroo\"><img alt=\"\
+        Facebook\" src=\"/site/img/icons/social/facebook.png\"></a><a href=\"https://twitter.com/CityofWanneroo\"\
+        ><img alt=\"Twitter\" src=\"/site/img/icons/social/twitter.png\"></a><a href=\"\
+        https://www.youtube.com/user/CityWanneroo\"><img alt=\"Youtube\" src=\"/site/img/icons/social/youtube.png\"\
+        ></a><a href=\"/enewslettersubscription\"><img alt=\"Enewsletter subscription\"\
+        \ src=\"/site/img/icons/social/enewsletters.png\"></a>\n                </div>\n\
+        \n\n            </div>\n        </aside>\n<!-- googleon: index -->\n    \t\
+        <!-- googleoff: index -->\n    \t<header>\n    \t\t<div class=\"container\"\
+        >\n        \t\t<div class=\"logo\"><a href=\"https://www.wanneroo.wa.gov.au\"\
+        >City of Wanneroo: Celebrating 20 years as a city</a></div>\n    \t\t</div>\n\
+        \            <a class=\"show-hide-language\" href=\"https://www.wanneroo.wa.gov.au/translations\"\
+        ><span>Language</span></a>\n            <form action=\"/site_search/results/\"\
+        \ method=\"get\" class=\"form__search\">\n                <a class=\"search-show-hide\"\
+        \ href=\"#\"><span>Search this site</span></a>\n                <label class=\"\
+        visually-hidden\" for=\"search-site\">Search this site</label>\n         \
+        \       <input class=\"field\" type=\"text\" size=\"18\" name=\"q\" placeholder=\"\
+        Search\" id=\"search-site\" title=\"search-site\">\n                <input\
+        \ type=\"submit\" class=\"button button__primary\" value=\"\uE956\">\n   \
+        \         </form>\n    \t</header>\n    \t<!-- googleon: index -->\n    <main\
+        \ class=\"wrapper\">\n        <div id=\"content\" tabindex=\"-1\" class=\"\
+        skip-links__anchor visually-hidden\"></div>\n        <div class=\"container\"\
+        >\n    <!--googleoff: snippet-->\n        <div class=\"alert announcement\"\
+        >\n            <h2 class=\"title box-header icon-info-circled\">COVID-19 recovery\
+        \ information and updates</h2>\n            <p><span>With the announcement\
+        \ of the State Government&rsquo;s plan to move into Phase 3 of its COVID-19\
+        \ recovery roadmap, City services and facilities are currently being reviewed\
+        \ for reopening in early June 2020. </span>             <a href=\"https://www.wanneroo.wa.gov.au/COVID-19recovery\"\
+        >Click here to find out more</a>\n</p>\n        </div>\n    <!--googleon:\
+        \ snippet-->\n<a href=\"/\" class=\"home__button button button__primary\"\
+        >Home</a>\n        <h1>Black &amp; white female Husky dog</h1>\n<!-- googleoff:\
+        \ all -->\n                <nav class=\"breadcrumb\" aria-label=\"Breadcrumb\
+        \ Navigation\">\n            <ol class=\"breadcrumb-list\">\n            \
+        \    <li>\n                    <a href=\"https://www.wanneroo.wa.gov.au\"\
+        \ rel=\"home\">Home</a>\n                </li>\n                <li>\n   \
+        \                 <a href=\"/animals\">Animal Care Centre</a>\n          \
+        \      </li><li><span>DOG-6246</span></li>\n            </ol>\n        </nav>\n\
+        <!-- googleon: all -->\n\n        <h2>Animal reference: <strong>DOG-6246</strong></h2>\n\
+        \                    <img class=\"main-image\" src=\"/lost-animals/images/5ed222b185d3a.jpg\"\
+        \ alt=\" \">\n                <ul class=\"item-list item-list__arrows item-list__larger\
+        \ item-list__floatingimage\">\n            <li>Sex: <strong>Female</strong></li>\
+        \            <li>Colour: <strong>Black &amp; white</strong></li>         \
+        \   <li>Breed: <strong>Husky</strong></li>\n            \n            <li>Admitted\
+        \ from: <strong>Sinagra - 6065</strong></li>            <li>Admission date:\
+        \ <strong>30/05/2020</strong></li>\n        </ul>\n\n        \n<a class=\"\
+        button button__secondary icon-link-ext\" href=\"/dogcollection?animalreference=DOG-6246\"\
+        \ target=\"_blank\" style=\"\n    margin-left: 10px;\n    margin-top: 10px;\n\
+        \    padding-top: 20px;\n    padding-bottom: 20px;\n\">I believe this is my\
+        \ dog</a>\n<a class=\"button button__secondary icon-link-ext\" href=\"/adoptdog?animalreference=DOG-6246\"\
+        \ target=\"_blank\" style=\"\n    margin-left: 10px;\n    margin-top: 10px;\n\
+        \    padding-top: 20px;\n    padding-bottom: 20px;\n\">I'm interested in adopting\
+        \ this dog</a>\n\n\n        <p class=\"subtext\">If your pet has wandered\
+        \ from home and you believe it has been impounded, you should contact the\
+        \ Animal Care Centre by completing our dedicated online form or call us on\
+        \ 9405 5000 (during office hours) or 1300 138 393 (after hours). If one of\
+        \ our Rangers has found your pet and it\u2019s wearing a current Council registration\
+        \ tag, we will contact you.</p>\n        <p class=\"subtext\">The Animal Care\
+        \ Centre is located at the City of Wanneroo Ashby Operations Centre, 1204\
+        \ Wanneroo Road, Ashby. If your pet is impounded you will need to call the\
+        \ City on 9405 5000 to make an appointment to collect the animal. The Centre\
+        \ is closed on Christmas Day and Good Friday. Pets that have been picked up\
+        \ by Rangers and are not claimed are re-homed where possible.</p>\n\n    \
+        \ </div>\n </main>\n<!-- googleoff: index -->\n    <footer>\n\t\t<div class=\"\
+        container\">\n    \t\t<div class=\"social\">\n        \t\t<a href=\"https://www.facebook.com/CityofWanneroo\"\
+        ><img alt=\"Facebook\" src=\"/site/img/icons/social/facebook.png\"></a><a\
+        \ href=\"https://twitter.com/CityofWanneroo\"><img alt=\"Twitter\" src=\"\
+        /site/img/icons/social/twitter.png\"></a><a href=\"https://www.youtube.com/user/CityWanneroo\"\
+        ><img alt=\"Youtube\" src=\"/site/img/icons/social/youtube.png\"></a><a href=\"\
+        /enewslettersubscription\"><img alt=\"Enewsletter subscription\" src=\"/site/img/icons/social/enewsletters.png\"\
+        ></a>\n    \t\t</div>\n            <div class=\"languages\">\n           \
+        \     <ul class=\"languages__list\">\n                    <li class=\"languages__list-item\"\
+        ><a class=\"languages__link\" href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=vi&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >Vi\u1EC7t</a></li>\n                    <li class=\"languages__list-item\"\
+        ><a class=\"languages__link\" href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=af&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >Afrikaans</a></li>\n                    <li class=\"languages__list-item\"\
+        ><a class=\"languages__link\" href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=it&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >Italiano</a></li>\n                    <li class=\"languages__list-item\"\
+        ><a class=\"languages__link\" href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=mk&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >\u041C\u0430\u043A\u0435\u0434\u043E\u043D\u0441\u043A\u0438</a></li>\n \
+        \                   <li class=\"languages__list-item\"><a class=\"languages__link\"\
+        \ href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=ar&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >\u0627\u0644\u0639\u0631\u0628\u064A\u0629</a></li>\n                   \
+        \ <li class=\"languages__list-item\"><a class=\"languages__link\" href=\"\
+        https://www.wanneroo.wa.gov.au/translations\">Language Translations</a></li>\n\
+        \                </ul>\n            </div>\n\t\t<p class=\"subtext\">ACKNOWLEDGEMENT\
+        \ OF COUNTRY The City of Wanneroo acknowledges the Traditional Custodians\
+        \ of the land we are working on, the Whadjuk people. We would like to pay\
+        \ respect to the Elders of the Noongar nation, past, present and future, who\
+        \ have walked and cared for the land and we acknowledge and respect their\
+        \ continuing culture and the contributions made to the life of this City and\
+        \ this region. </p>\n\t\t<p class=\"subtext\">\n            <a href=\"/terms\"\
+        \ class=\"smallprint__link\">Terms</a><span>All content &copy; 2020 City of\
+        \ Wanneroo. 23 Dundebar Road, Wanneroo WA 6065 | Locked Bag 1, Wanneroo WA\
+        \ 6946</span>\n        </p>\n\t\t</div>\n\t</footer>\n\t<!-- googleon: index\
+        \ -->\n        <script src=\"//www.wanneroo.wa.gov.au/site/javascript/almond.min.js\"\
+        ></script>\n        <script src=\"//www.wanneroo.wa.gov.au/site/javascript/util.min.js\"\
+        ></script>\n        <script src=\"//www.wanneroo.wa.gov.au/site/js/main.js?v1.70.0\"\
+        ></script>\n        <!--[if lte IE 9]>\n            <script src=\"//www.wanneroo.wa.gov.au/site/js/matchmediapolyfill.js\"\
+        ></script>\n        <![endif]-->\n<script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\
+        \  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\
+        \  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\
+        \  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\
+        \   ga('create', 'UA-49670030-1', 'wanneroo.wa.gov.au');  ga('send', 'pageview');\
+        \ </script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new\
+        \ Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-K93NJGG');</script><!--\
+        \ End Google Tag Manager --></script>\n    </body>\n</html>"
     headers:
       Cache-Control:
       - no-store, no-cache, must-revalidate
       Connection:
       - Keep-Alive
-      Content-Encoding:
-      - gzip
-      Content-Length:
-      - '4807'
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Sun, 31 May 2020 04:41:05 GMT
+      - Sun, 31 May 2020 04:44:16 GMT
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Keep-Alive:
@@ -288,6 +915,8 @@ http_interactions:
       - TestCookie=Test; path=/; domain=www.wanneroo.wa.gov.au; HttpOnly
       Strict-Transport-Security:
       - max-age=2592000
+      Transfer-Encoding:
+      - chunked
       Vary:
       - Accept-Encoding
       X-UA-Compatible:
@@ -296,7 +925,7 @@ http_interactions:
       code: 200
       message: OK
     url: https://www.wanneroo.wa.gov.au/animals/dogs/6246-black-white-female-husky
-- recorded_at: '2020-05-31T04:41:05'
+- recorded_at: '2020-05-31T04:44:15'
   request:
     body:
       encoding: utf-8
@@ -305,7 +934,7 @@ http_interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - none
       Connection:
       - keep-alive
       Cookie:
@@ -316,19 +945,17 @@ http_interactions:
     uri: http://www.wanneroo.wa.gov.au/animals/dogs/6247-black-white-female-husky
   response:
     body:
-      base64_string: H4sIAAAAAAAAAwMAAAAAAAAAAAA=
       encoding: UTF-8
+      string: ''
     headers:
       Connection:
       - Keep-Alive
-      Content-Encoding:
-      - gzip
       Content-Length:
-      - '20'
+      - '0'
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Sun, 31 May 2020 04:41:06 GMT
+      - Sun, 31 May 2020 04:44:16 GMT
       Keep-Alive:
       - timeout=5, max=97
       Location:
@@ -341,7 +968,7 @@ http_interactions:
       code: 302
       message: Found
     url: http://www.wanneroo.wa.gov.au/animals/dogs/6247-black-white-female-husky
-- recorded_at: '2020-05-31T04:41:05'
+- recorded_at: '2020-05-31T04:44:16'
   request:
     body:
       encoding: utf-8
@@ -350,32 +977,234 @@ http_interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - none
       Connection:
       - keep-alive
       Cookie:
-      - TestCookie=Test; c1cjzHyDXC2fEzdg=c3122fee9224686e276339ef1ff0dd4f
+      - TestCookie=Test; c1cjzHyDXC2fEzdg=e0f8b1ed8433f94aab3b31760d727cdd
       User-Agent:
       - python-requests/2.23.0
     method: GET
     uri: https://www.wanneroo.wa.gov.au/animals/dogs/6247-black-white-female-husky
   response:
     body:
-      base64_string: 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
       encoding: UTF-8
+      string: "<!DOCTYPE html>\n<!--[if IE 7]>          <html class=\"no-js ie9 ie8\
+        \ ie7\"  lang=\"en\"> <![endif]-->\n<!--[if IE 8]>          <html class=\"\
+        no-js ie9 ie8\"  lang=\"en\"> <![endif]-->\n<!--[if IE 9]>          <html\
+        \ class=\"no-js ie9\"  lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> \
+        \ <html class=\"no-js\"  lang=\"en\"> <!--<![endif]-->\n    <head>\n    \t\
+        <link rel=\"alternate\" type=\"application/rss+xml\" title=\"RSS\" href=\"\
+        https://www.wanneroo.wa.gov.au/rss/news\">\n        <link rel=\"search\" type=\"\
+        application/opensearchdescription+xml\" title=\"City of Wanneroo\" href=\"\
+        https://www.wanneroo.wa.gov.au/site/scripts/opensearch.php\">\n        <link\
+        \ rel=\"shortcut icon\" type=\"image/x-icon\" href=\"//www.wanneroo.wa.gov.au/site/favicon.ico?v=2\"\
+        >\n        <link href='//fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic,500,500italic,700,700italic,900,900italic'\
+        \ rel='stylesheet' type='text/css'>\n        <link rel=\"stylesheet\" type=\"\
+        text/css\" href=\"//www.wanneroo.wa.gov.au/site/styles/generic/base.css\"\
+        >\n        <link rel=\"stylesheet\" type=\"text/css\" href=\"//www.wanneroo.wa.gov.au/site/styles/standard.css?v1.70.0\"\
+        >\n        <!--[if lte IE 9]>\n            <script src=\"//www.wanneroo.wa.gov.au/site/js/html5shiv.js\"\
+        ></script>\n        <![endif]-->\n<!-- Global site tag (gtag.js) - Google\
+        \ Analytics -->\r\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-49670030-1\"\
+        ></script>\r\n<script>\r\n  window.dataLayer = window.dataLayer || [];\r\n\
+        \  function gtag(){dataLayer.push(arguments);}\r\n  gtag('js', new Date());\r\
+        \n\r\n  gtag('config', 'UA-49670030-1');\r\n</script>\r\n<!-- Facebook Pixel\
+        \ Code -->\r\n<script>\r\n!function(f,b,e,v,n,t,s)\r\n{if(f.fbq)return;n=f.fbq=function(){n.callMethod?\r\
+        \nn.callMethod.apply(n,arguments):n.queue.push(arguments)};\r\nif(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\r\
+        \nn.queue=[];t=b.createElement(e);t.async=!0;\r\nt.src=v;s=b.getElementsByTagName(e)[0];\r\
+        \ns.parentNode.insertBefore(t,s)}(window, document,'script',\r\n'https://connect.facebook.net/en_US/fbevents.js';);\r\
+        \nfbq('init', '{367990463887414}');\r\nfbq('track', 'PageView');\r\n</script>\r\
+        \n<noscript>\r\n<img height=\"1\" width=\"1\" style=\"display:none\"\r\nsrc=\"\
+        https://www.facebook.com/tr?id={367990463887414}&ev=PageView&noscript=1\"\
+        />;\r\n</noscript>\r\n<!-- End Facebook Pixel Code -->        <link rel=\"\
+        schema.dcterms\" href=\"http://purl.org/dc/terms\">\n        <meta name=\"\
+        author\" content=\"City of Wanneroo\">\n        <meta name=\"generator\" content=\"\
+        http://www.jadu.net\">\n        <meta name=\"revisit-after\" content=\"2 days\"\
+        >\n        <meta name=\"robots\" content=\"index,follow\">\n        <meta\
+        \ name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n   \
+        \     <meta name=\"dcterms.creator\" content=\"City of Wanneroo\">\n     \
+        \   <meta name=\"dcterms.coverage\" content=\"Wanneroo, Perth, Western Australia,\
+        \ Australia\">\n        <meta name=\"dcterms.format\" content=\"text/html\"\
+        >\n        <meta name=\"dcterms.identifier\" content=\"https://www.wanneroo.wa.gov.au/animals/dogs/6247-black-white-female-husky\"\
+        >\n        <meta name=\"dcterms.language\" content=\"en\">\n        <meta\
+        \ name=\"dcterms.publisher\" content=\"City of Wanneroo\">\n        <meta\
+        \ name=\"dcterms.rightsHolder\" content=\"City of Wanneroo\">\n        <meta\
+        \ name=\"dcterms.description\" content=\"City of Wanneroo is committed to\
+        \ providing accessible web content for all\">\n        <meta name=\"dcterms.subject\"\
+        \ content=\"Accessibility, dda, disability discrimination act, disabled access,\
+        \ access keys, City of Wanneroo, Local Government, Council, Employment, Planning,\
+        \ Waste Collection, Zoning, Infrastructure, Rates Payments, Lost Pets, Search,\
+        \ Community, Events, Emergency Management, Library, Libraries, Bush Fire,\
+        \ Environment, Tourism\">\n        <meta name=\"dcterms.title\" content=\"\
+        City of Wanneroo accessibility features\">\n        <meta name=\"description\"\
+        \ content=\"City of Wanneroo is committed to providing accessible web content\
+        \ for all\">\n        <meta name=\"keywords\" content=\"Accessibility, dda,\
+        \ disability discrimination act, disabled access, access keys, City of Wanneroo,\
+        \ Local Government, Council, Employment, Planning, Waste Collection, Zoning,\
+        \ Infrastructure, Rates Payments, Lost Pets, Search, Community, Events, Emergency\
+        \ Management, Library, Libraries, Bush Fire, Environment, Tourism\">\n   \
+        \     <script type=\"text/javascript\" src=\"//www.wanneroo.wa.gov.au/site/javascript/swfobject.js\"\
+        ></script>\n        <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\"\
+        ></script>\n        <script type=\"text/javascript\">\n            jQuery.noConflict();\n\
+        \    \t\tjQuery('html').removeClass('no-js');\n\t\t</script>\n        <title>Black\
+        \ &amp; white female Husky dog - Animal Care Centre - City of Wanneroo</title>\n\
+        \    </head>\n    <body class=\"body\">\n    <nav aria-label=\"skip links\"\
+        >\n        <ul class=\"skip-links item-list\">\n            <li class=\"item-list__item\"\
+        ><a class=\"skip-links__link\" href=\"https://www.wanneroo.wa.gov.au/animals/dogs/6247-black-white-female-husky#content\"\
+        \ rel=\"nofollow\">Skip to content</a></li>\n        </ul>\n    </nav>\n<!--\
+        \ googleoff: index -->\n        <section aria-label=\"Navigation Button\"\
+        >\n            <a class=\"show-hide-toolpane\" href=\"#\">Menu</a>\n     \
+        \   </section>\n        <aside class=\"toolpane\" aria-label=\"Navigation\"\
+        >\n            <div class=\"toolpane-inner\">\n                <span class=\"\
+        h3\">Navigation</span>\n                <ul class=\"item-list item-list__rich\
+        \ categories\">\n                                        <li>\n          \
+        \              <a id=\"skipToNavAnchor\" href=\"https://www.wanneroo.wa.gov.au/info/20003/council\"\
+        >Council</a>\n                    </li>\n                    <li>\n      \
+        \                  <a href=\"https://www.wanneroo.wa.gov.au/info/20040/libraries\"\
+        >Libraries</a>\n                    </li>\n                    <li>\n    \
+        \                    <a href=\"https://www.wanneroo.wa.gov.au/info/20001/sport_and_leisure\"\
+        >Sport &amp; leisure</a>\n                    </li>\n                    <li>\n\
+        \                        <a href=\"https://www.wanneroo.wa.gov.au/info/20004/community\"\
+        >Community</a>\n                    </li>\n                    <li>\n    \
+        \                    <a href=\"https://www.wanneroo.wa.gov.au/info/20005/business\"\
+        >Business</a>\n                    </li>\n                    <li>\n     \
+        \                   <a href=\"https://www.wanneroo.wa.gov.au/info/20006/animals_and_pets\"\
+        >Animals and pets</a>\n                    </li>\n                    <li>\n\
+        \                        <a href=\"https://www.wanneroo.wa.gov.au/info/20008/waste_and_recycling\"\
+        >Waste and Recycling</a>\n                    </li>\n                    <li>\n\
+        \                        <a href=\"https://www.wanneroo.wa.gov.au/info/20009/things_to_do\"\
+        >Things to do</a>\n                    </li>\n                    <li>\n \
+        \                       <a href=\"https://www.wanneroo.wa.gov.au/info/20017/planning_and_building\"\
+        >Planning and building</a>\n                    </li>\n                  \
+        \  <li>\n                        <a href=\"https://www.wanneroo.wa.gov.au/info/20035/community_health_and_safety\"\
+        >Community health and safety</a>\n                    </li>\n            \
+        \        <li>\n                        <a href=\"https://www.wanneroo.wa.gov.au/info/20041/environment\"\
+        >Environment</a>\n                    </li>\n                    <li>\n  \
+        \                      <a href=\"https://www.wanneroo.wa.gov.au/info/20062/youth\"\
+        >Youth</a>\n                    </li>\n                    <li>\n        \
+        \                <a href=\"https://www.wanneroo.wa.gov.au/info/20125/your_say\"\
+        >Your Say</a>\n                    </li>\n                </ul>\n        \
+        \        <div class=\"account\">\n                    <span class=\"h3\">My\
+        \ Wanneroo</span>\n                    <a class=\"button\" href=\"https://www.wanneroo.wa.gov.au/register\"\
+        >Register</a>\n                    <a class=\"button\" href=\"https://www.wanneroo.wa.gov.au/account/signin\"\
+        >Sign in</a>\n                    <p class=\"subext\"><a href=\"https://www.wanneroo.wa.gov.au/account/forgot_password\"\
+        >Forgot your password?</a><br /><a href=\"/accounthelp\">Account and registration\
+        \ help</a></p>\n                </div>\n                <div class=\"social\"\
+        >\n                    <span class=\"h3\">Social media</span>\n          \
+        \          <a href=\"https://www.facebook.com/CityofWanneroo\"><img alt=\"\
+        Facebook\" src=\"/site/img/icons/social/facebook.png\"></a><a href=\"https://twitter.com/CityofWanneroo\"\
+        ><img alt=\"Twitter\" src=\"/site/img/icons/social/twitter.png\"></a><a href=\"\
+        https://www.youtube.com/user/CityWanneroo\"><img alt=\"Youtube\" src=\"/site/img/icons/social/youtube.png\"\
+        ></a><a href=\"/enewslettersubscription\"><img alt=\"Enewsletter subscription\"\
+        \ src=\"/site/img/icons/social/enewsletters.png\"></a>\n                </div>\n\
+        \n\n            </div>\n        </aside>\n<!-- googleon: index -->\n    \t\
+        <!-- googleoff: index -->\n    \t<header>\n    \t\t<div class=\"container\"\
+        >\n        \t\t<div class=\"logo\"><a href=\"https://www.wanneroo.wa.gov.au\"\
+        >City of Wanneroo: Celebrating 20 years as a city</a></div>\n    \t\t</div>\n\
+        \            <a class=\"show-hide-language\" href=\"https://www.wanneroo.wa.gov.au/translations\"\
+        ><span>Language</span></a>\n            <form action=\"/site_search/results/\"\
+        \ method=\"get\" class=\"form__search\">\n                <a class=\"search-show-hide\"\
+        \ href=\"#\"><span>Search this site</span></a>\n                <label class=\"\
+        visually-hidden\" for=\"search-site\">Search this site</label>\n         \
+        \       <input class=\"field\" type=\"text\" size=\"18\" name=\"q\" placeholder=\"\
+        Search\" id=\"search-site\" title=\"search-site\">\n                <input\
+        \ type=\"submit\" class=\"button button__primary\" value=\"\uE956\">\n   \
+        \         </form>\n    \t</header>\n    \t<!-- googleon: index -->\n    <main\
+        \ class=\"wrapper\">\n        <div id=\"content\" tabindex=\"-1\" class=\"\
+        skip-links__anchor visually-hidden\"></div>\n        <div class=\"container\"\
+        >\n    <!--googleoff: snippet-->\n        <div class=\"alert announcement\"\
+        >\n            <h2 class=\"title box-header icon-info-circled\">COVID-19 recovery\
+        \ information and updates</h2>\n            <p><span>With the announcement\
+        \ of the State Government&rsquo;s plan to move into Phase 3 of its COVID-19\
+        \ recovery roadmap, City services and facilities are currently being reviewed\
+        \ for reopening in early June 2020. </span>             <a href=\"https://www.wanneroo.wa.gov.au/COVID-19recovery\"\
+        >Click here to find out more</a>\n</p>\n        </div>\n    <!--googleon:\
+        \ snippet-->\n<a href=\"/\" class=\"home__button button button__primary\"\
+        >Home</a>\n        <h1>Black &amp; white female Husky dog</h1>\n<!-- googleoff:\
+        \ all -->\n                <nav class=\"breadcrumb\" aria-label=\"Breadcrumb\
+        \ Navigation\">\n            <ol class=\"breadcrumb-list\">\n            \
+        \    <li>\n                    <a href=\"https://www.wanneroo.wa.gov.au\"\
+        \ rel=\"home\">Home</a>\n                </li>\n                <li>\n   \
+        \                 <a href=\"/animals\">Animal Care Centre</a>\n          \
+        \      </li><li><span>DOG-6247</span></li>\n            </ol>\n        </nav>\n\
+        <!-- googleon: all -->\n\n        <h2>Animal reference: <strong>DOG-6247</strong></h2>\n\
+        \                    <img class=\"main-image\" src=\"/lost-animals/images/5ed221b7e64ec.jpg\"\
+        \ alt=\" \">\n                <ul class=\"item-list item-list__arrows item-list__larger\
+        \ item-list__floatingimage\">\n            <li>Sex: <strong>Female</strong></li>\
+        \            <li>Colour: <strong>Black &amp; white</strong></li>         \
+        \   <li>Breed: <strong>Husky</strong></li>\n            \n            <li>Admitted\
+        \ from: <strong>Sinagra - 6065</strong></li>            <li>Admission date:\
+        \ <strong>30/05/2020</strong></li>\n        </ul>\n\n        \n<a class=\"\
+        button button__secondary icon-link-ext\" href=\"/dogcollection?animalreference=DOG-6247\"\
+        \ target=\"_blank\" style=\"\n    margin-left: 10px;\n    margin-top: 10px;\n\
+        \    padding-top: 20px;\n    padding-bottom: 20px;\n\">I believe this is my\
+        \ dog</a>\n<a class=\"button button__secondary icon-link-ext\" href=\"/adoptdog?animalreference=DOG-6247\"\
+        \ target=\"_blank\" style=\"\n    margin-left: 10px;\n    margin-top: 10px;\n\
+        \    padding-top: 20px;\n    padding-bottom: 20px;\n\">I'm interested in adopting\
+        \ this dog</a>\n\n\n        <p class=\"subtext\">If your pet has wandered\
+        \ from home and you believe it has been impounded, you should contact the\
+        \ Animal Care Centre by completing our dedicated online form or call us on\
+        \ 9405 5000 (during office hours) or 1300 138 393 (after hours). If one of\
+        \ our Rangers has found your pet and it\u2019s wearing a current Council registration\
+        \ tag, we will contact you.</p>\n        <p class=\"subtext\">The Animal Care\
+        \ Centre is located at the City of Wanneroo Ashby Operations Centre, 1204\
+        \ Wanneroo Road, Ashby. If your pet is impounded you will need to call the\
+        \ City on 9405 5000 to make an appointment to collect the animal. The Centre\
+        \ is closed on Christmas Day and Good Friday. Pets that have been picked up\
+        \ by Rangers and are not claimed are re-homed where possible.</p>\n\n    \
+        \ </div>\n </main>\n<!-- googleoff: index -->\n    <footer>\n\t\t<div class=\"\
+        container\">\n    \t\t<div class=\"social\">\n        \t\t<a href=\"https://www.facebook.com/CityofWanneroo\"\
+        ><img alt=\"Facebook\" src=\"/site/img/icons/social/facebook.png\"></a><a\
+        \ href=\"https://twitter.com/CityofWanneroo\"><img alt=\"Twitter\" src=\"\
+        /site/img/icons/social/twitter.png\"></a><a href=\"https://www.youtube.com/user/CityWanneroo\"\
+        ><img alt=\"Youtube\" src=\"/site/img/icons/social/youtube.png\"></a><a href=\"\
+        /enewslettersubscription\"><img alt=\"Enewsletter subscription\" src=\"/site/img/icons/social/enewsletters.png\"\
+        ></a>\n    \t\t</div>\n            <div class=\"languages\">\n           \
+        \     <ul class=\"languages__list\">\n                    <li class=\"languages__list-item\"\
+        ><a class=\"languages__link\" href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=vi&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >Vi\u1EC7t</a></li>\n                    <li class=\"languages__list-item\"\
+        ><a class=\"languages__link\" href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=af&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >Afrikaans</a></li>\n                    <li class=\"languages__list-item\"\
+        ><a class=\"languages__link\" href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=it&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >Italiano</a></li>\n                    <li class=\"languages__list-item\"\
+        ><a class=\"languages__link\" href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=mk&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >\u041C\u0430\u043A\u0435\u0434\u043E\u043D\u0441\u043A\u0438</a></li>\n \
+        \                   <li class=\"languages__list-item\"><a class=\"languages__link\"\
+        \ href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=ar&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >\u0627\u0644\u0639\u0631\u0628\u064A\u0629</a></li>\n                   \
+        \ <li class=\"languages__list-item\"><a class=\"languages__link\" href=\"\
+        https://www.wanneroo.wa.gov.au/translations\">Language Translations</a></li>\n\
+        \                </ul>\n            </div>\n\t\t<p class=\"subtext\">ACKNOWLEDGEMENT\
+        \ OF COUNTRY The City of Wanneroo acknowledges the Traditional Custodians\
+        \ of the land we are working on, the Whadjuk people. We would like to pay\
+        \ respect to the Elders of the Noongar nation, past, present and future, who\
+        \ have walked and cared for the land and we acknowledge and respect their\
+        \ continuing culture and the contributions made to the life of this City and\
+        \ this region. </p>\n\t\t<p class=\"subtext\">\n            <a href=\"/terms\"\
+        \ class=\"smallprint__link\">Terms</a><span>All content &copy; 2020 City of\
+        \ Wanneroo. 23 Dundebar Road, Wanneroo WA 6065 | Locked Bag 1, Wanneroo WA\
+        \ 6946</span>\n        </p>\n\t\t</div>\n\t</footer>\n\t<!-- googleon: index\
+        \ -->\n        <script src=\"//www.wanneroo.wa.gov.au/site/javascript/almond.min.js\"\
+        ></script>\n        <script src=\"//www.wanneroo.wa.gov.au/site/javascript/util.min.js\"\
+        ></script>\n        <script src=\"//www.wanneroo.wa.gov.au/site/js/main.js?v1.70.0\"\
+        ></script>\n        <!--[if lte IE 9]>\n            <script src=\"//www.wanneroo.wa.gov.au/site/js/matchmediapolyfill.js\"\
+        ></script>\n        <![endif]-->\n<script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\
+        \  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\
+        \  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\
+        \  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\
+        \   ga('create', 'UA-49670030-1', 'wanneroo.wa.gov.au');  ga('send', 'pageview');\
+        \ </script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new\
+        \ Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-K93NJGG');</script><!--\
+        \ End Google Tag Manager --></script>\n    </body>\n</html>"
     headers:
       Cache-Control:
       - no-store, no-cache, must-revalidate
       Connection:
       - Keep-Alive
-      Content-Encoding:
-      - gzip
-      Content-Length:
-      - '4806'
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Sun, 31 May 2020 04:41:06 GMT
+      - Sun, 31 May 2020 04:44:16 GMT
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Keep-Alive:
@@ -388,6 +1217,8 @@ http_interactions:
       - TestCookie=Test; path=/; domain=www.wanneroo.wa.gov.au; HttpOnly
       Strict-Transport-Security:
       - max-age=2592000
+      Transfer-Encoding:
+      - chunked
       Vary:
       - Accept-Encoding
       X-UA-Compatible:
@@ -396,7 +1227,7 @@ http_interactions:
       code: 200
       message: OK
     url: https://www.wanneroo.wa.gov.au/animals/dogs/6247-black-white-female-husky
-- recorded_at: '2020-05-31T04:41:06'
+- recorded_at: '2020-05-31T04:44:16'
   request:
     body:
       encoding: utf-8
@@ -405,7 +1236,7 @@ http_interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - none
       Connection:
       - keep-alive
       Cookie:
@@ -416,19 +1247,17 @@ http_interactions:
     uri: http://www.wanneroo.wa.gov.au/animals/cats
   response:
     body:
-      base64_string: H4sIAAAAAAAAAwMAAAAAAAAAAAA=
       encoding: UTF-8
+      string: ''
     headers:
       Connection:
       - Keep-Alive
-      Content-Encoding:
-      - gzip
       Content-Length:
-      - '20'
+      - '0'
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Sun, 31 May 2020 04:41:07 GMT
+      - Sun, 31 May 2020 04:44:17 GMT
       Keep-Alive:
       - timeout=5, max=96
       Location:
@@ -441,7 +1270,7 @@ http_interactions:
       code: 302
       message: Found
     url: http://www.wanneroo.wa.gov.au/animals/cats
-- recorded_at: '2020-05-31T04:41:06'
+- recorded_at: '2020-05-31T04:44:17'
   request:
     body:
       encoding: utf-8
@@ -450,32 +1279,221 @@ http_interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - none
       Connection:
       - keep-alive
       Cookie:
-      - TestCookie=Test; c1cjzHyDXC2fEzdg=c3122fee9224686e276339ef1ff0dd4f
+      - TestCookie=Test; c1cjzHyDXC2fEzdg=e0f8b1ed8433f94aab3b31760d727cdd
       User-Agent:
       - python-requests/2.23.0
     method: GET
     uri: https://www.wanneroo.wa.gov.au/animals/cats
   response:
     body:
-      base64_string: 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
       encoding: UTF-8
+      string: "<!DOCTYPE html>\n<!--[if IE 7]>          <html class=\"no-js ie9 ie8\
+        \ ie7\"  lang=\"en\"> <![endif]-->\n<!--[if IE 8]>          <html class=\"\
+        no-js ie9 ie8\"  lang=\"en\"> <![endif]-->\n<!--[if IE 9]>          <html\
+        \ class=\"no-js ie9\"  lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> \
+        \ <html class=\"no-js\"  lang=\"en\"> <!--<![endif]-->\n    <head>\n    \t\
+        <link rel=\"alternate\" type=\"application/rss+xml\" title=\"RSS\" href=\"\
+        https://www.wanneroo.wa.gov.au/rss/news\">\n        <link rel=\"search\" type=\"\
+        application/opensearchdescription+xml\" title=\"City of Wanneroo\" href=\"\
+        https://www.wanneroo.wa.gov.au/site/scripts/opensearch.php\">\n        <link\
+        \ rel=\"shortcut icon\" type=\"image/x-icon\" href=\"//www.wanneroo.wa.gov.au/site/favicon.ico?v=2\"\
+        >\n        <link href='//fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic,500,500italic,700,700italic,900,900italic'\
+        \ rel='stylesheet' type='text/css'>\n        <link rel=\"stylesheet\" type=\"\
+        text/css\" href=\"//www.wanneroo.wa.gov.au/site/styles/generic/base.css\"\
+        >\n        <link rel=\"stylesheet\" type=\"text/css\" href=\"//www.wanneroo.wa.gov.au/site/styles/standard.css?v1.70.0\"\
+        >\n        <!--[if lte IE 9]>\n            <script src=\"//www.wanneroo.wa.gov.au/site/js/html5shiv.js\"\
+        ></script>\n        <![endif]-->\n<!-- Global site tag (gtag.js) - Google\
+        \ Analytics -->\r\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-49670030-1\"\
+        ></script>\r\n<script>\r\n  window.dataLayer = window.dataLayer || [];\r\n\
+        \  function gtag(){dataLayer.push(arguments);}\r\n  gtag('js', new Date());\r\
+        \n\r\n  gtag('config', 'UA-49670030-1');\r\n</script>\r\n<!-- Facebook Pixel\
+        \ Code -->\r\n<script>\r\n!function(f,b,e,v,n,t,s)\r\n{if(f.fbq)return;n=f.fbq=function(){n.callMethod?\r\
+        \nn.callMethod.apply(n,arguments):n.queue.push(arguments)};\r\nif(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\r\
+        \nn.queue=[];t=b.createElement(e);t.async=!0;\r\nt.src=v;s=b.getElementsByTagName(e)[0];\r\
+        \ns.parentNode.insertBefore(t,s)}(window, document,'script',\r\n'https://connect.facebook.net/en_US/fbevents.js';);\r\
+        \nfbq('init', '{367990463887414}');\r\nfbq('track', 'PageView');\r\n</script>\r\
+        \n<noscript>\r\n<img height=\"1\" width=\"1\" style=\"display:none\"\r\nsrc=\"\
+        https://www.facebook.com/tr?id={367990463887414}&ev=PageView&noscript=1\"\
+        />;\r\n</noscript>\r\n<!-- End Facebook Pixel Code -->        <link rel=\"\
+        schema.dcterms\" href=\"http://purl.org/dc/terms\">\n        <meta name=\"\
+        author\" content=\"City of Wanneroo\">\n        <meta name=\"generator\" content=\"\
+        http://www.jadu.net\">\n        <meta name=\"revisit-after\" content=\"2 days\"\
+        >\n        <meta name=\"robots\" content=\"index,follow\">\n        <meta\
+        \ name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n   \
+        \     <meta name=\"dcterms.creator\" content=\"City of Wanneroo\">\n     \
+        \   <meta name=\"dcterms.coverage\" content=\"Wanneroo, Perth, Western Australia,\
+        \ Australia\">\n        <meta name=\"dcterms.format\" content=\"text/html\"\
+        >\n        <meta name=\"dcterms.identifier\" content=\"https://www.wanneroo.wa.gov.au/animals/cats\"\
+        >\n        <meta name=\"dcterms.language\" content=\"en\">\n        <meta\
+        \ name=\"dcterms.publisher\" content=\"City of Wanneroo\">\n        <meta\
+        \ name=\"dcterms.rightsHolder\" content=\"City of Wanneroo\">\n        <meta\
+        \ name=\"dcterms.description\" content=\"City of Wanneroo is committed to\
+        \ providing accessible web content for all\">\n        <meta name=\"dcterms.subject\"\
+        \ content=\"Accessibility, dda, disability discrimination act, disabled access,\
+        \ access keys, City of Wanneroo, Local Government, Council, Employment, Planning,\
+        \ Waste Collection, Zoning, Infrastructure, Rates Payments, Lost Pets, Search,\
+        \ Community, Events, Emergency Management, Library, Libraries, Bush Fire,\
+        \ Environment, Tourism\">\n        <meta name=\"dcterms.title\" content=\"\
+        City of Wanneroo accessibility features\">\n        <meta name=\"description\"\
+        \ content=\"City of Wanneroo is committed to providing accessible web content\
+        \ for all\">\n        <meta name=\"keywords\" content=\"Accessibility, dda,\
+        \ disability discrimination act, disabled access, access keys, City of Wanneroo,\
+        \ Local Government, Council, Employment, Planning, Waste Collection, Zoning,\
+        \ Infrastructure, Rates Payments, Lost Pets, Search, Community, Events, Emergency\
+        \ Management, Library, Libraries, Bush Fire, Environment, Tourism\">\n   \
+        \     <script type=\"text/javascript\" src=\"//www.wanneroo.wa.gov.au/site/javascript/swfobject.js\"\
+        ></script>\n        <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\"\
+        ></script>\n        <script type=\"text/javascript\">\n            jQuery.noConflict();\n\
+        \    \t\tjQuery('html').removeClass('no-js');\n\t\t</script>\n        <title>Cats\
+        \ in the Animal Care Centre - City of Wanneroo</title>\n    </head>\n    <body\
+        \ class=\"body\">\n    <nav aria-label=\"skip links\">\n        <ul class=\"\
+        skip-links item-list\">\n            <li class=\"item-list__item\"><a class=\"\
+        skip-links__link\" href=\"https://www.wanneroo.wa.gov.au/animals/cats#content\"\
+        \ rel=\"nofollow\">Skip to content</a></li>\n        </ul>\n    </nav>\n<!--\
+        \ googleoff: index -->\n        <section aria-label=\"Navigation Button\"\
+        >\n            <a class=\"show-hide-toolpane\" href=\"#\">Menu</a>\n     \
+        \   </section>\n        <aside class=\"toolpane\" aria-label=\"Navigation\"\
+        >\n            <div class=\"toolpane-inner\">\n                <span class=\"\
+        h3\">Navigation</span>\n                <ul class=\"item-list item-list__rich\
+        \ categories\">\n                                        <li>\n          \
+        \              <a id=\"skipToNavAnchor\" href=\"https://www.wanneroo.wa.gov.au/info/20003/council\"\
+        >Council</a>\n                    </li>\n                    <li>\n      \
+        \                  <a href=\"https://www.wanneroo.wa.gov.au/info/20040/libraries\"\
+        >Libraries</a>\n                    </li>\n                    <li>\n    \
+        \                    <a href=\"https://www.wanneroo.wa.gov.au/info/20001/sport_and_leisure\"\
+        >Sport &amp; leisure</a>\n                    </li>\n                    <li>\n\
+        \                        <a href=\"https://www.wanneroo.wa.gov.au/info/20004/community\"\
+        >Community</a>\n                    </li>\n                    <li>\n    \
+        \                    <a href=\"https://www.wanneroo.wa.gov.au/info/20005/business\"\
+        >Business</a>\n                    </li>\n                    <li>\n     \
+        \                   <a href=\"https://www.wanneroo.wa.gov.au/info/20006/animals_and_pets\"\
+        >Animals and pets</a>\n                    </li>\n                    <li>\n\
+        \                        <a href=\"https://www.wanneroo.wa.gov.au/info/20008/waste_and_recycling\"\
+        >Waste and Recycling</a>\n                    </li>\n                    <li>\n\
+        \                        <a href=\"https://www.wanneroo.wa.gov.au/info/20009/things_to_do\"\
+        >Things to do</a>\n                    </li>\n                    <li>\n \
+        \                       <a href=\"https://www.wanneroo.wa.gov.au/info/20017/planning_and_building\"\
+        >Planning and building</a>\n                    </li>\n                  \
+        \  <li>\n                        <a href=\"https://www.wanneroo.wa.gov.au/info/20035/community_health_and_safety\"\
+        >Community health and safety</a>\n                    </li>\n            \
+        \        <li>\n                        <a href=\"https://www.wanneroo.wa.gov.au/info/20041/environment\"\
+        >Environment</a>\n                    </li>\n                    <li>\n  \
+        \                      <a href=\"https://www.wanneroo.wa.gov.au/info/20062/youth\"\
+        >Youth</a>\n                    </li>\n                    <li>\n        \
+        \                <a href=\"https://www.wanneroo.wa.gov.au/info/20125/your_say\"\
+        >Your Say</a>\n                    </li>\n                </ul>\n        \
+        \        <div class=\"account\">\n                    <span class=\"h3\">My\
+        \ Wanneroo</span>\n                    <a class=\"button\" href=\"https://www.wanneroo.wa.gov.au/register\"\
+        >Register</a>\n                    <a class=\"button\" href=\"https://www.wanneroo.wa.gov.au/account/signin\"\
+        >Sign in</a>\n                    <p class=\"subext\"><a href=\"https://www.wanneroo.wa.gov.au/account/forgot_password\"\
+        >Forgot your password?</a><br /><a href=\"/accounthelp\">Account and registration\
+        \ help</a></p>\n                </div>\n                <div class=\"social\"\
+        >\n                    <span class=\"h3\">Social media</span>\n          \
+        \          <a href=\"https://www.facebook.com/CityofWanneroo\"><img alt=\"\
+        Facebook\" src=\"/site/img/icons/social/facebook.png\"></a><a href=\"https://twitter.com/CityofWanneroo\"\
+        ><img alt=\"Twitter\" src=\"/site/img/icons/social/twitter.png\"></a><a href=\"\
+        https://www.youtube.com/user/CityWanneroo\"><img alt=\"Youtube\" src=\"/site/img/icons/social/youtube.png\"\
+        ></a><a href=\"/enewslettersubscription\"><img alt=\"Enewsletter subscription\"\
+        \ src=\"/site/img/icons/social/enewsletters.png\"></a>\n                </div>\n\
+        \n\n            </div>\n        </aside>\n<!-- googleon: index -->\n    \t\
+        <!-- googleoff: index -->\n    \t<header>\n    \t\t<div class=\"container\"\
+        >\n        \t\t<div class=\"logo\"><a href=\"https://www.wanneroo.wa.gov.au\"\
+        >City of Wanneroo: Celebrating 20 years as a city</a></div>\n    \t\t</div>\n\
+        \            <a class=\"show-hide-language\" href=\"https://www.wanneroo.wa.gov.au/translations\"\
+        ><span>Language</span></a>\n            <form action=\"/site_search/results/\"\
+        \ method=\"get\" class=\"form__search\">\n                <a class=\"search-show-hide\"\
+        \ href=\"#\"><span>Search this site</span></a>\n                <label class=\"\
+        visually-hidden\" for=\"search-site\">Search this site</label>\n         \
+        \       <input class=\"field\" type=\"text\" size=\"18\" name=\"q\" placeholder=\"\
+        Search\" id=\"search-site\" title=\"search-site\">\n                <input\
+        \ type=\"submit\" class=\"button button__primary\" value=\"\uE956\">\n   \
+        \         </form>\n    \t</header>\n    \t<!-- googleon: index -->\n    <main\
+        \ class=\"wrapper\">\n        <div id=\"content\" tabindex=\"-1\" class=\"\
+        skip-links__anchor visually-hidden\"></div>\n        <div class=\"container\"\
+        >\n    <!--googleoff: snippet-->\n        <div class=\"alert announcement\"\
+        >\n            <h2 class=\"title box-header icon-info-circled\">COVID-19 recovery\
+        \ information and updates</h2>\n            <p><span>With the announcement\
+        \ of the State Government&rsquo;s plan to move into Phase 3 of its COVID-19\
+        \ recovery roadmap, City services and facilities are currently being reviewed\
+        \ for reopening in early June 2020. </span>             <a href=\"https://www.wanneroo.wa.gov.au/COVID-19recovery\"\
+        >Click here to find out more</a>\n</p>\n        </div>\n    <!--googleon:\
+        \ snippet-->\n<a href=\"/\" class=\"home__button button button__primary\"\
+        >Home</a>\n        <h1>Cats in the Animal Care Centre</h1>\n<!-- googleoff:\
+        \ all -->\n                <nav class=\"breadcrumb\" aria-label=\"Breadcrumb\
+        \ Navigation\">\n            <ol class=\"breadcrumb-list\">\n            \
+        \    <li>\n                    <a href=\"https://www.wanneroo.wa.gov.au\"\
+        \ rel=\"home\">Home</a>\n                </li>\n                <li>\n   \
+        \                 <span>Animal Care Centre</span>\n                </li>\n\
+        \            </ol>\n        </nav>\n<!-- googleon: all -->\n\n\n<p class=\"\
+        summary\">\n            There are currently\n        0 lost cats        recorded\
+        \ in Wanneroo.\n    </p>\n\n\n<p class=\"subtext\">If your pet has wandered\
+        \ from home and you believe it has been impounded, you should contact the\
+        \ Animal Care Centre by completing our dedicated online form or call us on\
+        \ 9405 5000 (during office hours) or 1300 138 393 (after hours). If one of\
+        \ our Rangers has found your pet and it\u2019s wearing a current Council registration\
+        \ tag, we will contact you.</p>\n<p class=\"subtext\">The Animal Care Centre\
+        \ is located at the City of Wanneroo Ashby Operations Centre, 1204 Wanneroo\
+        \ Road, Ashby. If your pet is impounded you will need to call the City on\
+        \ 9405 5000 to make an appointment to collect the animal. The Centre is closed\
+        \ on Christmas Day and Good Friday. Pets that have been picked up by Rangers\
+        \ and are not claimed are re-homed where possible.</p>\n\n     </div>\n </main>\n\
+        <!-- googleoff: index -->\n    <footer>\n\t\t<div class=\"container\">\n \
+        \   \t\t<div class=\"social\">\n        \t\t<a href=\"https://www.facebook.com/CityofWanneroo\"\
+        ><img alt=\"Facebook\" src=\"/site/img/icons/social/facebook.png\"></a><a\
+        \ href=\"https://twitter.com/CityofWanneroo\"><img alt=\"Twitter\" src=\"\
+        /site/img/icons/social/twitter.png\"></a><a href=\"https://www.youtube.com/user/CityWanneroo\"\
+        ><img alt=\"Youtube\" src=\"/site/img/icons/social/youtube.png\"></a><a href=\"\
+        /enewslettersubscription\"><img alt=\"Enewsletter subscription\" src=\"/site/img/icons/social/enewsletters.png\"\
+        ></a>\n    \t\t</div>\n            <div class=\"languages\">\n           \
+        \     <ul class=\"languages__list\">\n                    <li class=\"languages__list-item\"\
+        ><a class=\"languages__link\" href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=vi&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >Vi\u1EC7t</a></li>\n                    <li class=\"languages__list-item\"\
+        ><a class=\"languages__link\" href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=af&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >Afrikaans</a></li>\n                    <li class=\"languages__list-item\"\
+        ><a class=\"languages__link\" href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=it&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >Italiano</a></li>\n                    <li class=\"languages__list-item\"\
+        ><a class=\"languages__link\" href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=mk&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >\u041C\u0430\u043A\u0435\u0434\u043E\u043D\u0441\u043A\u0438</a></li>\n \
+        \                   <li class=\"languages__list-item\"><a class=\"languages__link\"\
+        \ href=\"https://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=ar&amp;u=https://www.wanneroo.wa.gov.au\"\
+        >\u0627\u0644\u0639\u0631\u0628\u064A\u0629</a></li>\n                   \
+        \ <li class=\"languages__list-item\"><a class=\"languages__link\" href=\"\
+        https://www.wanneroo.wa.gov.au/translations\">Language Translations</a></li>\n\
+        \                </ul>\n            </div>\n\t\t<p class=\"subtext\">ACKNOWLEDGEMENT\
+        \ OF COUNTRY The City of Wanneroo acknowledges the Traditional Custodians\
+        \ of the land we are working on, the Whadjuk people. We would like to pay\
+        \ respect to the Elders of the Noongar nation, past, present and future, who\
+        \ have walked and cared for the land and we acknowledge and respect their\
+        \ continuing culture and the contributions made to the life of this City and\
+        \ this region. </p>\n\t\t<p class=\"subtext\">\n            <a href=\"/terms\"\
+        \ class=\"smallprint__link\">Terms</a><span>All content &copy; 2020 City of\
+        \ Wanneroo. 23 Dundebar Road, Wanneroo WA 6065 | Locked Bag 1, Wanneroo WA\
+        \ 6946</span>\n        </p>\n\t\t</div>\n\t</footer>\n\t<!-- googleon: index\
+        \ -->\n        <script src=\"//www.wanneroo.wa.gov.au/site/javascript/almond.min.js\"\
+        ></script>\n        <script src=\"//www.wanneroo.wa.gov.au/site/javascript/util.min.js\"\
+        ></script>\n        <script src=\"//www.wanneroo.wa.gov.au/site/js/main.js?v1.70.0\"\
+        ></script>\n        <!--[if lte IE 9]>\n            <script src=\"//www.wanneroo.wa.gov.au/site/js/matchmediapolyfill.js\"\
+        ></script>\n        <![endif]-->\n<script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\
+        \  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\
+        \  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\
+        \  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\
+        \   ga('create', 'UA-49670030-1', 'wanneroo.wa.gov.au');  ga('send', 'pageview');\
+        \ </script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new\
+        \ Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-K93NJGG');</script><!--\
+        \ End Google Tag Manager --></script>\n    </body>\n</html>"
     headers:
       Cache-Control:
       - no-store, no-cache, must-revalidate
       Connection:
       - Keep-Alive
-      Content-Encoding:
-      - gzip
-      Content-Length:
-      - '4469'
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Sun, 31 May 2020 04:41:07 GMT
+      - Sun, 31 May 2020 04:44:17 GMT
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Keep-Alive:
@@ -488,6 +1506,8 @@ http_interactions:
       - TestCookie=Test; path=/; domain=www.wanneroo.wa.gov.au; HttpOnly
       Strict-Transport-Security:
       - max-age=2592000
+      Transfer-Encoding:
+      - chunked
       Vary:
       - Accept-Encoding
       X-UA-Compatible:

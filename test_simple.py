@@ -15,6 +15,7 @@ with Betamax.configure() as config:
 @fixture
 def betamax(request):
     session = Session()
+    session.headers['Accept-Encoding'] = 'none'  # gzip/deflate breaks with betamax
     with Betamax(session).use_cassette(request.node.name, serialize_with='yaml11'):
         yield session
 

@@ -79,3 +79,47 @@ snapshots['test_sources[gosnells] 1'] = [
         "Pet(location=None, image='https://eservices.gosnells.wa.gov.au/Data/remote.axd/eservices.gosnells.wa.gov.au/ImpoundImgs//73748_$P1RAMAP_1aqLXPH-x06txGHzeXjL7g.jpg?width=800', breed=None, color=None, gender='Male', found_on=<Arrow [2020-05-27T00:00:00+00:00]>, source='gosnells', url='https://eservices.gosnells.wa.gov.au/data/impounds')"
     ),
 ]
+
+snapshots['test_sources[canning] 1'] = []
+
+snapshots['test_sources[rockingham] 1'] = [
+    GenericRepr(
+        "Pet(location='Shoalwater', image='https://rockingham.wa.gov.au/getattachment/9a407892-8a20-4f9c-a99d-2f3424a004b7/342-20.JPG?lang=en-AU', breed='Domestic Short Haired (cat)', color='Tortoise Shell', gender='Female', found_on=<Arrow [2020-05-22T00:00:00+00:00]>, source='rockingham', url='https://rockingham.wa.gov.au/your-services/pets-and-animals/animal-pound')"
+    ),
+    GenericRepr(
+        "Pet(location='Secret Harbour', image='https://rockingham.wa.gov.au/getattachment/b2dad3dd-8535-4fda-8b0f-e95699f5e3d0/346-20.JPG?lang=en-AU', breed='Ragdoll (cat)', color='Seal Point', gender='Male', found_on=<Arrow [2020-05-24T00:00:00+00:00]>, source='rockingham', url='https://rockingham.wa.gov.au/your-services/pets-and-animals/animal-pound')"
+    ),
+    GenericRepr(
+        "Pet(location='Elanora Drive, Rockingham', image='https://rockingham.wa.gov.au/getattachment/f31283b0-6ff2-4330-a4d0-7f789d649387/348-20.JPG?lang=en-AU', breed='Domestic Short Haired (cat)', color='Tabby', gender='Male', found_on=<Arrow [2020-05-25T00:00:00+00:00]>, source='rockingham', url='https://rockingham.wa.gov.au/your-services/pets-and-animals/animal-pound')"
+    ),
+    GenericRepr(
+        "Pet(location='Port Kennedy Vets', image='https://rockingham.wa.gov.au/getattachment/65a560f8-ea6f-4991-9a23-3dbc4ad72fca/351-2020.JPG?lang=en-AU', breed='Domestic Long Hair (cat)', color='Tabby', gender='Female', found_on=<Arrow [2020-05-26T00:00:00+00:00]>, source='rockingham', url='https://rockingham.wa.gov.au/your-services/pets-and-animals/animal-pound')"
+    ),
+    GenericRepr(
+        "Pet(location='Waikiki', image='https://rockingham.wa.gov.au/getattachment/b538cdd2-d18c-432e-b132-f7cbb48b30df/354-20.JPG?lang=en-AU', breed='Staffy X', color='Tan/White', gender='Female', found_on=<Arrow [2020-05-27T00:00:00+00:00]>, source='rockingham', url='https://rockingham.wa.gov.au/your-services/pets-and-animals/animal-pound')"
+    ),
+    GenericRepr(
+        "Pet(location='Port Kennedy', image='https://rockingham.wa.gov.au/getattachment/0f76afa2-c586-4285-b720-05b44bceaac8/361-20.JPG?lang=en-AU', breed='Shar Pei', color='Tan', gender='Male', found_on=<Arrow [2020-05-29T00:00:00+00:00]>, source='rockingham', url='https://rockingham.wa.gov.au/your-services/pets-and-animals/animal-pound')"
+    ),
+    GenericRepr(
+        "Pet(location='Baldivis', image='https://rockingham.wa.gov.au/getattachment/8d9c4c9a-c259-43f0-b368-e0dadd9d4462/358-20.jpg?lang=en-AU&height=1920&width=1440', breed='Siamese (cat)', color='Black/Grey/White', gender='Male', found_on=<Arrow [2020-05-28T00:00:00+00:00]>, source='rockingham', url='https://rockingham.wa.gov.au/your-services/pets-and-animals/animal-pound')"
+    ),
+    GenericRepr(
+        "Pet(location='Warnbro', image='https://rockingham.wa.gov.au/getattachment/3891bf30-1fa9-4311-817d-1a86c0f0c28b/362-20.jpg?lang=en-AU&height=966&width=1288', breed='Domestic Short Haired (cat)', color='Brindle/White', gender='Female', found_on=<Arrow [2020-05-31T00:00:00+00:00]>, source='rockingham', url='https://rockingham.wa.gov.au/your-services/pets-and-animals/animal-pound')"
+    ),
+]
+
+snapshots['test_sources[cockburn] 1'] = [
+    GenericRepr(
+        "Pet(location='HAMILTON HILL', image='https://www.cockburn.wa.gov.au/CMSPages/GetBizFormFile.aspx?filename=0f3fed5b-e5ff-4b42-9d16-a254873aee85.jpg&sitename=CityOfCockburn&mod=30May2020035013', breed='Ridgeback', color='Tan and White', gender='Male', found_on=<Arrow [2020-05-30T00:00:00+00:00]>, source='cockburn', url='https://www.cockburn.wa.gov.au/Health-and-Safety/Dogs-and-Cats/Animal-Pound-Dogs-and-Cats')"
+    ),
+    GenericRepr(
+        "Pet(location='COOLBELLUP', image='https://www.cockburn.wa.gov.au/CMSPages/GetBizFormFile.aspx?filename=2343520a-a8d8-471d-b472-a4fdf4272f56.jpg&sitename=CityOfCockburn&mod=29May2020050621', breed='Staffordshire Bull Terrier Cross', color='Brown Brindled', gender='Male', found_on=<Arrow [2020-05-29T00:00:00+00:00]>, source='cockburn', url='https://www.cockburn.wa.gov.au/Health-and-Safety/Dogs-and-Cats/Animal-Pound-Dogs-and-Cats')"
+    ),
+    GenericRepr(
+        "Pet(location='COOLBELLUP', image='https://www.cockburn.wa.gov.au/CMSPages/GetBizFormFile.aspx?filename=260f5576-1268-4f04-aaca-87a058909420.jpg&sitename=CityOfCockburn&mod=29May2020113631', breed='Domestic Short Hair', color='Tabby', gender='Unknown', found_on=<Arrow [2020-05-23T00:00:00+00:00]>, source='cockburn', url='https://www.cockburn.wa.gov.au/Health-and-Safety/Dogs-and-Cats/Animal-Pound-Dogs-and-Cats')"
+    ),
+    GenericRepr(
+        "Pet(location='COOLBELLUP', image='https://www.cockburn.wa.gov.au/CMSPages/GetBizFormFile.aspx?filename=8ba4ab7f-6aeb-4f3f-be04-0bf8636a01a5.jpg&sitename=CityOfCockburn&mod=29May2020113643', breed='Domestic Short Hair', color='White', gender='Unknown', found_on=<Arrow [2020-05-23T00:00:00+00:00]>, source='cockburn', url='https://www.cockburn.wa.gov.au/Health-and-Safety/Dogs-and-Cats/Animal-Pound-Dogs-and-Cats')"
+    ),
+]

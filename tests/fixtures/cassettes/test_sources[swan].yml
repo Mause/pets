@@ -1,5 +1,5 @@
 http_interactions:
-- recorded_at: '2020-05-31T04:41:09'
+- recorded_at: '2020-05-31T04:44:20'
   request:
     body:
       encoding: utf-8
@@ -8,7 +8,7 @@ http_interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - none
       Connection:
       - keep-alive
       User-Agent:
@@ -95,7 +95,7 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Date:
-      - Sun, 31 May 2020 04:41:10 GMT
+      - Sun, 31 May 2020 04:44:21 GMT
       ETag:
       - '"ea5a4b4c75f00d6b8d763bbb3c24b618"'
       Server:
@@ -111,9 +111,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.41
       X-Request-Id:
-      - 3aef1705-df64-4269-a5dc-1c632ad3a667
+      - 16811822-73a8-4136-82dc-cd13cf1f7a0a
       X-Runtime:
-      - '0.060644'
+      - '0.075958'
       X-UA-Compatible:
       - chrome=1
       X-XSS-Protection:
@@ -122,7 +122,7 @@ http_interactions:
       code: 200
       message: OK
     url: http://www.swanamf.com.au/dogs
-- recorded_at: '2020-05-31T04:41:09'
+- recorded_at: '2020-05-31T04:44:20'
   request:
     body:
       encoding: utf-8
@@ -131,7 +131,7 @@ http_interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - none
       Connection:
       - keep-alive
       User-Agent:
@@ -253,7 +253,7 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Date:
-      - Sun, 31 May 2020 04:41:10 GMT
+      - Sun, 31 May 2020 04:44:21 GMT
       ETag:
       - '"61215dc6427c6299ce4e028e691ea3f4"'
       Server:
@@ -269,9 +269,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.41
       X-Request-Id:
-      - 710edc4f-19f5-4d03-b2e2-e1d5b0d79d54
+      - aa9fd9b7-7395-4c24-98bd-999030421963
       X-Runtime:
-      - '0.102897'
+      - '0.117000'
       X-UA-Compatible:
       - chrome=1
       X-XSS-Protection:
