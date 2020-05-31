@@ -26,6 +26,7 @@ ipdb = "*"
 pdbpp = "*"
 pre-commit = "*"
 betamax-serializers = "*"
+mypy = "*"
 
 [requires]
 python_version = "3.8"
