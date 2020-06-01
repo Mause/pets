@@ -20,7 +20,9 @@
 
   {% for listing in data %}
   <p>
-    <img src="{{listing.image}}"/>
+    {% if listing.image %}
+      <img src="{{listing.image}}"/>
+    {% endif %}
 
     <table>
       <tbody>
