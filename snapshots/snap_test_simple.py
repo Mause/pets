@@ -123,3 +123,50 @@ snapshots['test_sources[cockburn] 1'] = [
         "Pet(location='COOLBELLUP', image='https://www.cockburn.wa.gov.au/CMSPages/GetBizFormFile.aspx?filename=8ba4ab7f-6aeb-4f3f-be04-0bf8636a01a5.jpg&sitename=CityOfCockburn&mod=29May2020113643', breed='Domestic Short Hair', color='White', gender='Unknown', found_on=<Arrow [2020-05-23T00:00:00+00:00]>, source='cockburn', url='https://www.cockburn.wa.gov.au/Health-and-Safety/Dogs-and-Cats/Animal-Pound-Dogs-and-Cats')"
     ),
 ]
+
+snapshots[
+    'test_render 1'
+] = '''
+<!DOCTYPE html>
+
+<title>Lost Pets</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/static/writ.css">
+
+<header>
+  <h1>Lost Pets</h1>
+  <p>1 lost pets</p>
+  <small>Last updated 2020-01-01T00:00</small>
+</header>
+
+<main>
+
+    <code>swahamish</code> is unavailable
+
+
+
+  <p>
+
+
+    <table>
+      <tbody>
+        <tr><td>Location:</td><td>Rapture</td></tr>
+        <tr><td>Breed:</td><td>Unknown</td></tr>
+        <tr><td>Color:</td><td>Unknown</td></tr>
+        <tr><td>Gender:</td><td>Unknown</td></tr>
+        <tr><td>Found on:</td><td>01/01/2020</td></tr>
+        <tr><td>Source:</td><td>Rapture</td></tr>
+        <tr><td><a href="https://rapture.io/lost-and-found">More information</a></td></tr>
+      </tbody>
+    </table>
+  </p>
+  <hr/>
+
+</main>
+
+<footer>
+  <a href="https://github.com/mause/pets">Source code</a>&nbsp;|&nbsp;
+  <a href="/index.json">Raw data</a>
+</footer>'''
