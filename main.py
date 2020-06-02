@@ -17,10 +17,10 @@ logging.basicConfig(level=logging.DEBUG)
 app = Blueprint('app', __name__)
 
 
-def create_app(config=None):
+def create_app(config_override=None):
     papp = Flask(__name__)
     papp.register_blueprint(app)
-    papp.config.update(config or {})
+    papp.config.update(config_override or {})
     papp.redis = (
         Mock(spec=StrictRedis)
         if papp.testing
