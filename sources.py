@@ -362,7 +362,7 @@ def _rockingham_page(url, html):
         details = dict(adjacent(bits))
 
         yield Pet(
-            found_on=parse(details['Date found'], 'DD MMM YYYY'),
+            found_on=parse(details['Date found'], 'DD MMMM YYYY'),
             location=details['Location found'],
             color=details['Colour'],
             breed=details['Breed'],
