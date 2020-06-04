@@ -1,6 +1,5 @@
 import json
 import logging
-import os
 import pickle
 import time
 from concurrent.futures import ThreadPoolExecutor as PoolExecutor
@@ -11,23 +10,25 @@ import requests
 import schedule
 import sentry_sdk
 from flask import render_template
+from redis import StrictRedis
 from requests import Session
 from sentry_sdk import capture_exception, push_scope
 from tqdm import tqdm
 
 from config import config
-from main import app, redis
+from main import app
 from sources import sources
 
-if 'SENTRY_DSN' in os.environ:
-    sentry_sdk.init(dsn=os.environ['SENTRY_DSN'])
-
+if 'SENTRY_DSN' in config:
+    sentry_sdk.init(dsn=config['SENTRY_DSN'])
 
 EXECUTOR = PoolExecutor()
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
 HERE = dirname(__file__)
+
+redis = StrictRedis.from_url(config["REDIS_URL"])
 
 
 def update_data():
@@ -41,7 +42,7 @@ def update_data():
     data = pickle.dumps(data)
     statuses = json.dumps(statuses)
 
-    (redis.pipeline().set("data", data).set('statuses', statuses).execute())
+    redis.pipeline().set("data", data).set('statuses', statuses).execute()
 
     for source, error in errors.items():
         if not error:
