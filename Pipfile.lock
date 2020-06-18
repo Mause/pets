@@ -197,11 +197,11 @@
         },
         "sentry-sdk": {
             "hashes": [
-                "sha256:0e5e947d0f7a969314aa23669a94a9712be5a688ff069ff7b9fc36c66adc160c",
-                "sha256:799a8bf76b012e3030a881be00e97bc0b922ce35dde699c6537122b751d80e2c"
+                "sha256:c24428f04eb7fc77c6f2a4d32c58656bf347855b39930dc8947384226ac55daa",
+                "sha256:ce5493d5ce4f0760661381c156a93667003c97c92ce04282d399d19fa79c8941"
             ],
             "index": "pypi",
-            "version": "==0.14.4"
+            "version": "==0.15.0"
         },
         "six": {
             "hashes": [
@@ -482,10 +482,10 @@
         },
         "py": {
             "hashes": [
-                "sha256:5e27081401262157467ad6e7f851b7aa402c5852dbcb3dae06768434de5752aa",
-                "sha256:c20fdd83a5dbc0af9efd622bee9a5564e278f6380fffcacc43ba6f43db2813b0"
+                "sha256:a673fa23d7000440cc885c17dbd34fafcb7d7a6e230b29f6766400de36a33c44",
+                "sha256:f3b3a4c36512a4c4f024041ab51866f11761cc169670204b235f6b20523d4e6b"
             ],
-            "version": "==1.8.1"
+            "version": "==1.8.2"
         },
         "pygments": {
             "hashes": [
