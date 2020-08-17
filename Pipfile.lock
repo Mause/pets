@@ -201,11 +201,11 @@
         },
         "sentry-sdk": {
             "hashes": [
-                "sha256:06825c15a78934e78941ea25910db71314c891608a46492fc32c15902c6b2119",
-                "sha256:3ac0c430761b3cb7682ce612151d829f8644bb3830d4e530c75b02ceb745ff49"
+                "sha256:d359609e23ec9360b61e5ffdfa417e2f6bca281bfb869608c98c169c7e64acd5",
+                "sha256:e12eb1c2c01cd9e9cfe70608dbda4ef451f37ef0b7cbb92e5d43f87c341d6334"
             ],
             "index": "pypi",
-            "version": "==0.15.1"
+            "version": "==0.16.5"
         },
         "six": {
             "hashes": [
@@ -340,10 +340,10 @@
         },
         "identify": {
             "hashes": [
-                "sha256:110ed090fec6bce1aabe3c72d9258a9de82207adeaa5a05cd75c635880312f9a",
-                "sha256:ccd88716b890ecbe10920659450a635d2d25de499b9a638525a48b48261d989b"
+                "sha256:69c4769f085badafd0e04b1763e847258cbbf6d898e8678ebffc91abdb86f6c6",
+                "sha256:d6ae6daee50ba1b493e9ca4d36a5edd55905d2cf43548fdc20b2a14edef102e7"
             ],
-            "version": "==1.4.25"
+            "version": "==1.4.28"
         },
         "idna": {
             "hashes": [
@@ -354,9 +354,10 @@
         },
         "iniconfig": {
             "hashes": [
-                "sha256:aa0b40f50a00e72323cb5d41302f9c6165728fd764ac8822aa3fff00a40d56b4"
+                "sha256:80cf40c597eb564e86346103f609d74efce0f6b4d4f30ec8ce9e2c26411ba437",
+                "sha256:e5f92f89355a67de0595932a6c6c02ab4afddc6fcdc0bfc5becd0d60884d3f69"
             ],
-            "version": "==1.0.0"
+            "version": "==1.0.1"
         },
         "ipdb": {
             "hashes": [
@@ -367,10 +368,10 @@
         },
         "ipython": {
             "hashes": [
-                "sha256:2dbcc8c27ca7d3cfe4fcdff7f45b27f9a8d3edfa70ff8024a71c7a8eb5f09d64",
-                "sha256:9f4fcb31d3b2c533333893b9172264e4821c1ac91839500f31bd43f2c59b3ccf"
+                "sha256:5a8f159ca8b22b9a0a1f2a28befe5ad2b703339afb58c2ffe0d7c8d7a3af5999",
+                "sha256:b70974aaa2674b05eb86a910c02ed09956a33f2dd6c71afc60f0b128a77e7f28"
             ],
-            "version": "==7.16.1"
+            "version": "==7.17.0"
         },
         "ipython-genutils": {
             "hashes": [
@@ -479,10 +480,10 @@
         },
         "prompt-toolkit": {
             "hashes": [
-                "sha256:563d1a4140b63ff9dd587bda9557cffb2fe73650205ab6f4383092fb882e7dc8",
-                "sha256:df7e9e63aea609b1da3a65641ceaf5bc7d05e0a04de5bd45d05dbeffbabf9e04"
+                "sha256:683397077a64cd1f750b71c05afcfc6612a7300cb6932666531e5a54f38ea564",
+                "sha256:7630ab85a23302839a0f26b31cc24f518e6155dea1ed395ea61b42c45941b6a6"
             ],
-            "version": "==3.0.5"
+            "version": "==3.0.6"
         },
         "ptyprocess": {
             "hashes": [
@@ -587,10 +588,10 @@
         },
         "traitlets": {
             "hashes": [
-                "sha256:70b4c6a1d9019d7b4f6846832288f86998aa3b9207c6821f3578a6a6a467fe44",
-                "sha256:d023ee369ddd2763310e4c3eae1ff649689440d4ae59d7485eb4cfbbe3e359f7"
+                "sha256:ba3fc57ba75a8affee1addf8ce9b538aab79d275b478fda76dbe9cd2f49289a9",
+                "sha256:c6ec96486dacf8f9374a06f23553f71029f8d60255ccf630fd30c0fc7c7751b0"
             ],
-            "version": "==4.3.3"
+            "version": "==5.0.0b1"
         },
         "typed-ast": {
             "hashes": [
@@ -635,10 +636,10 @@
         },
         "virtualenv": {
             "hashes": [
-                "sha256:688a61d7976d82b92f7906c367e83bb4b3f0af96f8f75bfcd3da95608fe8ac6c",
-                "sha256:8f582a030156282a9ee9d319984b759a232b07f86048c1d6a9e394afa44e78c8"
+                "sha256:7b54fd606a1b85f83de49ad8d80dbec08e983a2d2f96685045b262ebc7481ee5",
+                "sha256:8cd7b2a4850b003a11be2fc213e206419efab41115cc14bca20e69654f2ac08e"
             ],
-            "version": "==20.0.28"
+            "version": "==20.0.30"
         },
         "wasmer": {
             "hashes": [
