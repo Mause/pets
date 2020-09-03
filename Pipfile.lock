@@ -201,11 +201,11 @@
         },
         "sentry-sdk": {
             "hashes": [
-                "sha256:2c770e7bf72d6419bb82b3bb950f3789fc24bd6a0ba191369607a96289acd63b",
-                "sha256:ad2c514aab9ed40d3f9f3245675727f672ea3d85b3b7a5956af93f405ba7aee0"
+                "sha256:0af429c221670e602f960fca85ca3f607c85510a91f11e8be8f742a978127f78",
+                "sha256:a088a1054673c6a19ea590045c871c38da029ef743b61a07bfee95e9f3c060f7"
             ],
             "index": "pypi",
-            "version": "==0.17.1"
+            "version": "==0.17.3"
         },
         "six": {
             "hashes": [
@@ -340,10 +340,10 @@
         },
         "identify": {
             "hashes": [
-                "sha256:9f5fcf22b665eaece583bd395b103c2769772a0f646ffabb5b1f155901b07de2",
-                "sha256:b1aa2e05863dc80242610d46a7b49105e2eafe00ef0c8ff311c1828680760c76"
+                "sha256:e105a62fd3a496c701fd1bc4e24eb695455b5efb97e722816d5bd988c3344311",
+                "sha256:f9f84a4ff44e29b9cc23c4012c2c8954089860723f80ce63d760393e5f197108"
             ],
-            "version": "==1.4.29"
+            "version": "==1.4.30"
         },
         "idna": {
             "hashes": [
@@ -589,10 +589,10 @@
         },
         "traitlets": {
             "hashes": [
-                "sha256:6c09e93a4b0aae5594d88d22910dd40677c3f4d730c5881ce4a8254fcf480052",
-                "sha256:d56e45db33a0f37ffa3cc4cfa439fc09ed2906e228d0f28310fcd42a19facdce"
+                "sha256:4c9a7212db9642056ea4fcd4ba9e18d302eb617daf679f45fd8cb5d19687b640",
+                "sha256:613da6efe96bdb4288c72dc65bc82c53320994b1702c6803150e0d2b21f83216"
             ],
-            "version": "==5.0.0rc2"
+            "version": "==5.0.2"
         },
         "typed-ast": {
             "hashes": [
