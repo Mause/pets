@@ -242,11 +242,11 @@
         },
         "tqdm": {
             "hashes": [
-                "sha256:4621f6823bab46a9cc33d48105753ccbea671b68bab2c50a9f0be23d4065cb5a",
-                "sha256:fe3d08dd00a526850568d542ff9de9bbc2a09a791da3c334f3213d8d0bbbca65"
+                "sha256:9fdf349068d047d4cfbe24862c425883af1db29bcddf4b0eeb2524f6fbdb23c7",
+                "sha256:d666ae29164da3e517fcf125e41d4fe96e5bb375cd87ff9763f6b38b5592fe33"
             ],
             "index": "pypi",
-            "version": "==4.56.0"
+            "version": "==4.59.0"
         },
         "urllib3": {
             "hashes": [
