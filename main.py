@@ -55,7 +55,11 @@ def get_status():
 @app.route('/index.json')
 def index_json():
     data = get_cached_data()
-    return jsonify(last_updated=get_last_updated(), statuses=get_status(), data=data,)
+    return jsonify(
+        last_updated=get_last_updated(),
+        statuses=get_status(),
+        data=data,
+    )
 
 
 @app.route('/status')
